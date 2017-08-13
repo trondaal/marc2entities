@@ -1,0 +1,2605 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <leader>00569nam a2200193 a 4500</leader>
+        <controlfield tag="001">010025123</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960507114942.0</controlfield>
+        <controlfield tag="008">871229r19871922enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8806299</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002321408</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0000035182</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The secret adversary /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1987, c1922</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">220 p. ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Dodd Mead, 1922</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X89.G00694</subfield>
+            <subfield code="m">(Box B000000001916)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00558nam a2200193 4500</leader>
+        <controlfield tag="001">010025882</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960507121218.0</controlfield>
+        <controlfield tag="008">880622r19871925enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8841697</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002321378</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0000036732</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The secret of chimneys /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1987</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">219 p. ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published : London : Collins, 1925</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X89.G00103</subfield>
+            <subfield code="m">(Box B000000001904)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00555nam a2200193 4500</leader>
+        <controlfield tag="001">010026202</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960507122055.0</controlfield>
+        <controlfield tag="008">880622r19871924enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8841696</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002321416</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0000037393</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Poirot investigates /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1987</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">192 p. ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published : London : Collins, 1924</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X89.G00293</subfield>
+            <subfield code="m">(Box B000000001908)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00509nam a2200181 a 4500</leader>
+        <controlfield tag="001">010039975</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960507205555.0</controlfield>
+        <controlfield tag="008">880413r19871924enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8828750</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002321386</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400023712</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The man in the brown suit /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1987, c1924</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">189 p.</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X89.G01061</subfield>
+            <subfield code="m">(Box B000000001923)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00554nam a2200193 a 4500</leader>
+        <controlfield tag="001">010249760</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960510125104.0</controlfield>
+        <controlfield tag="008">900326r19871931enk d 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8735877</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0854562036</subfield>
+        </datafield>
+        <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">PR6005.H66</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400557660</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The Sittaford mystery /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1987, c1931</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">386 p (large print) ;</subfield>
+            <subfield code="c">23 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X90.F00471</subfield>
+            <subfield code="m">(Box B000000001254)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00617nam a2200205 a 4500</leader>
+        <controlfield tag="001">010249768</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960510125104.0</controlfield>
+        <controlfield tag="008">900326r19871945enk d 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8735885</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0854560041</subfield>
+        </datafield>
+        <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">PR6005.H66</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400557677</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Death comes as the end /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1987, c1945</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">351 p. (large print) ;</subfield>
+            <subfield code="c">23 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Collins, 1945</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X90.F00470</subfield>
+            <subfield code="m">(Box B000000001253)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00444nam a2200157 a 4500</leader>
+        <controlfield tag="001">010316085</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960511102713.0</controlfield>
+        <controlfield tag="008">900820r19881923enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006174779</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400661952</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The murder on the links /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana/Collins,</subfield>
+            <subfield code="c">1988</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">208 p.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X90.H00686</subfield>
+            <subfield code="m">(Box B000000002417)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00561nam a2200193 4500</leader>
+        <controlfield tag="001">010393957</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512060137.0</controlfield>
+        <controlfield tag="008">901218r19881920enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8911460</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006174744</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400744108</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mysterious affair at Styles /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1988, c1920</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">204 p. ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.H00059</subfield>
+            <subfield code="m">(Box B000000002423)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="1" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">CEDBL</subfield>
+            <subfield code="h">823.914 CHR</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00511nam a2200181 a 4500</leader>
+        <controlfield tag="001">010394485</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512060728.0</controlfield>
+        <controlfield tag="008">901219r19881924enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8828750</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006174752</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400745297</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The man in the brown suit /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1988, c1924</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">238 p.</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.H00183</subfield>
+            <subfield code="m">(Box B000000002425)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00443nam a2200157 a 4500</leader>
+        <controlfield tag="001">010452704</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512183814.0</controlfield>
+        <controlfield tag="008">910524r19871923enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000232136X</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400873654</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The murder on the links /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1987</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">219 p. ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.G00957</subfield>
+            <subfield code="m">(Box B000000001987)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00744nam a2200229 a 4500</leader>
+        <controlfield tag="001">010458505</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512194214.0</controlfield>
+        <controlfield tag="008">500101r19901946enk 000 0aeng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 90-36452</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006375944</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL 990006375944(Bnb) from bmsc53</subfield>
+        </datafield>
+        <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">PR6005.H66Z/</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400886118</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Come, tell me how you live /</subfield>
+            <subfield code="c">Agatha Christie Mallowan ; with an introduction by Jacquetta
+                Hawkes</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Fontana/Collins :</subfield>
+            <subfield code="b">London,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">205 p, [8] p of plates ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Collins, 1946</subfield>
+        </datafield>
+        <datafield tag="600" ind1="1" ind2="0">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">M91.H00694</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00571nam a2200193 a 4500</leader>
+        <controlfield tag="001">010460008</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512200019.0</controlfield>
+        <controlfield tag="008">891025t19891973enka 000 0 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8954857</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0285628887</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">821.912</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400889412</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">My flower garden /</subfield>
+            <subfield code="c">Agatha Christie ; illustrated by Richard Allen</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Souvenir,</subfield>
+            <subfield code="c">1989, c1973</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">[30] p. :</subfield>
+            <subfield code="b">ill. ;</subfield>
+            <subfield code="c">16 cm</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Allen, Richard.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.H01488</subfield>
+            <subfield code="m">(Box B000000002440)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00590nam a2200193 a 4500</leader>
+        <controlfield tag="001">010469148</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960512213738.0</controlfield>
+        <controlfield tag="008">890607r19891920enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8911460</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708919553</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400908929</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mysterious affair at Styles /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1989</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">336 p. (large print) ;</subfield>
+            <subfield code="c">23 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Bodley Head, 1920</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.F01682</subfield>
+            <subfield code="m">(Box B000000001315)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00563nam a2200181 a 4500</leader>
+        <controlfield tag="001">010501835</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960513053702.0</controlfield>
+        <controlfield tag="008">911028s1989 enk 000 0 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0948397594</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0401002593</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Country house murders /</subfield>
+            <subfield code="c">Agatha Christie ... [et al.] ; edited by Thomas Godfrey</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">O'Mara,</subfield>
+            <subfield code="c">1989</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">339 p</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Twenty-two short stories by various authors</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Godfrey, Thomas.</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E00022</subfield>
+            <subfield code="m">(Box B000000000682)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00474nam a2200169 a 4500</leader>
+        <controlfield tag="001">010510001</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960513065820.0</controlfield>
+        <controlfield tag="008">911114r19881948enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006168892</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0401020554</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Taken at the flood /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[s.l.] :</subfield>
+            <subfield code="b">Fontana/Collins,</subfield>
+            <subfield code="c">1988</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">220 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published 1948</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.H01178</subfield>
+            <subfield code="m">(Box B000000002474)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00654naa a22002051a 4500</leader>
+        <controlfield tag="001">010524964</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20110704065352.0</controlfield>
+        <controlfield tag="008">910722s1988 fr 000 0 fre d</controlfield>
+        <datafield tag="041" ind1="1" ind2=" ">
+            <subfield code="a">fre</subfield>
+            <subfield code="h">eng</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400921293</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="240" ind1="1" ind2="0">
+            <subfield code="a">Hollow.</subfield>
+            <subfield code="l">French</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="3">
+            <subfield code="a">Le vallon /</subfield>
+            <subfield code="c">Agatha Christie ; adaptation et mise en scène de Simone
+                Benmussa</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Paris :</subfield>
+            <subfield code="b">L'Avant-Scène,</subfield>
+            <subfield code="c">1988</subfield>
+        </datafield>
+        <datafield tag="490" ind1="1" ind2=" ">
+            <subfield code="a">Avant-scène. Théâtre ;</subfield>
+            <subfield code="v">825</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">In: L'Avant-scène. Théâtre, 825, 1er mars 1988.</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Benmussa, Simone.</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Avant-scène.</subfield>
+            <subfield code="p">Théâtre ;</subfield>
+            <subfield code="v">825</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">TAYBL</subfield>
+            <subfield code="h">B.PER.</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00604nam a2200217 4500</leader>
+        <controlfield tag="001">010549147</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960514042122.0</controlfield>
+        <controlfield tag="008">500101r19901944enkc 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006163858 pbk</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">A316711</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2=" ">
+            <subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0401106560</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Towards zero /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="250" ind1=" " ind2=" ">
+            <subfield code="a">13th imp</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">222 p ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Port. on inside cover</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London: Collins, 1944</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.H01501</subfield>
+            <subfield code="m">(Box B000000002478)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00698nam a2200217 a 4500</leader>
+        <controlfield tag="001">010551096</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20050713172346.0</controlfield>
+        <controlfield tag="008">920304m19901993enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006178839 (bk.2)</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006470920 (bk.3)</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006473032 (bk.4)</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0401110990</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Agatha Christie's Poirot.</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1990-1993.</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">3 v. ;</subfield>
+            <subfield code="c">18 cm.</subfield>
+        </datafield>
+        <datafield tag="600" ind1="1" ind2="0">
+            <subfield code="a">Poirot, Hercule</subfield>
+            <subfield code="c">(Fictitious character)</subfield>
+            <subfield code="v">Fiction.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X05.H02664</subfield>
+            <subfield code="m">(Box B000000134602)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X05.H02663</subfield>
+            <subfield code="m">(Box B000000134602)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X05.H02662</subfield>
+            <subfield code="m">(Box B000000134602)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00564nam a2200205 a 4500</leader>
+        <controlfield tag="001">010572845</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960514083444.0</controlfield>
+        <controlfield tag="008">911220r19621941enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 92-3079</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006163017</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">BNB issue 2171</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0401158427</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">N or M? /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[S.l.] :</subfield>
+            <subfield code="b">Fontana/Collins,</subfield>
+            <subfield code="c">1962</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">217 p. ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="4">
+            <subfield code="a">The Christie collection</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.H02503</subfield>
+            <subfield code="m">(Box B000000002491)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00545nam a2200181 a 4500</leader>
+        <controlfield tag="001">010616060</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516110630.0</controlfield>
+        <controlfield tag="008">920825r19901942enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002237733</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500632997</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="2">
+            <subfield code="a">A Body in the library /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">191 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1942</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01840</subfield>
+            <subfield code="m">(Box B000000002970)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00584nam a2200193 4500</leader>
+        <controlfield tag="001">010616068</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516110643.0</controlfield>
+        <controlfield tag="008">920825r19901920enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002237741</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500633014</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mysterious affair at Styles /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">204 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Lane, 1920</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01839</subfield>
+            <subfield code="m">(Box B000000000738)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00725nam a2200241 4500</leader>
+        <controlfield tag="001">010616073</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20110706184949.0</controlfield>
+        <controlfield tag="008">911129r19901936enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 91-71049</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002237768</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">BNB issue 2168</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500633023</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The ABC murders /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">224 p ;</subfield>
+            <subfield code="c">24 cm</subfield>
+        </datafield>
+        <datafield tag="490" ind1="1" ind2=" ">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="490" ind1="0" ind2=" ">
+            <subfield code="a">The Crime Club</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1936</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01838</subfield>
+            <subfield code="m">(Box B000000000738)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00639nam a2200217 4500</leader>
+        <controlfield tag="001">010616083</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516110645.0</controlfield>
+        <controlfield tag="008">911129r19901937enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 91-71047</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002237725</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">BNB issue 2168</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500633043</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Death on the Nile /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">252 p ;</subfield>
+            <subfield code="c">24 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1937</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01837</subfield>
+            <subfield code="m">(Box B000000000738)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00643nam a2200217 4500</leader>
+        <controlfield tag="001">010616088</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516110658.0</controlfield>
+        <controlfield tag="008">911129r19901950enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 91-71048</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002237776</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">BNB issue 2168</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500633056</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="2">
+            <subfield code="a">A murder is announced /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">237 p ;</subfield>
+            <subfield code="c">24 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1950</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01842</subfield>
+            <subfield code="m">(Box B000000000738)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00647nam a2200217 4500</leader>
+        <controlfield tag="001">010616100</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516110701.0</controlfield>
+        <controlfield tag="008">911129r19901936enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 91-71045</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000223789X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">BNB issue 2168</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500633079</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Cards on the table /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">224 p :</subfield>
+            <subfield code="b">ill ;</subfield>
+            <subfield code="c">24 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1936</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">Agatha Christie : the centenary editions</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.E01841</subfield>
+            <subfield code="m">(Box B000000000738)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00548nam a2200193 a 4500</leader>
+        <controlfield tag="001">010652854</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516183415.0</controlfield>
+        <controlfield tag="008">921127r19901924enk d 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8841696</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708922821</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500720427</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Poirot investigates</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">305 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published : London : Collins, 1924</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.F05040</subfield>
+            <subfield code="m">(Box B000000001454)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00512nam a2200181 a 4500</leader>
+        <controlfield tag="001">010658157</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516193319.0</controlfield>
+        <controlfield tag="008">921207r19901934enk d 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8911460</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708922910</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500733022</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The Listerdale mystery /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">372 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.F05134</subfield>
+            <subfield code="m">(Box B000000001456)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00556nam a2200193 a 4500</leader>
+        <controlfield tag="001">010658517</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960516193542.0</controlfield>
+        <controlfield tag="008">921207r19901960enk d 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB-8735885</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708923097</subfield>
+        </datafield>
+        <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">PR6005.H66</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500733846</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The adventure of the Christmas pudding /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">432 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X92.F05132</subfield>
+            <subfield code="m">(Box B000000001456)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00740nam a22002171 4500</leader>
+        <controlfield tag="001">010669556</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960517132446.0</controlfield>
+        <controlfield tag="008">921109s1985 enk 000 0 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0099395606</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN02 record 108209</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500758923</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Come, tell me how you live /</subfield>
+            <subfield code="c">Agatha Christie Mallowan ; with an introduction by Jacquetta
+                Hawkes</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Hamlyn,</subfield>
+            <subfield code="c">1985, c1983</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">192 p ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="600" ind1="1" ind2="0">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976</subfield>
+            <subfield code="x">Travel</subfield>
+            <subfield code="z">Syria.</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Authors, English</subfield>
+            <subfield code="v">Biography</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Excavations (Archaeology)</subfield>
+            <subfield code="z">Syria.</subfield>
+        </datafield>
+        <datafield tag="651" ind1=" " ind2="0">
+            <subfield code="a">Syria</subfield>
+            <subfield code="x">Social life and customs</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">20606 e.277</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00452nam a2200157 a 4500</leader>
+        <controlfield tag="001">010686207</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960517170153.0</controlfield>
+        <controlfield tag="008">930129r19901974enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708923267</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500797535</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Poirot's early cases /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">469 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.F00604</subfield>
+            <subfield code="m">(Box B000000001475)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00529nam a2200169 a 4500</leader>
+        <controlfield tag="001">010688032</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960517172336.0</controlfield>
+        <controlfield tag="008">930202r19911979enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708923461</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500802235</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Miss Marple's final cases, and two other cases</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">205 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published in UK: London : William Collins, 1979</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.F00609</subfield>
+            <subfield code="m">(Box B000000001475)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00564nam a22002051 4500</leader>
+        <controlfield tag="001">010709977</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518185138.0</controlfield>
+        <controlfield tag="008">930122s1986 enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 88-12062</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0582540879</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN23</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0500883888</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Best detective stories of Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="250" ind1=" " ind2=" ">
+            <subfield code="a">Complete text ed</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Harlow :</subfield>
+            <subfield code="b">Longman,</subfield>
+            <subfield code="c">1986</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">xxi, 136 p ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="4">
+            <subfield code="a">The Bridge series</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25618 e.10294</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00628nam a22002051 4500</leader>
+        <controlfield tag="001">010715393</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518195121.0</controlfield>
+        <controlfield tag="008">930224r19851948enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17289</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002216965</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN24</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501005655</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The rose and the yew tree /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1956</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">190 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Heinemann, 1948</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25614 e.12543</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00560nam a22001931 4500</leader>
+        <controlfield tag="001">010715395</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518195133.0</controlfield>
+        <controlfield tag="008">930224r19851944enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17293</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000221038X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN24</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501005661</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Absent in the spring /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1944</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">192 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25614 e.12542</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00626nam a22002051 4500</leader>
+        <controlfield tag="001">010715630</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518195401.0</controlfield>
+        <controlfield tag="008">930224r19851952enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17290</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002211491</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN24</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501006227</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="2">
+            <subfield code="a">A daughter's a daughter /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1952</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">189 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Heinemann, 1952</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25615 e.17613</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00613nam a22002051 4500</leader>
+        <controlfield tag="001">010715650</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518195428.0</controlfield>
+        <controlfield tag="008">930224r19851956enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17288</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002210932</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN24</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501006266</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The burden /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1956</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">192 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London : Heinemann, 1956</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25615 e.17612</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00579nam a22001931a 4500</leader>
+        <controlfield tag="001">010726453</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518214305.0</controlfield>
+        <controlfield tag="008">930413s1985 enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17291</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002215454</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL 9900B8617291(Bnb) from emmc32d</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501032282</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Giant's bread /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1958</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">350 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25612 e.14210</subfield>
+            <subfield code="m">(Repr., 1985)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00802nam a2200205 a 4500</leader>
+        <controlfield tag="001">010729298</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20050729095446.0</controlfield>
+        <controlfield tag="008">500101s1990 enk 000 0 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 91-23854</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL 018984649554(Cam) from plc026</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501039222</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mystery of the Blue Train ; 4.50 from Paddington /</subfield>
+            <subfield code="c">Agatha Christie.</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Folio Society,</subfield>
+            <subfield code="c">1990.</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">2 v. ;</subfield>
+            <subfield code="c">23 cm.</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">The mystery of the Blue Train first published: Collins, [1928]; 4.50
+                from Paddington first published: Collins, 1957</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+            <subfield code="t">4:50 from Paddington.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.E01309</subfield>
+            <subfield code="m">[1] (Box B000000000795)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.E01310</subfield>
+            <subfield code="m">[2] (Box B000000000795)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00662nam a22001931 4500</leader>
+        <controlfield tag="001">010734026</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518230149.0</controlfield>
+        <controlfield tag="008">930225s1985 enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 85-29815</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000231469X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN26</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501050440</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="2">
+            <subfield code="a">A Miss Marple quartet /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">664 p ;</subfield>
+            <subfield code="c">23 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Contents: The body in the library. - The moving finger. - A murder is
+                announced. Originally published 1950. - A pocket full of rye. Originally published
+                1953</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25614 d.65</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00574nam a22001931 4500</leader>
+        <controlfield tag="001">010734814</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960518230929.0</controlfield>
+        <controlfield tag="008">930225s1985 enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 86-17292</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002218607</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL Interim file ISBN26</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501052321</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Westmacott, Mary,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Unfinished portrait /</subfield>
+            <subfield code="c">Mary Westmacott, also known as Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1985, c1962</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">251 p ;</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">25613 e.20029</subfield>
+            <subfield code="m">(Repr., 1985)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00558nam a2200193 a 4500</leader>
+        <controlfield tag="001">010739326</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960520025522.0</controlfield>
+        <controlfield tag="008">500101s1989 enk 000 1 eng d</controlfield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB 89-29320</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006177425</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL 990006177425(Bnb) from krmc005</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0400756304</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Hercule Poirot's casebook /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1989</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">264 p ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X91.H00134</subfield>
+            <subfield code="m">(Box B000000002424)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00564nam a2200193 a 4500</leader>
+        <controlfield tag="001">010772766</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960520084701.0</controlfield>
+        <controlfield tag="008">930510r19911924enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006174795</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501072792</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Poirot investigates /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">192 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Bodley Head, 1924</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="4">
+            <subfield code="a">The Christie collection</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.H01474</subfield>
+            <subfield code="m">(Box B000000002537)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00563nam a2200193 a 4500</leader>
+        <controlfield tag="001">010772782</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960520084715.0</controlfield>
+        <controlfield tag="008">930510r19911922enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006174787</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823/.912</subfield>
+            <subfield code="d">F</subfield>
+            <subfield code="2">19</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501072828</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The secret adversary /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">[London] :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">251 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : John Lane, 1922</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="4">
+            <subfield code="a">The Christie collection</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.H01475</subfield>
+            <subfield code="m">(Box B000000002537)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00507nam a2200169 a 4500</leader>
+        <controlfield tag="001">010847474</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960521232015.0</controlfield>
+        <controlfield tag="008">930911r19901958enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708924182</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501228491</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Ordeal by innocence /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1990</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">373 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1958</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.F03034</subfield>
+            <subfield code="m">(Box B000000001525)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00491nam a2200169 a 4500</leader>
+        <controlfield tag="001">010862294</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960522133158.0</controlfield>
+        <controlfield tag="008">931006r19911922enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708924417</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501264643</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The secret adversary</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">444 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : John Lane, 1922</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.F03235</subfield>
+            <subfield code="m">(Box B000000001530)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00568nam a2200193 a 4500</leader>
+        <controlfield tag="001">010867680</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960522144541.0</controlfield>
+        <controlfield tag="008">931015s1993 enk 000 0 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000224344X</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006476570 (Specialoverseas ed.)</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">OX/U-1</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501277907</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mousetrap and other plays /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">HarperCollins,</subfield>
+            <subfield code="c">1993</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">714 p. ;</subfield>
+            <subfield code="c">24 cm</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">M93.E11913</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X95.H01360</subfield>
+            <subfield code="m">(Box B000000002651)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00654nam a2200205 a 4500</leader>
+        <controlfield tag="001">010882663</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20090604130227.0</controlfield>
+        <controlfield tag="008">931112m19911993enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002238497 (bk.2)</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">000224196X (bk.4)</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501314833</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Agatha Christie's Poirot.</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Collins,</subfield>
+            <subfield code="c">1991-1993.</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">4 v. ;</subfield>
+            <subfield code="c">21-23 cm.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Book 4 published by HarperCollins.</subfield>
+        </datafield>
+        <datafield tag="600" ind1="1" ind2="0">
+            <subfield code="a">Poirot, Hercule</subfield>
+            <subfield code="c">(Fictitious character)</subfield>
+            <subfield code="v">Fiction.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X09.G08624</subfield>
+            <subfield code="m">(Box B000001118129)</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X09.F05098</subfield>
+            <subfield code="m">(Box B000001117101)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00490nam a2200169 a 4500</leader>
+        <controlfield tag="001">010895413</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960522222658.0</controlfield>
+        <controlfield tag="008">921118s1991 enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0002239221</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">FS</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501346736</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Problem at Pollensa Bay and other stories /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">HarperCollins,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">227 p.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X93.E02213</subfield>
+            <subfield code="m">(Box B000000000824)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00854nam a2200253 a 4500</leader>
+        <controlfield tag="001">010901791</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">20010119083425.0</controlfield>
+        <controlfield tag="008">500101r19931977enkac 000 0 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006353282</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">CURL 01898923185X(Cam) from wk502994</subfield>
+        </datafield>
+        <datafield tag="049" ind1=" " ind2=" ">
+            <subfield code="a">CU</subfield>
+            <subfield code="k">01898923185X</subfield>
+            <subfield code="l">e</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501362681</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="3">
+            <subfield code="a">An autobiography /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">HarperCollins,</subfield>
+            <subfield code="c">1993</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">559 p, [16] p of plates :</subfield>
+            <subfield code="b">ill, ports ;</subfield>
+            <subfield code="c">18 cm</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Cover title: Agatha Christie, an autobiography</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originally published: London: Collins, 1977</subfield>
+        </datafield>
+        <datafield tag="600" ind1="1" ind2="0">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976</subfield>
+            <subfield code="x">Biography.</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Novelists, English</subfield>
+            <subfield code="y">20th century</subfield>
+            <subfield code="v">Biography</subfield>
+        </datafield>
+        <datafield tag="740" ind1="0" ind2=" ">
+            <subfield code="a">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">M01.H00046</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">M94.H01026</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00482nam a2200169 a 4500</leader>
+        <controlfield tag="001">010945949</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960524214918.0</controlfield>
+        <controlfield tag="008">940305r19911949enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708924190</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501471181</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Crooked house</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1991</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">330 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: London : Collins, 1949</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.F01055</subfield>
+            <subfield code="m">(Box B000000001582)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00645nam a22002291a 4500</leader>
+        <controlfield tag="001">010952540</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960524230431.0</controlfield>
+        <controlfield tag="008">940316s1954 enka 000 1 eng d</controlfield>
+        <datafield tag="010" ind1=" " ind2=" ">
+            <subfield code="a">LC 54-023986 /L</subfield>
+        </datafield>
+        <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">GB56-7230</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">OCLC 00368098 from pio11</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DLC</subfield>
+            <subfield code="c">WSU</subfield>
+            <subfield code="d">OCL</subfield>
+            <subfield code="d">UKM</subfield>
+            <subfield code="d">EQO</subfield>
+        </datafield>
+        <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">PR6005.H66</subfield>
+            <subfield code="b">M6</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">822.91</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501487302</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The mousetrap,</subfield>
+            <subfield code="b">a play in two acts</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">French,</subfield>
+            <subfield code="c">[1954]</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">70 p.</subfield>
+            <subfield code="b">illus.</subfield>
+            <subfield code="c">22 cm</subfield>
+        </datafield>
+        <datafield tag="830" ind1=" " ind2="0">
+            <subfield code="a">French's acting edition ;</subfield>
+            <subfield code="v">No. 153</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">M. adds. 110 d.502</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00484nam a2200169 a 4500</leader>
+        <controlfield tag="001">010971214</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960525024142.0</controlfield>
+        <controlfield tag="008">940418r19921991enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006472427</subfield>
+        </datafield>
+        <datafield tag="082" ind1=" " ind2=" ">
+            <subfield code="a">823.912</subfield>
+            <subfield code="d">FS</subfield>
+            <subfield code="2">20</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501619909</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Problem at Pollensa Bay and other stories /</subfield>
+            <subfield code="c">Agatha Christie</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Fontana,</subfield>
+            <subfield code="c">1992</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">227 p.</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.H01474</subfield>
+            <subfield code="m">(Box B000000002591)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00544nam a2200169 a 4500</leader>
+        <controlfield tag="001">011006446</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960529123214.0</controlfield>
+        <controlfield tag="008">940613r19921972enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708926576</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501704527</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Elephants can remember</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1992</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">351 p (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">&quot;First published in Great Britain in 1972 by William Collins
+                Sons &amp; Co., London&quot; - t.p. verso</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.F02651</subfield>
+            <subfield code="m">(Box B000000001616)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00498nam a2200181 a 4500</leader>
+        <controlfield tag="001">011012593</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960529135321.0</controlfield>
+        <controlfield tag="008">940624r19931939enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006168132</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">OX/U-1</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501719719</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Murder is easy</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">HarperCollins,</subfield>
+            <subfield code="c">1993</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">223 p</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published in Great Britain: Collins, 1939</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.H02500</subfield>
+            <subfield code="m">(Box B000000002604)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00500nam a2200169 a 4500</leader>
+        <controlfield tag="001">011013155</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960529140105.0</controlfield>
+        <controlfield tag="008">940627r19921939enk d 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0708926738</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501720935</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Murder is easy</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Leicester :</subfield>
+            <subfield code="b">Ulverscroft,</subfield>
+            <subfield code="c">1992</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">370 p. (large print)</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published in Great Britain: London : Collins, 1939</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.F03507</subfield>
+            <subfield code="m">(Box B000000001635)</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>00542nam a2200181 a 4500</leader>
+        <controlfield tag="001">011035622</controlfield>
+        <controlfield tag="003">UkOxU</controlfield>
+        <controlfield tag="005">19960529191603.0</controlfield>
+        <controlfield tag="008">940804r19921965enk 000 1 eng d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">0006276644</subfield>
+        </datafield>
+        <datafield tag="092" ind1=" " ind2=" ">
+            <subfield code="a">D0501826522</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Christie, Agatha,</subfield>
+            <subfield code="d">1890-1976.</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Star over Bethlehem, and other stories /</subfield>
+            <subfield code="c">by Agatha Christie Mallowan</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">Fount,</subfield>
+            <subfield code="c">1992</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">84 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">First published: Dodd, Mead, 1965</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Christmas stories</subfield>
+        </datafield>
+        <datafield tag="852" ind1="8" ind2=" ">
+            <subfield code="a">UkOxU</subfield>
+            <subfield code="b">BODBL</subfield>
+            <subfield code="h">X94.H03226</subfield>
+            <subfield code="m">(Box B000000002614)</subfield>
+        </datafield>
+    </record>
+</collection>

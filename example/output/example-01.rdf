@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:a="http://rdaregistry.info/Elements/a/"
+         xmlns:c="http://rdaregistry.info/Elements/c/"
+         xmlns:e="http://rdaregistry.info/Elements/e/"
+         xmlns:u="http://rdaregistry.info/Elements/u/"
+         xmlns:w="http://rdaregistry.info/Elements/w/"
+         xmlns:m="http://rdaregistry.info/Elements/m/"
+         xmlns:frsad="http://iflastandards.info/ns/fr/frsad/"
+         xmlns:frbrer="http://iflastandards.info/ns/fr/frbr/frbrer/"
+         xmlns:marcrdf="http://marc21rdf.info/elements/"
+         xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xml:base="http://idi.ntnu.no/frbrized/">
+   <rdf:Description rdf:about="cpersonallenrichard"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Allen, Richard</a:nameOfPerson>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpersonbenmussasimone"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Benmussa, Simone</a:nameOfPerson>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpersonchristieagatha18901976"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Christie, Agatha</a:nameOfPerson>
+      <a:dateAssociatedWithPerson>1890-1976</a:dateAssociatedWithPerson>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976450frompaddington18901976"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976abodyinthelibrary"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976agathachristiespoirot"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976amissmarplequartet"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976amurderisannounced"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976anautobiography"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976bestdetectivestoriesofagathachristie"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976cardsonthetable"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976cometellmehowyoulive"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976crookedhouse"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976deathcomesastheend"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976deathonthenile"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976elephantscanremember"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976herculepoirotscasebook"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976hollow"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976missmarplesfinalcasesandtwoothercases"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976murderiseasy"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976myflowergarden"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976norm"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976ordealbyinnocence"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976poirotinvestigates"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976poirotsearlycases"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976problematpollensabayandotherstories"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976staroverbethlehemandotherstories"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976takenattheflood"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976theabcmurders"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976theadventureofthechristmaspudding"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976thelisterdalemystery"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themaninthebrownsuit"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themousetrapandotherplays"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themousetrapaplayintwoacts"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themurderonthelinks"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themysteriousaffairatstyles"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976themysteryofthebluetrain450frompaddington"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976thesecretadversary"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976thesecretofchimneys"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976thesittafordmystery"/>
+      <a:authorOf rdf:resource="cworkcpersonchristieagatha18901976towardszero"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpersongodfreythomas"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Godfrey, Thomas</a:nameOfPerson>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpersonpoirothercule"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Poirot, Hercule</a:nameOfPerson>
+      <a:titleOfThePerson>(Fictitious character)</a:titleOfThePerson>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpersonwestmacottmary18901976"
+                    rdf:type="http://rdaregistry.info/Elements/c/Person">
+      <a:nameOfPerson>Westmacott, Mary</a:nameOfPerson>
+      <a:dateAssociatedWithPerson>1890-1976</a:dateAssociatedWithPerson>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976absentinthespring"/>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976adaughtersadaughter"/>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976giantsbread"/>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976theburden"/>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976theroseandtheyewtree"/>
+      <a:authorOf rdf:resource="cworkcpersonwestmacottmary18901976unfinishedportrait"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcountryhousemurders"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Country house murders</w:titleOfWork>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976450frompaddington18901976"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:dateOfWork>1890-1976.</w:dateOfWork>
+      <w:titleOfWork>4:50 from Paddington.</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976abodyinthelibrary"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>A Body in the library</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976agathachristiespoirot"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Agatha Christie's Poirot</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976amissmarplequartet"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>A Miss Marple quartet</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976amurderisannounced"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>A murder is announced</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976anautobiography"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>An autobiography</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976bestdetectivestoriesofagathachristie"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Best detective stories of Agatha Christie</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976cardsonthetable"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Cards on the table</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976cometellmehowyoulive"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Come, tell me how you live</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976crookedhouse"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Crooked house</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976deathcomesastheend"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Death comes as the end</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976deathonthenile"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Death on the Nile</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976elephantscanremember"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Elephants can remember</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976herculepoirotscasebook"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Hercule Poirot's casebook</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976hollow"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Hollow.</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976missmarplesfinalcasesandtwoothercases"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Miss Marple's final cases, and two other cases</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976murderiseasy"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Murder is easy</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976myflowergarden"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>My flower garden</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976norm"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>N or M?</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976ordealbyinnocence"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Ordeal by innocence</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976poirotinvestigates"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Poirot investigates</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976poirotsearlycases"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Poirot's early cases</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976problematpollensabayandotherstories"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Problem at Pollensa Bay and other stories</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976staroverbethlehemandotherstories"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Star over Bethlehem, and other stories</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976takenattheflood"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Taken at the flood</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976theabcmurders"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The ABC murders</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976theadventureofthechristmaspudding"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The adventure of the Christmas pudding</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976thelisterdalemystery"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The Listerdale mystery</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themaninthebrownsuit"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The man in the brown suit</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themousetrapandotherplays"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The mousetrap and other plays</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themousetrapaplayintwoacts"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The mousetrap : a play in two acts</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themurderonthelinks"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The murder on the links</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themysteriousaffairatstyles"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The mysterious affair at Styles</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976themysteryofthebluetrain450frompaddington"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The mystery of the Blue Train ; 4.50 from Paddington</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976thesecretadversary"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The secret adversary</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976thesecretofchimneys"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The secret of chimneys</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976thesittafordmystery"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The Sittaford mystery</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonchristieagatha18901976towardszero"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Towards zero</w:titleOfWork>
+      <w:author rdf:resource="cpersonchristieagatha18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976absentinthespring"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Absent in the spring</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976adaughtersadaughter"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>A daughter's a daughter</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976giantsbread"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Giant's bread</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976theburden"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The burden</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976theroseandtheyewtree"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>The rose and the yew tree</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cworkcpersonwestmacottmary18901976unfinishedportrait"
+                    rdf:type="http://rdaregistry.info/Elements/c/Work">
+      <w:titleOfWork>Unfinished portrait</w:titleOfWork>
+      <w:author rdf:resource="cpersonwestmacottmary18901976"/>
+   </rdf:Description>
+</rdf:RDF>
