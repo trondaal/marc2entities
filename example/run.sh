@@ -1,5 +1,5 @@
 #!/bin/sh
-export  CLASSPATH="../jar/saxonhe/saxon9he.jar"
+export  CLASSPATH="../jar/saxon/saxon9he.jar"
 
 
 echo "Creating xslt conversion"
