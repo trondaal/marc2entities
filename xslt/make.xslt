@@ -19,7 +19,7 @@
             <xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'merge'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
-                <xsl:attribute name="select" select="'false()'"/>
+                <xsl:attribute name="select" select="'true()'"/>
             </xsl:element>
             <xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'rdf'"/>

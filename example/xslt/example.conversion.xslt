@@ -4,7 +4,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version="3.0">
    <xsl:param name="confidence" as="xs:boolean" select="false()"/>
-   <xsl:param name="merge" as="xs:boolean" select="false()"/>
+   <xsl:param name="merge" as="xs:boolean" select="true()"/>
    <xsl:param name="rdf" as="xs:boolean" select="false()"/>
    <xsl:param name="inverse" as="xs:boolean" select="true()"/>
    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>

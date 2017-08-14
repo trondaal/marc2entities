@@ -1,1531 +1,593 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thesecretadversary}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thesecretadversary}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The secret adversary</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thesecretofchimneys}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thesecretofchimneys}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The secret of chimneys</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Poirot investigates</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The man in the brown suit</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thesittafordmystery}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thesittafordmystery}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The Sittaford mystery</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};deathcomesastheend}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};deathcomesastheend}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Death comes as the end</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The murder on the links</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mysterious affair at Styles</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The man in the brown suit</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The murder on the links</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Come, tell me how you live</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-      <frbrizer:relationship type="frsad:P2001"
-                             itype="frsad:P2002"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-600-Person">
-      <datafield tag="600" ind1="1" ind2="0">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="frsad:P2002"
-                             itype="frsad:P2001"
-                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};myflowergarden}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};myflowergarden}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">My flower garden</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=allenrichard}"
-           type="c:Person"
-           templatename="MARC21-700-Person">
+   <record id="{cperson=allenrichard}" type="c:Person">
       <datafield tag="700" ind1="1" ind2=" ">
          <subfield code="a" type="a:nameOfPerson">Allen, Richard</subfield>
       </datafield>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mysterious affair at Styles</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork=countryhousemurders}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="0" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Country house murders</subfield>
-      </datafield>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=godfreythomas}"
-           type="c:Person"
-           templatename="MARC21-700-Person">
-      <datafield tag="700" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Godfrey, Thomas</subfield>
-      </datafield>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-700-Person">
-      <datafield tag="700" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};takenattheflood}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};takenattheflood}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Taken at the flood</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};hollow}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};hollow}"
-           type="c:Work"
-           templatename="MARC21-240-Work">
-      <datafield tag="240" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Hollow.</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=benmussasimone}"
-           type="c:Person"
-           templatename="MARC21-700-Person">
+   <record id="{cperson=benmussasimone}" type="c:Person">
       <datafield tag="700" ind1="1" ind2=" ">
          <subfield code="a" type="a:nameOfPerson">Benmussa, Simone</subfield>
       </datafield>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
+   <record id="{cperson=christieagatha;18901976}" type="c:Person">
       <datafield tag="100" ind1="1" ind2=" ">
          <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
          <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};towardszero}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};towardszero}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Towards zero</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Agatha Christie's Poirot</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-      <frbrizer:relationship type="frsad:P2001"
-                             itype="frsad:P2002"
-                             href="{cperson=poirothercule}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=poirothercule}"
-           type="c:Person"
-           templatename="MARC21-600-Person">
-      <datafield tag="600" ind1="1" ind2="0">
-         <subfield code="a" type="a:nameOfPerson">Poirot, Hercule</subfield>
-         <subfield code="c" type="a:titleOfThePerson">(Fictitious character)</subfield>
-      </datafield>
-      <frbrizer:relationship type="frsad:P2002"
-                             itype="frsad:P2001"
-                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};norm}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};norm}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">N or M?</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};abodyinthelibrary}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};abodyinthelibrary}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="2">
-         <subfield code="a" type="w:titleOfWork">A Body in the library</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mysterious affair at Styles</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};theabcmurders}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};theabcmurders}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The ABC murders</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};deathonthenile}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};deathonthenile}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Death on the Nile</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};amurderisannounced}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};amurderisannounced}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="2">
-         <subfield code="a" type="w:titleOfWork">A murder is announced</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};cardsonthetable}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};cardsonthetable}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Cards on the table</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Poirot investigates</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thelisterdalemystery}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thelisterdalemystery}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The Listerdale mystery</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};theadventureofthechristmaspudding}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};theadventureofthechristmaspudding}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The adventure of the Christmas pudding</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Come, tell me how you live</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-      <frbrizer:relationship type="frsad:P2001"
-                             itype="frsad:P2002"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-600-Person">
       <datafield tag="600" ind1="1" ind2="0">
          <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
          <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
       </datafield>
-      <frbrizer:relationship type="frsad:P2002"
-                             itype="frsad:P2001"
-                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};poirotsearlycases}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};poirotsearlycases}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Poirot's early cases</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};missmarplesfinalcasesandtwoothercases}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};missmarplesfinalcasesandtwoothercases}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Miss Marple's final cases, and two other cases</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};bestdetectivestoriesofagathachristie}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};bestdetectivestoriesofagathachristie}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Best detective stories of Agatha Christie</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};theroseandtheyewtree}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};theroseandtheyewtree}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The rose and the yew tree</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};absentinthespring}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};absentinthespring}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Absent in the spring</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};adaughtersadaughter}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};adaughtersadaughter}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="2">
-         <subfield code="a" type="w:titleOfWork">A daughter's a daughter</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};theburden}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};theburden}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The burden</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};giantsbread}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};giantsbread}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Giant's bread</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themysteryofthebluetrain;450frompaddington}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themysteryofthebluetrain;450frompaddington}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mystery of the Blue Train ; 4.50 from Paddington</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-700-Person">
       <datafield tag="700" ind1="1" ind2=" ">
          <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
          <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
                              href="{cwork={cperson=christieagatha;18901976};450frompaddington;18901976}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};abodyinthelibrary}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};amissmarplequartet}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};amurderisannounced}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};anautobiography}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};bestdetectivestoriesofagathachristie}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};cardsonthetable}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};crookedhouse}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};deathcomesastheend}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};deathonthenile}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};elephantscanremember}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};herculepoirotscasebook}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};hollow}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};missmarplesfinalcasesandtwoothercases}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};murderiseasy}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};myflowergarden}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};norm}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};ordealbyinnocence}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};poirotsearlycases}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};staroverbethlehemandotherstories}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};takenattheflood}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};theabcmurders}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};theadventureofthechristmaspudding}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};thelisterdalemystery}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themousetrapandotherplays}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themousetrapaplayintwoacts}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};themysteryofthebluetrain;450frompaddington}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};thesecretadversary}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};thesecretofchimneys}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};thesittafordmystery}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=christieagatha;18901976};towardszero}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2002"
+                             href="{cwork={cperson=christieagatha;18901976};anautobiography}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2002"
+                             href="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};450frompaddington;18901976}"
-           type="c:Work"
-           subtype=""
-           templatename="MARC21-700-Work">
+   <record id="{cperson=godfreythomas}" type="c:Person">
+      <datafield tag="700" ind1="1" ind2=" ">
+         <subfield code="a" type="a:nameOfPerson">Godfrey, Thomas</subfield>
+      </datafield>
+   </record>
+   <record id="{cperson=poirothercule}" type="c:Person">
+      <datafield tag="600" ind1="1" ind2="0">
+         <subfield code="a" type="a:nameOfPerson">Poirot, Hercule</subfield>
+         <subfield code="c" type="a:titleOfThePerson">(Fictitious character)</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2002"
+                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
+   </record>
+   <record id="{cperson=westmacottmary;18901976}" type="c:Person">
+      <datafield tag="100" ind1="1" ind2=" ">
+         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
+         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};absentinthespring}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};adaughtersadaughter}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};giantsbread}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};theburden}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};theroseandtheyewtree}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="a:authorOf"
+                             href="{cwork={cperson=westmacottmary;18901976};unfinishedportrait}"/>
+   </record>
+   <record id="{cwork=countryhousemurders}" type="c:Work">
+      <datafield tag="245" ind1="0" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Country house murders</subfield>
+      </datafield>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};450frompaddington;18901976}"
+           type="c:Work">
       <datafield tag="700" ind1="1" ind2=" ">
          <subfield code="d" type="w:dateOfWork">1890-1976.</subfield>
          <subfield code="t" type="w:titleOfWork">4:50 from Paddington.</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};amissmarplequartet}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};amissmarplequartet}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};abodyinthelibrary}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="2">
-         <subfield code="a" type="w:titleOfWork">A Miss Marple quartet</subfield>
+         <subfield code="a" type="w:titleOfWork">A Body in the library</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=westmacottmary;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Westmacott, Mary</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=westmacottmary;18901976};unfinishedportrait}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=westmacottmary;18901976};unfinishedportrait}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Unfinished portrait</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=westmacottmary;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};herculepoirotscasebook}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};herculepoirotscasebook}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Hercule Poirot's casebook</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Poirot investigates</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thesecretadversary}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thesecretadversary}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The secret adversary</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};ordealbyinnocence}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};ordealbyinnocence}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Ordeal by innocence</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};thesecretadversary}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};thesecretadversary}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The secret adversary</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themousetrapandotherplays}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themousetrapandotherplays}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mousetrap and other plays</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
          <subfield code="a" type="w:titleOfWork">Agatha Christie's Poirot</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-      <frbrizer:relationship type="frsad:P2001"
-                             itype="frsad:P2002"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2001"
                              href="{cperson=poirothercule}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=poirothercule}"
-           type="c:Person"
-           templatename="MARC21-600-Person">
-      <datafield tag="600" ind1="1" ind2="0">
-         <subfield code="a" type="a:nameOfPerson">Poirot, Hercule</subfield>
-         <subfield code="c" type="a:titleOfThePerson">(Fictitious character)</subfield>
-      </datafield>
-      <frbrizer:relationship type="frsad:P2002"
-                             itype="frsad:P2001"
-                             href="{cwork={cperson=christieagatha;18901976};agathachristiespoirot}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Problem at Pollensa Bay and other stories</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};amissmarplequartet}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="2">
+         <subfield code="a" type="w:titleOfWork">A Miss Marple quartet</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};anautobiography}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};anautobiography}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};amurderisannounced}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="2">
+         <subfield code="a" type="w:titleOfWork">A murder is announced</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};anautobiography}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="3">
          <subfield code="a" type="w:titleOfWork">An autobiography</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2001"
                              href="{cperson=christieagatha;18901976}"/>
-      <frbrizer:relationship type="frsad:P2001"
-                             itype="frsad:P2002"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-600-Person">
-      <datafield tag="600" ind1="1" ind2="0">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};bestdetectivestoriesofagathachristie}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Best detective stories of Agatha Christie</subfield>
       </datafield>
-      <frbrizer:relationship type="frsad:P2002"
-                             itype="frsad:P2001"
-                             href="{cwork={cperson=christieagatha;18901976};anautobiography}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};cardsonthetable}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Cards on the table</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};crookedhouse}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};crookedhouse}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};cometellmehowyoulive}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Come, tell me how you live</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="frsad:P2001"
+                             href="{cperson=christieagatha;18901976}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};crookedhouse}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
          <subfield code="a" type="w:titleOfWork">Crooked house</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};themousetrapaplayintwoacts}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};themousetrapaplayintwoacts}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="w:titleOfWork">The mousetrap : a play in two acts</subfield>
-      </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
-                             href="{cperson=christieagatha;18901976}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};deathcomesastheend}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Problem at Pollensa Bay and other stories</subfield>
+         <subfield code="a" type="w:titleOfWork">Death comes as the end</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};deathonthenile}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Death on the Nile</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};elephantscanremember}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};elephantscanremember}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};elephantscanremember}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
          <subfield code="a" type="w:titleOfWork">Elephants can remember</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};herculepoirotscasebook}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Hercule Poirot's casebook</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};murderiseasy}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};murderiseasy}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};hollow}" type="c:Work">
+      <datafield tag="240" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Hollow.</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};missmarplesfinalcasesandtwoothercases}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Miss Marple's final cases, and two other cases</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};murderiseasy}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
          <subfield code="a" type="w:titleOfWork">Murder is easy</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
-      </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};murderiseasy}"/>
-   </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};murderiseasy}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};myflowergarden}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="w:titleOfWork">Murder is easy</subfield>
+         <subfield code="a" type="w:titleOfWork">My flower garden</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cperson=christieagatha;18901976}"
-           type="c:Person"
-           templatename="MARC21-100-Person">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="a" type="a:nameOfPerson">Christie, Agatha</subfield>
-         <subfield code="d" type="a:dateAssociatedWithPerson">1890-1976</subfield>
+   <record id="{cwork={cperson=christieagatha;18901976};norm}" type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">N or M?</subfield>
       </datafield>
-      <frbrizer:relationship type="a:authorOf"
-                             itype="w:author"
-                             href="{cwork={cperson=christieagatha;18901976};staroverbethlehemandotherstories}"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
    </record>
-   <record xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           id="{cwork={cperson=christieagatha;18901976};staroverbethlehemandotherstories}"
-           type="c:Work"
-           templatename="MARC21-245-Work">
+   <record id="{cwork={cperson=christieagatha;18901976};ordealbyinnocence}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Ordeal by innocence</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};poirotinvestigates}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Poirot investigates</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};poirotsearlycases}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Poirot's early cases</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};problematpollensabayandotherstories}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Problem at Pollensa Bay and other stories</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};staroverbethlehemandotherstories}"
+           type="c:Work">
       <datafield tag="245" ind1="1" ind2="0">
          <subfield code="a" type="w:titleOfWork">Star over Bethlehem, and other stories</subfield>
       </datafield>
-      <frbrizer:relationship type="w:author"
-                             itype="a:authorOf"
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
                              href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};takenattheflood}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Taken at the flood</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};theabcmurders}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The ABC murders</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};theadventureofthechristmaspudding}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The adventure of the Christmas pudding</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};thelisterdalemystery}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The Listerdale mystery</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themaninthebrownsuit}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The man in the brown suit</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themousetrapandotherplays}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The mousetrap and other plays</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themousetrapaplayintwoacts}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The mousetrap : a play in two acts</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themurderonthelinks}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The murder on the links</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themysteriousaffairatstyles}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The mysterious affair at Styles</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};themysteryofthebluetrain;450frompaddington}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The mystery of the Blue Train ; 4.50 from Paddington</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};thesecretadversary}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The secret adversary</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};thesecretofchimneys}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The secret of chimneys</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};thesittafordmystery}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The Sittaford mystery</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=christieagatha;18901976};towardszero}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Towards zero</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=christieagatha;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};absentinthespring}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Absent in the spring</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};adaughtersadaughter}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="2">
+         <subfield code="a" type="w:titleOfWork">A daughter's a daughter</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};giantsbread}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Giant's bread</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};theburden}" type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The burden</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};theroseandtheyewtree}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="4">
+         <subfield code="a" type="w:titleOfWork">The rose and the yew tree</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
+   </record>
+   <record id="{cwork={cperson=westmacottmary;18901976};unfinishedportrait}"
+           type="c:Work">
+      <datafield tag="245" ind1="1" ind2="0">
+         <subfield code="a" type="w:titleOfWork">Unfinished portrait</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="w:author"
+                             href="{cperson=westmacottmary;18901976}"/>
    </record>
 </collection>
