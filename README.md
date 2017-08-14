@@ -17,6 +17,7 @@ An example of the rule file can be found in the examples diretory. The format is
         <!-- @tag is the tag that this rule is used for, one entity per occurence of the tag --> 
         <attributes>
         <!-- The fields that will be mapped/included for this entity -->
+        <!-- @select is only needed if the data element has to be processed - such as removing hardcoded ISBD separators -->
             <datafield tag="100">
                 <subfield code="a" type="a:nameOfPerson" select="frbrizer:trim(.)"/>
                 <subfield code="c" type="a:titleOfThePerson"  select="frbrizer:trim(.)"/>
