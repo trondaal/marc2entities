@@ -1,4 +1,8 @@
-<templates xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../xsd/marc2frbr.rules.xsd"
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <!-- Example rules for extracting works and creators -->
+    <!-- This ruleset has limited implementation of relationships between works, and does not identify expressions and manifestation -->
     <entity type="c:Person" templatename="MARC21-100-Person" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
         <anchor tag="100"/>
         <attributes>
@@ -112,7 +116,6 @@
     </entity>
 
     <entity type="c:Work" templatename="MARC21-240-Work" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
-        <note>Work identified by title in 240</note>
         <anchor tag="240"/>
         <attributes>
             <datafield tag="240">                
@@ -447,7 +450,6 @@
         </relationships>
     </entity>
     <entity type="c:Person" templatename="MARC21-700-Person" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
-        <note>Person identified in 700 - added entry</note>
         <anchor tag="700"/>
         <attributes>
             <datafield tag="700">
@@ -471,7 +473,6 @@
     </entity>
     
     <entity type="c:Work" templatename="MARC21-700-Work" subtype="{$anchor_field/*:subfield[@code='k']}" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
-        <note>Work identified in 700 - added entry</note>
         <anchor tag="700">
             <code code="t"/>
         </anchor>
@@ -613,10 +614,9 @@
     </entity>
     
     <entity type="c:Work" templatename="MARC21-730-Work" subtype="{if ($anchor_field/*:subfield[@code='k']) then $anchor_field/*:subfield[@code='k'] else $record/*:datafield[@tag='380']/*:subfield[@code = 'a']}" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
-        <note>Work identified in 730 </note>
         <anchor tag="730"/>
         <attributes>
-            <datafield tag="730"><!-- joining title  $a and name of part $p  to one string -->
+            <datafield tag="730">
                 <subfield code="a" type="w:titleOfWork"/>
                 <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
@@ -645,7 +645,7 @@
         <relationships/>
     </entity>
 
-    <stylesheet xmlns:frbrizer="http://idi.ntnu.no/frbrizer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0"><!-- This file is for user-defined functions -->
+    <stylesheet xmlns:frbrizer="http://idi.ntnu.no/frbrizer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0"><!-- User-defined functions used in the rules -->
         
         <xsl:function name="frbrizer:marc21rdftype" as="xs:string" xmlns:frbrizer="http://idi.ntnu.no/frbrizer/">
             <xsl:param name="node" as="element()"/>

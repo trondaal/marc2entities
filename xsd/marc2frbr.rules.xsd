@@ -1,0 +1,216 @@
+<xs:schema xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="templates">
+        <xs:annotation>
+            <xs:documentation>The root element of the file. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="entity" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Each entity element describes the rules for identifying one type of entity in the record from one specific tag in the record. </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="stylesheet" minOccurs="0" maxOccurs="1" type="xs:anyType">
+                    <xs:annotation>
+                        <xs:documentation>placeholder for user-defined functions that are used in the xpaths defined in the rules</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="templatename">
+            <xs:selector xpath="entity"/>
+            <xs:field xpath="@templatename"/>
+        </xs:unique>
+        <xs:keyref refer="templatename" name="templateref">
+            <xs:selector xpath="entity/relationships/relationship/target"/>
+            <xs:field xpath="@entity"/>
+        </xs:keyref>
+    </xs:element>
+    <xs:element name="entity">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="anchor">
+                    <xs:annotation>
+                        <xs:documentation>The anchor defines the positions in the record that is used to identify and create distinct entities. This information is used to create for-each loops for creating entity-records. 
+                            If code is included we will create a nested for-each loop.
+                            xsl:for-each select="/record/datafield[@tag = $tag][$tagcondition]
+                            xsl:for-each select="subfield[@code = $code][$codecondition]</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element ref="attributes">
+                    <xs:annotation>
+                        <xs:documentation>Defines the list of datafields/controfields that should be included in the description of the identified entity.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="key"/>
+                    <xs:element ref="label"/>
+                    <xs:element ref="relationships"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="templatename" use="required" type="xs:NCName"/>
+            <xs:attributeGroup ref="typeattributes"/>
+            <xs:attribute name="src"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="note" type="xs:string"/>
+    <xs:element name="anchor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="code"/>
+            </xs:sequence>
+            <xs:attribute name="tag" use="required" type="xs:integer"/>
+            <xs:attribute name="condition" use="optional" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="code">
+        <xs:complexType>
+            <xs:attribute name="code" use="required" type="xs:string"/>
+            <xs:attribute name="condition" use="optional" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="attributes">
+        <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element ref="controlfield"/>
+                <xs:element ref="datafield"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="controlfield">
+        <xs:complexType>
+            <xs:attribute name="tag" use="required" type="xs:integer"/>
+            <xs:attribute name="condition" use="optional" type="xs:string"/>
+            <xs:attribute name="select" use="optional" type="xs:string"/>
+            <xs:attributeGroup ref="typeattributes"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datafield">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="subfield">
+                    <xs:annotation>
+                        <xs:documentation>Defines the subfields that will be included for the identified entity, as well as the datatype it maps to.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="tag" use="required" type="xs:integer"/>
+            <xs:attribute name="condition" use="optional" type="xs:string"/>
+            <xs:attributeGroup ref="typeattributes"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="subfield">
+        <xs:complexType>
+            <xs:attribute name="code" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="condition" use="optional" type="xs:string"/>
+            <xs:attribute name="select" use="optional" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>This attribute can be use for an xpath-expression and the return value will be used as the value for this subfield in the output.
+                        The context element is the subfield element. Example on usage includes trimming the string for those annoying isbd separators that are coded at the end, concatenating title and subtitle into one string (other subfields can be addressed through the parent datafield), selecting only part of the string etc. 
+                        It is also possible to write your own xslt-functions and store them in the file for userdefined functions.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attributeGroup ref="typeattributes"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="key">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="related"/>
+                <xs:element maxOccurs="unbounded" ref="element"/>
+            </xs:sequence>
+            <xs:attribute name="order" use="optional" type="xs:integer" default="0"
+                form="unqualified"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="element" type="xs:string"/>
+    <xs:element name="label">
+        <xs:annotation>
+            <xs:documentation>The label element (child of record) can be used to add textual descriptions to the entity e.g. for display or other purposes.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:attribute name="select" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="relationships">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="relationship"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="relationship">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element ref="note" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="target" minOccurs="1"/>
+            </xs:choice>
+            <xs:attribute name="condition" type="xs:string"/>
+            <xs:attributeGroup ref="typeattributes"/>
+            <xs:attributeGroup ref="itypeattributes"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="target">
+        <xs:complexType>
+            <xs:attribute name="entity" use="required" type="xs:NCName"/>
+            <xs:attribute name="same-field" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>If you only want relationships between entities identified by the same field, the value of same-field has to be true. </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="condition" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="keyfilter" type="xs:string"
+        default="replace(lower-case(string-join($key, '\')), '[^a-z0-9\\#|¤§]', '')">
+        <xs:annotation>
+            <xs:documentation>
+                The keyfilter element is used to specify string processing of the key value. It has to be a valid XPATH expression using the variable $key as input.
+                Typically this expression is used to remove irrelevant punctuation, convert letters to lowercase and other text operations.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:attributeGroup name="typeattributes">
+        <xs:attribute name="type" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The type attribute is used to give a type-name or -identifier to an entity, attribute or relationship. If the attribute value is in curly braces it will be interpreted as an xpath-expression and can be used to decide type dynamically. If the value is without curly braces it will be interpreted as a literal value - a static type.
+                    
+                    You can use any kind of type name or id you want: e.g. a simple name, a URI, number etc.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="subtype" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The subtype attribute is used to give an additional type-name or -identifier to an entity, attribute or relationship. If the  value is in curly braces it will be interpreted as an xpath-expression and can be used to decide subtype dynamically. If the value is without curly braces it will be interpreted as a literal value - a static type.
+                    
+                    You can use any kind of type name or id you want: e.g. a simple name, a URI, number etc.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="label" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The label attribute is used to give a type label to an entity, attribute or relationship. If the  value is in curly braces it will be interpreted as an xpath-expression and can be used to decide label dynamically. If the value is without curly braces it will be interpreted as a literal value - a static label assigned to all.
+                    
+                    You can use any kind of label you want but this attribute is primarily intended for human readable type labels.
+                    
+                    The parameter include_labels can be used to include or remove type labels from the output.
+                    
+                    The parameter </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="itypeattributes">
+        <xs:attribute name="itype" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>This attribute is comparable to the type attribute, but it is used to define the inverse relationship. When this attribute is present, the tool will automatically create inverse relationships which significantly simplifies writing the rules.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ilabel" type="xs:string"/>
+        <xs:attribute name="isubtype" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Same purpose as the itype, but for any kind of subtype. The purpose of this attribute is to support dealing with types both at a genric (supertype) level and at the subtype level in the rules. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:element name="related" type="xs:string"/>
+</xs:schema>
