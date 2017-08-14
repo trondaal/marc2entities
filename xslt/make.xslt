@@ -602,7 +602,7 @@
                                             </xsl:element>
                                         <xsl:element name="xsl:attribute">
                                             <xsl:attribute name="name" select="'key'"/>
-                                            <xsl:attribute name="select" select="'concat(''{'', frbrizer:keyfilter(@type), ''='', string-join(frbrizer:keyfilter($keystring), '';''), ''}'')'"/>
+                                            <xsl:attribute name="select" select="'concat(''{'', frbrizer:typefilter(@type), ''='', string-join(frbrizer:keyfilter($keystring), '';''), ''}'')'"/>
                                         </xsl:element>
                                         <xsl:element name="xsl:attribute">
                                             <xsl:attribute name="name" select="'id'"/>

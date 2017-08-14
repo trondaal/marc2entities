@@ -3123,7 +3123,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3138,7 +3138,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3153,7 +3153,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3167,7 +3167,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3182,7 +3182,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3197,7 +3197,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3211,7 +3211,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3226,7 +3226,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3241,7 +3241,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3268,7 +3268,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3287,7 +3287,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3314,7 +3314,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3333,7 +3333,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3352,7 +3352,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3371,7 +3371,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3390,7 +3390,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3409,7 +3409,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3435,7 +3435,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3454,7 +3454,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3472,7 +3472,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3491,7 +3491,7 @@
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
-                                    select="concat('{', frbrizer:keyfilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
+                                    select="concat('{', frbrizer:typefilter(@type), '=', string-join(frbrizer:keyfilter($keystring), ';'), '}')"/>
                      <xsl:attribute name="id" select="@id"/>
                   </xsl:element>
                </xsl:when>
@@ -3653,10 +3653,15 @@
         <xsl:param name="key" as="xs:string*"/>
         <xsl:for-each select="$key">
             <xsl:if test=". != ''"><!-- removing empty strings -->
-                <xsl:value-of select="replace(lower-case(string-join(., ';')), '[^a-z0-9\\#|¤§={};]', '')"/>
+                <xsl:value-of select="replace(replace(replace(lower-case(string-join(., ';')), '[^\p{L}\p{N}{};:]+', ':'), ':::', ':'), ':;:', ':')"/>
             </xsl:if>
-        </xsl:for-each>
-        
+        </xsl:for-each>       
+    </xsl:function>
+   <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
+                 name="local:typefilter"
+                 as="xs:string">
+        <xsl:param name="typename" as="xs:string"/>
+        <xsl:value-of select="lower-case(substring-after($typename, ':'))"/>
     </xsl:function>
    <xsl:template match="*:record-entity-set" mode="create-inverse-relationships"><!--template for adding inverse relationships --><!--uses a record-set as input and outputs a new record-set-->
         <xsl:if test="$inverse">
