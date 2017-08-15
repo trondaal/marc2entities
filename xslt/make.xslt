@@ -390,7 +390,7 @@
     <xsl:template name="relationship-target-code-for-each">
         <xsl:param name="target_template"/>
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select="                     string-join(('node()[@code=''', string($target_template/anchor/code/@code), ''']',                     if ($target_template/anchor/code/@condition) then                         concat('[', $target_template/anchor/code/@condition, ']')                     else                         ()), '')"/>
+            <xsl:attribute name="select" select="string-join(('node()[@code=''', string($target_template/anchor/code/@code), ''']', if ($target_template/anchor/code/@condition) then concat('[', $target_template/anchor/code/@condition, ']') else  ()), '')"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield'"/>
                 <xsl:attribute name="select" select="'.'"/>

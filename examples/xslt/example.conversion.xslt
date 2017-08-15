@@ -3257,7 +3257,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3265,6 +3264,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3276,7 +3276,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3284,6 +3283,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3303,7 +3303,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3311,6 +3310,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3322,7 +3322,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3330,6 +3329,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3341,7 +3341,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3349,6 +3348,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3360,7 +3360,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3368,6 +3367,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3379,7 +3379,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3387,6 +3386,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3398,7 +3398,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3406,6 +3405,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3443,7 +3443,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3451,6 +3450,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"
@@ -3480,7 +3480,6 @@
                   <xsl:element name="frbrizer:keyentry">
                      <xsl:variable name="keystring" as="xs:string*">
                         <xsl:sequence>
-                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:titleOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:dateOfWork'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:formOfWork'])"/>
@@ -3488,6 +3487,7 @@
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:key'])"/>
                            <xsl:value-of select="frbrizer:sort-keys(*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork'])"/>
+                           <xsl:value-of select="frbrizer:sort-keys(string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, ''))"/>
                         </xsl:sequence>
                      </xsl:variable>
                      <xsl:attribute name="key"

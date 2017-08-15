@@ -135,7 +135,6 @@
             </datafield>
         </attributes>
         <key order="4">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -143,6 +142,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
@@ -167,7 +167,6 @@
             </datafield>
         </attributes>
         <key order="2">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -175,6 +174,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
@@ -199,7 +199,6 @@
             </datafield>
         </attributes>
         <key order="2">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -207,6 +206,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
@@ -246,7 +246,6 @@
         <attributes>
             <datafield tag="600">
                 <subfield code="t" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -258,7 +257,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -266,6 +264,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships>
             <relationship type="frsad:P2002" itype="frsad:P2001">
@@ -315,7 +314,6 @@
         <attributes>
             <datafield tag="610">
                 <subfield code="a" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -327,7 +325,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -335,6 +332,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships>
             <relationship type="frsad:P2002" itype="frsad:P2001">
@@ -384,7 +382,6 @@
         <attributes>
             <datafield tag="611">
                 <subfield code="a" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -396,7 +393,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -404,6 +400,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships>
             <relationship type="frsad:P2002" itype="frsad:P2001">
@@ -420,7 +417,6 @@
         <attributes>
             <datafield tag="630">
                 <subfield code="a" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -479,8 +475,7 @@
         <attributes>
             <datafield tag="700">
                 <subfield code="t" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
-                <subfield code="f" type="w:dateOfWork"/>
+                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
                 <subfield code="m" type="w:mediumOfPerformance"/>
@@ -491,7 +486,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -499,6 +493,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>      
     </entity>
@@ -534,7 +529,6 @@
         <attributes>
             <datafield tag="710">
                 <subfield code="t" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -546,7 +540,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -554,6 +547,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
@@ -589,7 +583,6 @@
         <attributes>
             <datafield tag="711">
                 <subfield code="t" type="w:titleOfWork"/>
-                <subfield code="d" type="w:dateOfWork"/>
                 <subfield code="f" type="w:dateOfWork"/>
                 <subfield code="g" type="{frbrizer:marc21rdftype(.)}"/>
                 <subfield code="k" type="w:formOfWork"/>
@@ -601,7 +594,6 @@
             </datafield>
         </attributes>
         <key order="3">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -609,6 +601,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
@@ -633,7 +626,6 @@
             </datafield>
         </attributes>
         <key order="4">
-            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
             <element>*:datafield/*:subfield[@*:type = 'w:titleOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:dateOfWork']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:formOfWork']</element>
@@ -641,6 +633,7 @@
             <element>*:datafield/*:subfield[@*:type = 'w:mediumOfPerformance']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:key']</element>
             <element>*:datafield/*:subfield[@*:type = 'w:otherDistinguishingCharacteristicOfTheWork']</element>
+            <element>string-join(frbrizer:sort-relationships(*:relationship[frbrizer:isWorkToActorType(@type)])/@href, '')</element>
         </key>
         <relationships/>
     </entity>
