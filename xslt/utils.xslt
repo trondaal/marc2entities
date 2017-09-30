@@ -125,9 +125,20 @@
     <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/" name="local:keyfilter" as="xs:string*">
         <xsl:param name="key" as="xs:string*"/>
         <xsl:for-each select="$key">
-            <xsl:if test=". != ''"><!-- removing empty strings -->
-                <xsl:value-of select="replace(replace(replace(lower-case(string-join(., ';')), '[^\p{L}\p{N}{};:]+', ':'), ':::', ':'), ':;:', ':')"/>
-            </xsl:if>
+            <xsl:choose>
+                <xsl:when test=". = ''">
+                    <!-- return nothing -->
+                </xsl:when>
+                <xsl:when test="matches(., '\{.*\}')">
+                    <!-- return as is -->
+                    <xsl:value-of select="."/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="replace(lower-case(replace(.,'^[^\p{L}\p{N}]|[^\p{L}\p{N}]+$', '')), '[^\p{N}\p{L}]+', ' ')"/>
+                    <!--<xsl:value-of select="replace(replace(replace(lower-case(string-join(., ';')), '[^\p{L}\p{N}{};:]+', ':'), ':::', ':'), ':;:', ':')"/>-->
+                </xsl:otherwise>
+            </xsl:choose>
+
         </xsl:for-each>       
     </xsl:function>
     

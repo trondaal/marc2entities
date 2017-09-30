@@ -4,20 +4,20 @@
     <!-- Example rules for extracting works and creators -->
     <!-- This ruleset has limited implementation of relationships between works, and does not identify expressions and manifestation -->
     <entity type="c:Person" templatename="MARC21-100-Person" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
-        <anchor tag="100"/>
+        <anchor tag="100"  condition="*:subfield[@code = 'a']"/>
         <attributes>
             <datafield tag="100">
                 <subfield code="a" type="a:nameOfPerson" select="frbrizer:trim(.)"/>
                 <subfield code="c" type="a:titleOfThePerson"  select="frbrizer:trim(.)"/>
-                 <subfield code="d" type="a:dateAssociatedWithPerson" select="frbrizer:trim(.)"/>
+                <subfield code="d" type="a:dateAssociatedWithPerson" select="frbrizer:trim(.)"/>
                 <subfield code="u" type="a:affiliation" select="frbrizer:trim(.)"/>
                 <subfield code="0" type="a:identifierForAgent" select="frbrizer:trim(.)"/>
             </datafield>
         </attributes>
         <key order="1">
             <element>*:datafield/*:subfield[@*:type= 'a:nameOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>
+            <!--<element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
+            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>-->
         </key>
         <relationships>
             <relationship condition="frbrizer:isRelatorCodeToWork(*:subfield[@code = '4'])" type="{frbrizer:relatorcode2rdatype($anchor_field/*:subfield[@code='4'], false())}" itype="{frbrizer:relatorcode2rdatype($anchor_field/*:subfield[@code='4'], true())}">
@@ -223,8 +223,8 @@
         </attributes>
         <key order="1">
             <element>*:datafield/*:subfield[@*:type= 'a:nameOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>
+            <!--<element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
+            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>-->
         </key>
         <relationships>
             <relationship condition="not(exists(*:subfield[@code= 't']))" type="frsad:P2002" itype="frsad:P2001">
@@ -276,7 +276,7 @@
         </relationships>
     </entity>
     
-    <entity type="c:Person" templatename="MARC21-610-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
+    <entity type="c:CorporateBody" templatename="MARC21-610-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
         <anchor tag="610"/>
         <attributes>
             <datafield tag="610">
@@ -344,7 +344,7 @@
         </relationships>
     </entity>
     
-    <entity type="c:Person" templatename="MARC21-611-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
+    <entity type="c:CorporateBody" templatename="MARC21-611-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
         <anchor tag="611"/>
         <attributes>
             <datafield tag="611">
@@ -457,8 +457,8 @@
         </attributes>
         <key order="1">
             <element>*:datafield/*:subfield[@*:type= 'a:nameOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
-            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>
+            <!--<element>*:datafield/*:subfield[@*:type= 'a:titleOfPerson']</element>
+            <element>*:datafield/*:subfield[@*:type= 'a:dateAssociatedWithPerson']</element>-->
         </key>
         <relationships>
             <relationship type="{frbrizer:relatorcode2rdatype($anchor_field/*:subfield[@code='4'], false())}" itype="{frbrizer:relatorcode2rdatype($anchor_field/*:subfield[@code='4'], true())}">
@@ -498,7 +498,7 @@
         <relationships/>      
     </entity>
     
-    <entity type="c:Person" templatename="MARC21-710-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
+    <entity type="c:CorporateBody" templatename="MARC21-710-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
         <anchor tag="710"/>
         <attributes>
             <datafield tag="710">
@@ -552,7 +552,7 @@
         <relationships/>
     </entity>
     
-    <entity type="c:Person" templatename="MARC21-711-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
+    <entity type="c:CorporateBody" templatename="MARC21-711-CorporateBody" src="{tokenize(tokenize(base-uri(), '/')[last()], '-')[1]}">
         <anchor tag="711"/>
         <attributes>
             <datafield tag="711">
@@ -655,12 +655,14 @@
             <xsl:param name="target" as="element()"/><!-- <xsl:value-of select="(some $x in $anchor/subfield[@code='8'] satisfies $x = $target/subfield[@code='8']) or (not(exists($anchor/subfield[@code='8'])) and not(exists($target/subfield[@code='8'])))"/>  -->
             <xsl:value-of select="(some $x in $anchor/*:subfield[@code = '8'] satisfies $x = $target/*:subfield[@code = '8']) or (not(exists($target/*:subfield[@code = '8'])))"/>
         </xsl:function>
+        
         <xsl:function name="frbrizer:trim" as="xs:string*">
             <xsl:param name="value" as="element()*"/>
             <xsl:for-each select="$value">
                 <xsl:value-of select="replace(., '[ \.,/:]+$', '')"/>
             </xsl:for-each>
         </xsl:function>
+        
         <xsl:function name="frbrizer:idprefix">
             <xsl:param name="value"/>
             <xsl:choose>

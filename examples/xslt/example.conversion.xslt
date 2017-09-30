@@ -41,7 +41,7 @@
       <xsl:variable name="tag" as="xs:string" select="'100'"/>
       <xsl:variable name="record" select="."/>
       <xsl:variable name="marcid" select="*:controlfield[@tag='001']"/>
-      <xsl:for-each select="node()[@tag='100']">
+      <xsl:for-each select="node()[@tag='100'][*:subfield[@code = 'a']]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
@@ -1180,22 +1180,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='600'][. = $this_field][*:subfield/@code = ('t','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='600'][. = $this_field][*:subfield/@code = ('t','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('t','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('t','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 't'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -1551,22 +1543,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='610'][. = $this_field][*:subfield/@code = ('a','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='610'][. = $this_field][*:subfield/@code = ('a','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('a','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('a','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 'a'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -1922,22 +1906,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='611'][. = $this_field][*:subfield/@code = ('a','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='611'][. = $this_field][*:subfield/@code = ('a','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('a','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('a','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 'a'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -2107,22 +2083,14 @@
                   <xsl:attribute name="cnt" select="'1'"/>
                </xsl:element>
             </xsl:if>
-            <xsl:for-each select="$record/*:datafield[@tag='630'][. = $this_field][*:subfield/@code = ('a','d','f','g','k','m','n','o','p','r')]">
+            <xsl:for-each select="$record/*:datafield[@tag='630'][. = $this_field][*:subfield/@code = ('a','f','g','k','m','n','o','p','r')]">
                <xsl:copy>
                   <xsl:call-template name="copy-attributes"/>
-                  <xsl:for-each select="*:subfield[@code = ('a','d','f','g','k','m','n','o','p','r')]">
+                  <xsl:for-each select="*:subfield[@code = ('a','f','g','k','m','n','o','p','r')]">
                      <xsl:if test="@code = 'a'">
                         <xsl:copy>
                            <xsl:call-template name="copy-content">
                               <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                              <xsl:with-param name="select" select="."/>
-                           </xsl:call-template>
-                        </xsl:copy>
-                     </xsl:if>
-                     <xsl:if test="@code = 'd'">
-                        <xsl:copy>
-                           <xsl:call-template name="copy-content">
-                              <xsl:with-param name="type" select="'w:dateOfWork'"/>
                               <xsl:with-param name="select" select="."/>
                            </xsl:call-template>
                         </xsl:copy>
@@ -2394,22 +2362,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='700'][. = $this_field][*:subfield/@code = ('t','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='700'][. = $this_field][*:subfield/@code = ('t','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('t','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('t','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 't'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -2621,22 +2581,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='710'][. = $this_field][*:subfield/@code = ('t','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='710'][. = $this_field][*:subfield/@code = ('t','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('t','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('t','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 't'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -2848,22 +2800,14 @@
                      <xsl:attribute name="cnt" select="'1'"/>
                   </xsl:element>
                </xsl:if>
-               <xsl:for-each select="$record/*:datafield[@tag='711'][. = $this_field][*:subfield/@code = ('t','d','f','g','k','m','n','o','p','r')]">
+               <xsl:for-each select="$record/*:datafield[@tag='711'][. = $this_field][*:subfield/@code = ('t','f','g','k','m','n','o','p','r')]">
                   <xsl:copy>
                      <xsl:call-template name="copy-attributes"/>
-                     <xsl:for-each select="*:subfield[@code = ('t','d','f','g','k','m','n','o','p','r')]">
+                     <xsl:for-each select="*:subfield[@code = ('t','f','g','k','m','n','o','p','r')]">
                         <xsl:if test="@code = 't'">
                            <xsl:copy>
                               <xsl:call-template name="copy-content">
                                  <xsl:with-param name="type" select="'w:titleOfWork'"/>
-                                 <xsl:with-param name="select" select="."/>
-                              </xsl:call-template>
-                           </xsl:copy>
-                        </xsl:if>
-                        <xsl:if test="@code = 'd'">
-                           <xsl:copy>
-                              <xsl:call-template name="copy-content">
-                                 <xsl:with-param name="type" select="'w:dateOfWork'"/>
                                  <xsl:with-param name="select" select="."/>
                               </xsl:call-template>
                            </xsl:copy>
@@ -3652,9 +3596,20 @@
                  as="xs:string*">
         <xsl:param name="key" as="xs:string*"/>
         <xsl:for-each select="$key">
-            <xsl:if test=". != ''"><!-- removing empty strings -->
-                <xsl:value-of select="replace(replace(replace(lower-case(string-join(., ';')), '[^\p{L}\p{N}{};:]+', ':'), ':::', ':'), ':;:', ':')"/>
-            </xsl:if>
+            <xsl:choose>
+                <xsl:when test=". = ''">
+                    <!-- return nothing -->
+                </xsl:when>
+                <xsl:when test="matches(., '\{.*\}')">
+                    <!-- return as is -->
+                    <xsl:value-of select="."/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="replace(lower-case(replace(.,'^[^\p{L}\p{N}]|[^\p{L}\p{N}]+$', '')), '[^\p{N}\p{L}]+', ' ')"/>
+                    <!--<xsl:value-of select="replace(replace(replace(lower-case(string-join(., ';')), '[^\p{L}\p{N}{};:]+', ':'), ':::', ':'), ':;:', ':')"/>-->
+                </xsl:otherwise>
+            </xsl:choose>
+
         </xsl:for-each>       
     </xsl:function>
    <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
