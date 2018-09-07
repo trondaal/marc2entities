@@ -35,8 +35,8 @@
                     <xsl:attribute name="rdf:about" select="replace(current-group()[1]/@id, '[^\p{L}\p{N}]', '')" />
                     
                     <!-- If using a licenced version of Saxon (pe, ee), it is possible to use functions in Java to create UUID based on a string -->
-                    <!-- <xsl:attribute name="rdf:about" select="uuid:to-string(uuid:nameUUIDFromBytes(string:getBytes(current-group()[1]/@id/string())))" 
-                        xmlns:uuid="java:java.util.UUID" xmlns:string="java:java.lang.String"/> -->
+                    <!--<xsl:attribute name="rdf:about" select="uuid:to-string(xs:byte(uuid:nameUUIDFromBytes(string:getBytes(current-group()[1]/@href/string()))))" 
+                        xmlns:uuid="java:java.util.UUID" xmlns:string="java:java.lang.String" xmlns:integer="java:java.lang.Integer"/> -->
                     
                     <xsl:attribute name="rdf:type" select="concat('http://rdaregistry.info/Elements/c/', substring-after(current-group()[1]/@type, ':'))"/>
                     <xsl:for-each-group select="current-group()//*:subfield" group-by="@type, text()" composite="yes">
@@ -52,7 +52,7 @@
                             <xsl:element name="{@type}">
                                 <xsl:attribute name="rdf:resource" select="replace(current-group()[1]/@href, '[^\p{L}\p{N}]', '')" />
                                 <!-- If using a licenced version of Saxon (pe, ee), it is possible to use functions in Java to create UUID based on a string -->
-                                <!-- <xsl:attribute name="rdf:resource" select="uuid:to-string(uuid:nameUUIDFromBytes(string:getBytes(current-group()[1]/@href/string())))" 
+                                <!--<xsl:attribute name="rdf:resource" select="uuid:to-string(xs:byte(uuid:nameUUIDFromBytes(string:getBytes(current-group()[1]/@href/string()) ) )) " 
                                     xmlns:uuid="java:java.util.UUID" xmlns:string="java:java.lang.String"/> -->
                             </xsl:element>
                         </xsl:if>

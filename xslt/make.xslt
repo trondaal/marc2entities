@@ -73,6 +73,10 @@
                     <xsl:attribute name="select" select="'.'"/>
                 </xsl:element>
                 <xsl:element name="xsl:variable">
+                    <xsl:attribute name="name" select="'collection'"/>
+                    <xsl:attribute name="select" select="'./ancestor-or-self::*:collection'"/>
+                </xsl:element>
+                <xsl:element name="xsl:variable">
                     <xsl:attribute name="name" select="'marcid'"/>
                     <xsl:attribute name="select" select="'*:controlfield[@tag=''001'']'"/>
                 </xsl:element>
