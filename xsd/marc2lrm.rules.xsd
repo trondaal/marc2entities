@@ -6,16 +6,22 @@
         </xs:annotation>
         <xs:complexType mixed="true">
             <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="keyfilter" minOccurs="0" maxOccurs="1"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="type-prefixes">
+                    <xs:annotation>
+                        <xs:documentation>This field is used to define all the namespace prefixes that you are using in type attribute values. xmlns:frbr = "url", xmlns:rda = "</xs:documentation>
+                        <xs:documentation>The purpose of the field is to make sure that your namespaces are included in the result so that it is easier to construct proper rdf.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:anyAttribute/>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element ref="entity" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
                         <xs:documentation>Each entity element describes the rules for identifying one type of entity in the record from one specific tag in the record. </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="stylesheet" minOccurs="0" maxOccurs="1" type="xs:anyType">
-                    <xs:annotation>
-                        <xs:documentation>placeholder for user-defined functions that are used in the xpaths defined in the rules</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
+                <xs:element name="stylesheet" minOccurs="0" maxOccurs="1" type="xs:anyType"/>
             </xs:choice>
         </xs:complexType>
         <xs:unique name="templatename">
@@ -30,19 +36,10 @@
     <xs:element name="entity">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="anchor">
-                    <xs:annotation>
-                        <xs:documentation>The anchor defines the positions in the record that is used to identify and create distinct entities. This information is used to create for-each loops for creating entity-records. 
-                            If code is included we will create a nested for-each loop.
-                            xsl:for-each select="/record/datafield[@tag = $tag][$tagcondition]
-                            xsl:for-each select="subfield[@code = $code][$codecondition]</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element ref="attributes">
-                    <xs:annotation>
-                        <xs:documentation>Defines the list of datafields/controfields that should be included in the description of the identified entity.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
+                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element ref="note"/>
+                </xs:choice>
+                <xs:element ref="attributes"/>
                 <xs:choice maxOccurs="unbounded">
                     <xs:element ref="key"/>
                     <xs:element ref="label"/>
@@ -51,7 +48,9 @@
             </xs:sequence>
             <xs:attribute name="templatename" use="required" type="xs:NCName"/>
             <xs:attributeGroup ref="typeattributes"/>
-            <xs:attribute name="src"/>
+            <xs:attribute name="tag" type="xs:string"/>
+            <xs:attribute name="code" type="xs:string"/>
+            <xs:attribute name="condition" type="xs:string"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="note" type="xs:string"/>
@@ -89,15 +88,10 @@
     <xs:element name="datafield">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="subfield">
-                    <xs:annotation>
-                        <xs:documentation>Defines the subfields that will be included for the identified entity, as well as the datatype it maps to.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
+                <xs:element maxOccurs="unbounded" ref="subfield"/>
             </xs:sequence>
             <xs:attribute name="tag" use="required" type="xs:integer"/>
             <xs:attribute name="condition" use="optional" type="xs:string"/>
-            <xs:attributeGroup ref="typeattributes"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="subfield">
@@ -172,19 +166,12 @@
         </xs:annotation>
     </xs:element>
     <xs:attributeGroup name="typeattributes">
-        <xs:attribute name="type" type="xs:string">
+        <xs:attribute name="type" type="xs:string" use="required">
             <xs:annotation>
                 <xs:documentation>The type attribute is used to give a type-name or -identifier to an entity, attribute or relationship. If the attribute value is in curly braces it will be interpreted as an xpath-expression and can be used to decide type dynamically. If the value is without curly braces it will be interpreted as a literal value - a static type.
                     
                     You can use any kind of type name or id you want: e.g. a simple name, a URI, number etc.
                 </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-        <xs:attribute name="subtype" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>The subtype attribute is used to give an additional type-name or -identifier to an entity, attribute or relationship. If the  value is in curly braces it will be interpreted as an xpath-expression and can be used to decide subtype dynamically. If the value is without curly braces it will be interpreted as a literal value - a static type.
-                    
-                    You can use any kind of type name or id you want: e.g. a simple name, a URI, number etc.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="label" type="xs:string">
