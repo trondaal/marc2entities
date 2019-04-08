@@ -583,8 +583,8 @@
             <!-- condition in the xpath-selection is used to avoid linking to non-existing templates -->
             <xsl:choose>
                 <xsl:when test="exists(parent::*:relationship/@condition)">
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="string(parent::*:relationship/@condition)"/>
+                    <xsl:element name="xsl:for-each">
+                        <xsl:attribute name="select" select="'.['||string(parent::*:relationship/@condition)||']'"/>
                         <xsl:call-template name="relationship-target-tag-for-each"/>
                     </xsl:element>
                 </xsl:when>
@@ -669,10 +669,10 @@
     </xsl:template>
     <xsl:template name="relationship-if">
         <xsl:param name="target_template"/>
-        <xsl:element name="xsl:for-each">
+        <xsl:element name="xsl:if">
             <xsl:variable name="target_condition" select="if (@condition) then string-join(('(', @condition, ')'), '') else ()"/>
             <xsl:variable name="same_target_tag_condition" select="if ((@same-field = 'true' and ($target_template/@tag eq ancestor::entity/@tag))) then '($target_field = $this_field)'  else  ()"/>
-            <xsl:attribute name="select" select="string-join(($target_condition, $same_target_tag_condition), ' and ')"/>
+            <xsl:attribute name="test" select="string-join(($target_condition, $same_target_tag_condition), ' and ')"/>
             <xsl:call-template name="relationship">
                 <xsl:with-param name="target_template" select="$target_template"/>
             </xsl:call-template>

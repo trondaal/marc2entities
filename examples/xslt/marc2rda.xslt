@@ -759,7 +759,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:if test="not(*:subfield[@code = '4'])">
+            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -793,8 +793,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="not(*:subfield[@code = '4'])">
+            </xsl:for-each>
+            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -828,8 +828,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -863,8 +863,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -898,8 +898,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -908,7 +908,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="(frbrizer:linked($this_field, $target_field))">
+                  <xsl:if test="(frbrizer:linked($this_field, $target_field))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -933,10 +933,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -970,8 +970,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -1005,7 +1005,7 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:if>
+            </xsl:for-each>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -1437,7 +1437,7 @@
                <xsl:variable name="target_field_position"
                              as="xs:string"
                              select="string(position())"/>
-               <xsl:for-each select="($target_field = $this_field)">
+               <xsl:if test="($target_field = $this_field)">
                   <frbrizer:relationship>
                      <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/w/P10078'"/>
                      <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20231'"/>
@@ -1468,7 +1468,7 @@
                         </xsl:element>
                      </xsl:if>
                   </frbrizer:relationship>
-               </xsl:for-each>
+               </xsl:if>
             </xsl:for-each>
             <xsl:for-each select="$record/node()[@tag='800']">
                <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
@@ -1923,7 +1923,7 @@
                <xsl:variable name="target_field_position"
                              as="xs:string"
                              select="string(position())"/>
-               <xsl:for-each select="($target_field = $this_field)">
+               <xsl:if test="($target_field = $this_field)">
                   <frbrizer:relationship>
                      <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/w/P10078'"/>
                      <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20231'"/>
@@ -1954,7 +1954,7 @@
                         </xsl:element>
                      </xsl:if>
                   </frbrizer:relationship>
-               </xsl:for-each>
+               </xsl:if>
             </xsl:for-each>
             <xsl:for-each select="$record/node()[@tag='800']">
                <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
@@ -2222,7 +2222,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:if test="not(*:subfield[@code = '4'])">
+            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2263,8 +2263,8 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2305,8 +2305,8 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2347,7 +2347,7 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:if>
+            </xsl:for-each>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -2886,7 +2886,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:if test="not(*:subfield[@code = '4'])">
+            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2895,7 +2895,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -2920,10 +2920,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2932,7 +2932,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -2957,10 +2957,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aui')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aui')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2969,7 +2969,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -2994,10 +2994,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3006,7 +3006,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50048'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10013'"/>
@@ -3031,10 +3031,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3043,7 +3043,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50048'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10013'"/>
@@ -3068,10 +3068,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -3080,7 +3080,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50048'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10013'"/>
@@ -3105,10 +3105,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('trl')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('trl')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Expression'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3117,7 +3117,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50145'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20037'"/>
@@ -3142,10 +3142,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('trl')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('trl')]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Expression'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3154,7 +3154,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50145'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20037'"/>
@@ -3179,10 +3179,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('act')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('act')]">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Expression'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3191,7 +3191,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50071'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20012'"/>
@@ -3216,10 +3216,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('act')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('act')]">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Expression'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3228,7 +3228,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50071'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20012'"/>
@@ -3253,9 +3253,9 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
+            </xsl:for-each>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -3425,7 +3425,7 @@
                <xsl:variable name="target_field_position"
                              as="xs:string"
                              select="string(position())"/>
-               <xsl:for-each select="($target_field = $this_field)">
+               <xsl:if test="($target_field = $this_field)">
                   <frbrizer:relationship>
                      <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/w/P10078'"/>
                      <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20231'"/>
@@ -3456,7 +3456,7 @@
                         </xsl:element>
                      </xsl:if>
                   </frbrizer:relationship>
-               </xsl:for-each>
+               </xsl:if>
             </xsl:for-each>
             <xsl:for-each select="$record/node()[@tag='700'][@ind2 ne '2' and *:subfield[@code='t'] and *:subfield[@code=('i', '4')]]">
                <xsl:variable name="target_template_name" select="'MARC21-700-Work-Related'"/>
@@ -3466,7 +3466,7 @@
                <xsl:variable name="target_field_position"
                              as="xs:string"
                              select="string(position())"/>
-               <xsl:for-each select="($target_field/*:subfield[@code='i'] and frbrizer:linked($this_field, $target_field))">
+               <xsl:if test="($target_field/*:subfield[@code='i'] and frbrizer:linked($this_field, $target_field))">
                   <frbrizer:relationship>
                      <xsl:attribute name="type" select="$target_field/*:subfield[@code='i']"/>
                      <xsl:if test="$include_target_entity_type">
@@ -3490,7 +3490,7 @@
                         </xsl:element>
                      </xsl:if>
                   </frbrizer:relationship>
-               </xsl:for-each>
+               </xsl:if>
             </xsl:for-each>
          </xsl:element>
       </xsl:for-each>
@@ -3863,7 +3863,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:if test="not(*:subfield[@code = '4'])">
+            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
                <xsl:for-each select="$record/node()[@tag='800']">
                   <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
                   <xsl:variable name="target_tag" select="'800'"/>
@@ -3872,7 +3872,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -3897,10 +3897,10 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="*:subfield[@code = '4'] = ('aut', 'aui')">
+            </xsl:for-each>
+            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut', 'aui')]">
                <xsl:for-each select="$record/node()[@tag='800']">
                   <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
                   <xsl:variable name="target_tag" select="'800'"/>
@@ -3909,7 +3909,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:for-each select="((frbrizer:linked($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50195'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/w/P10061'"/>
@@ -3934,9 +3934,9 @@
                            </xsl:element>
                         </xsl:if>
                      </frbrizer:relationship>
-                  </xsl:for-each>
+                  </xsl:if>
                </xsl:for-each>
-            </xsl:if>
+            </xsl:for-each>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>

@@ -1,4 +1,4 @@
-#!/bin/sh
+@echo off
 
 echo "Creating xslt conversion"
 java -cp "../jar/saxon/saxon9he.jar"  net.sf.saxon.Transform -xsl:"../xslt/make.xslt" -s:"rules/example-rules.xml" -o:"xslt/marc2rda.xslt" 

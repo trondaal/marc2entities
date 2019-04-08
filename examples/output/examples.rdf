@@ -33,7 +33,7 @@
                              href="http://viaf.org/viaf/54441441"/>
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/1965149068358065730000/tyska/"/>
+                             href="http://viaf.org/viaf/175978173/tyska/"/>
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/w/P10078"
                              href="http://viaf.org/viaf/175978173/swe/"/>
@@ -140,6 +140,9 @@
                              href="http://viaf.org/viaf/1965149068358065730000/tyska/"/>
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/a/P50145"
+                             href="http://viaf.org/viaf/175978173/tyska/"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="http://rdaregistry.info/Elements/a/P50145"
                              href="http://viaf.org/viaf/4188148523903220970001/ger/"/>
    </record>
    <record id="http://viaf.org/viaf/54441441"
@@ -216,6 +219,22 @@
                              type="http://rdaregistry.info/Elements/e/P20231"
                              href="http://viaf.org/viaf/175978173"/>
    </record>
+   <record id="http://viaf.org/viaf/175978173/tyska/"
+           type="http://rdaregistry.info/Elements/c/C10006">
+      <datafield tag="700" ind1="1" ind2="2">
+         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Tyska</subfield>
+         <subfield code="t" type="http://rdaregistry.info/Elements/e/P20312">Luftslottet som sprängdes.</subfield>
+      </datafield>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="http://rdaregistry.info/Elements/e/P20037"
+                             href="http://viaf.org/viaf/51520608"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="http://rdaregistry.info/Elements/e/P20059"
+                             href="urn:isbn:9783453267008"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="http://rdaregistry.info/Elements/e/P20231"
+                             href="http://viaf.org/viaf/175978173"/>
+   </record>
    <record id="http://viaf.org/viaf/1965149068358065730000/eng/"
            type="http://rdaregistry.info/Elements/c/C10006">
       <datafield tag="041" ind1="1" ind2=" ">
@@ -261,10 +280,6 @@
          <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Tyska</subfield>
          <subfield code="t" type="http://rdaregistry.info/Elements/e/P20312">Flickan som lekte med elden.</subfield>
       </datafield>
-      <datafield tag="700" ind1="1" ind2="2">
-         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Tyska</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/e/P20312">Luftslottet som sprängdes.</subfield>
-      </datafield>
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/e/P20037"
                              href="http://viaf.org/viaf/51520608"/>
@@ -274,9 +289,6 @@
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/e/P20231"
                              href="http://viaf.org/viaf/1965149068358065730000"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/175978173"/>
    </record>
    <record id="http://viaf.org/viaf/4188148523903220970001/ger/"
            type="http://rdaregistry.info/Elements/c/C10006">
@@ -366,6 +378,9 @@
       <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
                              type="http://rdaregistry.info/Elements/m/P30139"
                              href="http://viaf.org/viaf/1965149068358065730000/tyska/"/>
+      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+                             type="http://rdaregistry.info/Elements/m/P30139"
+                             href="http://viaf.org/viaf/175978173/tyska/"/>
    </record>
    <record id="urn:isbn:9789113029047"
            type="http://rdaregistry.info/Elements/c/C10007">
