@@ -7,5 +7,5 @@ java net.sf.saxon.Transform -xsl:"../xslt/make.xslt" -s:"rules/example-rules.xml
 
 
 echo "Running transformation of local files in directory"
-java net.sf.saxon.Transform -xsl:"xslt/marc2rda.xslt" -s:"input/examples.xml" -o:"output/examples.rdf" merge=true rdf=true
+java net.sf.saxon.Transform -xsl:"xslt/marc2rda.xslt" -s:"input/examples.xml" -o:"output/examples.rdf" merge=true rdf=false
 
