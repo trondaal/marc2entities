@@ -100,7 +100,11 @@
       <xsl:for-each select="node()[@tag='001']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -656,7 +660,11 @@
       <xsl:for-each select="node()[@tag='100']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -759,7 +767,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
+            <xsl:if test="not(*:subfield[@code = '4'])">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -793,8 +801,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
+            </xsl:if>
+            <xsl:if test="not(*:subfield[@code = '4'])">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -828,8 +836,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -863,8 +871,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -898,8 +906,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -935,8 +943,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -970,8 +978,8 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -1005,7 +1013,7 @@
                      </xsl:if>
                   </frbrizer:relationship>
                </xsl:for-each>
-            </xsl:for-each>
+            </xsl:if>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -1017,7 +1025,11 @@
       <xsl:for-each select="node()[@tag='240']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -1279,7 +1291,11 @@
       <xsl:for-each select="node()[@tag='240']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -1547,7 +1563,11 @@
       <xsl:for-each select="node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -1811,7 +1831,11 @@
       <xsl:for-each select="node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2032,7 +2056,11 @@
       <xsl:for-each select="node()[@tag='490']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2119,7 +2147,11 @@
       <xsl:for-each select="node()[@tag='600'][not(subfield[@code = 't'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2222,7 +2254,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
+            <xsl:if test="not(*:subfield[@code = '4'])">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2263,8 +2295,8 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2305,8 +2337,8 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='600']">
                   <xsl:variable name="target_template_name" select="'MARC21-600-Work'"/>
                   <xsl:variable name="target_tag" select="'600'"/>
@@ -2347,7 +2379,7 @@
                      </frbrizer:relationship>
                   </xsl:for-each>
                </xsl:for-each>
-            </xsl:for-each>
+            </xsl:if>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -2360,7 +2392,11 @@
       <xsl:for-each select="node()[@tag='600']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2530,7 +2566,11 @@
       <xsl:for-each select="node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2783,7 +2823,11 @@
       <xsl:for-each select="node()[@tag='700'][not(*:subfield[@code='t'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -2886,7 +2930,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
+            <xsl:if test="not(*:subfield[@code = '4'])">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2922,8 +2966,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2959,8 +3003,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aui')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aui')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -2996,8 +3040,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Work'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3033,8 +3077,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Work'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3070,8 +3114,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('drt')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('drt')">
                <xsl:for-each select="$record/node()[@tag='245'][not($record/*:datafield[@tag=('130', '240')]) and not($record/*:datafield[@tag='700'][@ind2='2']/*:subfield[@code='t'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-245-Work'"/>
                   <xsl:variable name="target_tag" select="'245'"/>
@@ -3107,8 +3151,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('trl')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('trl')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Expression'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3144,8 +3188,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('trl')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('trl')">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Expression'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3181,8 +3225,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('act')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('act')">
                <xsl:for-each select="$record/node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
                   <xsl:variable name="target_template_name" select="'MARC21-700-Expression'"/>
                   <xsl:variable name="target_tag" select="'700'"/>
@@ -3218,8 +3262,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('act')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('act')">
                <xsl:for-each select="$record/node()[@tag='240']">
                   <xsl:variable name="target_template_name" select="'MARC21-240-Expression'"/>
                   <xsl:variable name="target_tag" select="'240'"/>
@@ -3255,7 +3299,7 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
+            </xsl:if>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -3267,7 +3311,11 @@
       <xsl:for-each select="node()[@tag='700'][@ind2='2' and *:subfield[@code='t'] and not(*:subfield[@code='i'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -3503,7 +3551,11 @@
       <xsl:for-each select="node()[@tag='700'][@ind2 ne '2' and *:subfield[@code='t'] and *:subfield[@code=('i', '4')]]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -3664,7 +3716,11 @@
       <xsl:for-each select="node()[@tag='773']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -3760,7 +3816,11 @@
       <xsl:for-each select="node()[@tag='800'][not(*:subfield[@code='t'])]">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -3863,7 +3923,7 @@
                   </xsl:if>
                </xsl:copy>
             </xsl:for-each>
-            <xsl:for-each select=".[not(*:subfield[@code = '4'])]">
+            <xsl:if test="not(*:subfield[@code = '4'])">
                <xsl:for-each select="$record/node()[@tag='800']">
                   <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
                   <xsl:variable name="target_tag" select="'800'"/>
@@ -3899,8 +3959,8 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
-            <xsl:for-each select=".[*:subfield[@code = '4'] = ('aut', 'aui')]">
+            </xsl:if>
+            <xsl:if test="*:subfield[@code = '4'] = ('aut', 'aui')">
                <xsl:for-each select="$record/node()[@tag='800']">
                   <xsl:variable name="target_template_name" select="'MARC21-800-Work'"/>
                   <xsl:variable name="target_tag" select="'800'"/>
@@ -3936,7 +3996,7 @@
                      </frbrizer:relationship>
                   </xsl:if>
                </xsl:for-each>
-            </xsl:for-each>
+            </xsl:if>
          </xsl:element>
       </xsl:for-each>
    </xsl:template>
@@ -3948,7 +4008,11 @@
       <xsl:for-each select="node()[@tag='800']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
@@ -4082,7 +4146,11 @@
       <xsl:for-each select="node()[@tag='830']">
          <xsl:variable name="this_field"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="this"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="anchor_field"
+                       select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
+         <xsl:variable name="anchor"
                        select="(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)"/>
          <xsl:variable name="this_field_position"
                        as="xs:string"
