@@ -426,24 +426,24 @@
     </xsl:template>
     <xsl:template match="/*:collection" mode="rdfify" name="rdfify">
         <rdf:RDF xml:base="http://example.org/rda/">
-            <xsl:for-each-group select="( //@type)" group-by="replace(., tokenize(., '/')[last()], '')">
+            <xsl:for-each-group select="( //@type[starts-with(., 'http')])" group-by="replace(., tokenize(., '/')[last()], '')">
                 <xsl:namespace name="{tokenize(., '/')[last() - 1]}" select="current-grouping-key()"/>
             </xsl:for-each-group>
-            <xsl:for-each-group select="//*:record" group-by="@id, @type" composite="yes">
+            <xsl:for-each-group select="//*:record[starts-with(@type, 'http')]" group-by="@id, @type" composite="yes">
                 <xsl:sort select="@type"/>
                 <xsl:sort select="@id"/>
                 <xsl:variable name="p" select="tokenize(@type, '/')[last() - 1]"/>
                 <xsl:variable name="n" select="tokenize(@type, '/')[last()]"/>
                 <xsl:element name="{concat($p, ':', $n)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
                     <xsl:attribute name="rdf:about" select="@id" />
-                    <xsl:for-each-group select="current-group()//*:subfield" group-by="@type, text()" composite="yes">
+                    <xsl:for-each-group select="current-group()//*:subfield[starts-with(@type, 'http')]" group-by="@type, text()" composite="yes">
                         <xsl:variable name="pre" select="tokenize(@type, '/')[last() - 1]"/>
                         <xsl:variable name="nm" select="tokenize(@type, '/')[last()]"/>
                         <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
                             <xsl:copy-of select="current-group()[1]/text()"/>
                         </xsl:element>
                     </xsl:for-each-group>
-                    <xsl:for-each-group select="current-group()/*:relationship" group-by="@type, @href" composite="yes">
+                    <xsl:for-each-group select="current-group()/*:relationship[starts-with(@type, 'http')]" group-by="@type, @href" composite="yes">
                         <xsl:sort select="@type"/>
                         <xsl:variable name="pre" select="tokenize(@type, '/')[last() - 1]"/>
                         <xsl:variable name="nm" select="tokenize(@type, '/')[last()]"/>
