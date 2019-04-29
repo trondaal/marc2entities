@@ -1,0 +1,32 @@
+the resource catalogued is always is considered as an individual work
+its identity is determined by:
+
+Work of the publication
+a) IF 240 we use the 240 or 130 $1 as identifier (if no $1 we use the title as identifying key)
+b) IF 240$h we add $h and translators and adapters to dthe identifier
+c) IF NO 240 we use 245$a + language in 008 and any translator and adapters to dthe identifier
+If 240$h -> also create a work for the original and establish a translation relationship between original and work of the publication
+
+Added enty works (identified by having a $t, analytical entries)
+a) 700 having ind2=2 -> a work that is identrified by $1 (or title)
+b) IF 700$h we add $h and and translators and adapters to the identifier
+c) IF 700$h -> also create a work or the original which the added entry work i sa translation of
+
+Added enty works (identified by having a $t, related works)
+a) 700 having ind2 != 2 -> a work that is identrified by $1 (or title)
+b) create a typed relationship between main work of the publication and the mentioned related work using relationship in $4
+
+Subject entries
+a) Related to main entry work
+b) If $t it is the work that is related
+c) if no $t it is the person that is the topic
+
+Added entries for persons
+a) unless specifically linked with $8 they are related to the main work
+
+Series entries
+a) main work is considered to be a part of the series unless spesifically linked otherwise with $8
+
+
+
+

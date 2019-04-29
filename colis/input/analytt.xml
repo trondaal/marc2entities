@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:record source="1989-BNB-Spain-Camilo-Jose-Cela.xml">
+        <marc:leader>00826 am a22002897a 4500</marc:leader>
+        <marc:controlfield tag="001">011985302</marc:controlfield>
+        <marc:controlfield tag="008">930610s1993    enk    ||     000 1|eng  </marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0704370492 :</marc:subfield>
+            <marc:subfield code="c">£16.95</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+            <marc:subfield code="h">spa</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">863.62</marc:subfield>
+            <marc:subfield code="2">20</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cela, Camilo José</marc:subfield>
+            <marc:subfield code="d">1916-2002.</marc:subfield>
+            <marc:subfield code="1p">http://viaf.org/viaf/personhoved</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Dette er tittel på helheten</marc:subfield>
+            <marc:subfield code="1w">http://viaf.org/viaf/helhet</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Dette er tittelen som står på boka /</marc:subfield>
+            <marc:subfield code="c">Camilo José Cela ; translated by Patricia Haugaard.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London :</marc:subfield>
+            <marc:subfield code="b">Quartet,</marc:subfield>
+            <marc:subfield code="c">1993.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">312p.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Patricia Haugaard</marc:subfield>
+            <marc:subfield code="4">trl</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="2">
+            <marc:subfield code="a">Doyle, Arthur Conan</marc:subfield>
+            <marc:subfield code="d">1859-1930.</marc:subfield>
+            <marc:subfield code="t">Dette er tittel til en analytt</marc:subfield>
+            <marc:subfield code="l">spa</marc:subfield>
+            <marc:subfield code="1p">http://viaf.org/viaf/analyttperson</marc:subfield>
+            <marc:subfield code="1w">http://viaf.org/viaf/analyttid</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2=" ">
+            <marc:subfield code="a">Elton John</marc:subfield>
+            <marc:subfield code="t">Dette er tittel til et relatert verk</marc:subfield>
+            <marc:subfield code="1p">http://viaf.org/viaf/emneperson</marc:subfield>
+            <marc:subfield code="1w">http://viaf.org/viaf/emneverk</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

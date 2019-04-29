@@ -436,7 +436,7 @@
                 <xsl:variable name="n" select="tokenize(@type, '/')[last()]"/>
                 <xsl:element name="{concat($p, ':', $n)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
                     <xsl:attribute name="rdf:about" select="@id" />
-                    <xsl:for-each-group select="current-group()//*:subfield[starts-with(@type, 'http')]" group-by="@type, text()" composite="yes">
+                    <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, text()" composite="yes">
                         <xsl:variable name="pre" select="tokenize(@type, '/')[last() - 1]"/>
                         <xsl:variable name="nm" select="tokenize(@type, '/')[last()]"/>
                         <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >

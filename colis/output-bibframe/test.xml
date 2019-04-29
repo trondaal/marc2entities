@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:bibframe="http://id.loc.gov/ontologies/bibframe/"
+         xmlns:marc="http://marc21rdf.info/elements/marc/"
+         xmlns:m="http://rdaregistry.info/Elements/m/"
+         xmlns:a="http://rdaregistry.info/Elements/a/"
+         xmlns:w="http://rdaregistry.info/Elements/w/"
+         xmlns:e="http://rdaregistry.info/Elements/e/"
+         xml:base="http://example.org/rda/">
+   <bibframe:Instance rdf:about="urn:isbn:0704370492">
+      <marc:M001>011985302</marc:M001>
+      <m:P30004>urn:isbn:0704370492</m:P30004>
+      <m:P30156>Mazurka for two dead men</m:P30156>
+      <m:P30117>Camilo José Cela ; translated by Patricia Haugaard</m:P30117>
+      <m:P30088>London</m:P30088>
+      <m:P30083>Quartet</m:P30083>
+      <m:P30011>1993</m:P30011>
+      <m:P30182>312p.</m:P30182>
+      <m:P30001>unmediated</m:P30001>
+      <m:P30002>volume</m:P30002>
+      <bibframe:instanceOf rdf:resource="http://viaf.org/viaf/181460365/eng"/>
+   </bibframe:Instance>
+   <bibframe:Person rdf:about="http://viaf.org/viaf/14767431">
+      <a:P50094>http://viaf.org/viaf/14767431</a:P50094>
+      <a:P50111>Cela, Camilo José</a:P50111>
+      <a:P50107>1916-2002</a:P50107>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/181460365"/>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/181460365/eng"/>
+   </bibframe:Person>
+   <bibframe:Work rdf:about="http://viaf.org/viaf/179061639">
+      <w:P10002>http://viaf.org/viaf/179061639</w:P10002>
+      <w:P10088>Study in scarlet</w:P10088>
+   </bibframe:Work>
+   <bibframe:Work rdf:about="http://viaf.org/viaf/181460365">
+      <w:P10002>http://viaf.org/viaf/181460365</w:P10002>
+      <w:P10088>Mazurca para dos muertos</w:P10088>
+      <bibframe:translation rdf:resource="http://viaf.org/viaf/181460365/eng"/>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/14767431"/>
+      <w:adaptationOfWork.en rdf:resource="http://viaf.org/viaf/179061639"/>
+   </bibframe:Work>
+   <bibframe:Work rdf:about="http://viaf.org/viaf/181460365/eng">
+      <e:P20006>eng</e:P20006>
+      <w:P10002>http://viaf.org/viaf/181460365</w:P10002>
+      <w:P10088>Mazurca para dos muertos</w:P10088>
+      <e:P20006>English</e:P20006>
+      <w:P10088>Mazurka for two dead men</w:P10088>
+      <bibframe:hasInstance rdf:resource="urn:isbn:0704370492"/>
+      <bibframe:translationOf rdf:resource="http://viaf.org/viaf/181460365"/>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/14767431"/>
+   </bibframe:Work>
+</rdf:RDF>

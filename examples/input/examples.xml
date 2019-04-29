@@ -145,7 +145,7 @@
         <datafield tag="700" ind1="1" ind2=" ">
             <subfield code="a">Larsson, Stieg,</subfield>
             <subfield code="d">1954-2004</subfield>
-            <subfield code="i">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
             <subfield code="t">Män som hatar kvinnor</subfield>
             <subfield code="1">http://viaf.org/viaf/4188148523903220970001</subfield>
         </datafield>
@@ -226,7 +226,7 @@
         <datafield tag="700" ind1="1" ind2=" ">
             <subfield code="a">Larsson, Stieg,</subfield>
             <subfield code="d">1954-2004</subfield>
-            <subfield code="i">http://rdaregistry.info/Elements/w/adaptationOfWork.en</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/adaptationOfWork.en</subfield>
             <subfield code="t">Flickan som lekte med elden.</subfield>
             <subfield code="l">Spanska</subfield>
             <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
@@ -386,7 +386,7 @@
             <subfield code="a">Larsson, Stieg,</subfield>
             <subfield code="d">1954-2004.</subfield>
             <subfield code="t">Flickan som lekte med elden.</subfield>
-            <subfield code="i">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
             <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
         </datafield>
         <datafield tag="800" ind1="1" ind2=" ">

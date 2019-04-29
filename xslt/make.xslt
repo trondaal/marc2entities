@@ -158,7 +158,8 @@
                 <xsl:if test="exists(@code)">
                     <xsl:element name="xsl:variable">
                         <xsl:attribute name="name" select="'code'"/>
-                        <xsl:attribute name="select" select="@code"/>
+                        <xsl:attribute name="as" select="'xs:string'"/>
+                        <xsl:attribute name="select" select="string-join(('''', @code, ''''), '')"/>
                     </xsl:element>
                 </xsl:if>
                 <xsl:element name="xsl:variable">
@@ -175,9 +176,11 @@
     </xsl:template>
     <xsl:template name="tag-for-each">
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select=" string-join(('node()[@tag=''', @tag, ''']', if (@condition) then concat('[', @condition, ']') else ()), '')"/>
+            <xsl:variable name="taglist" select="'('''||string-join(tokenize((@tag), '\D+'), ''',''')||''')'"/>
+            <xsl:attribute name="select" select="'node()[@tag=' || $taglist  || ']' || (if (@condition) then '[' || @condition || ']' else ())"/>          
+            <!--<xsl:attribute name="select" select=" string-join(('node()[@tag=''', @tag, ''']', if (@condition) then concat('[', @condition, ']') else ()), '')"/>-->
             <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'this_field'"/>
+                <xsl:attribute name="name" select="'this_field'"/>              
                 <xsl:attribute name="select" select="'(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
@@ -190,6 +193,7 @@
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'anchor'"/>
+                <xsl:attribute name="as" select="'xs:string'"/>
                 <xsl:attribute name="select" select="'(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
@@ -209,7 +213,7 @@
     </xsl:template>
     <xsl:template name="code-for-each">
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select=" string-join(('node()[@code=''', @code, ''']', if (@condition) then string-join(('[', @condition, ']'), '') else  ()), '')"/>
+            <xsl:attribute name="select" select=" string-join(('node()[@code=''', @code, ''']', if (@code-condition) then string-join(('[', @code-condition, ']'), '') else  ()), '')"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield'"/>
                 <xsl:attribute name="select" select="'(ancestor-or-self::*:subfield)'"/>
@@ -220,11 +224,13 @@
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield_code'"/>
-                <xsl:attribute name="select" select="@code"/>
+                <xsl:attribute name="as" select="'xs:string'"/>
+                <xsl:attribute name="select" select="''''||@code||''''"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'anchor_subfield_code'"/>
-                <xsl:attribute name="select" select="@code"/>
+                <xsl:attribute name="as" select="'xs:string'"/>
+                <xsl:attribute name="select" select="''''||@code||''''"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield_position'"/>
@@ -606,13 +612,15 @@
         <xsl:element name="xsl:for-each">
             <xsl:variable name="target_template_name" select="string(@entity)"/>
             <xsl:variable name="target_template" select="//*:templates/*:entity[@templatename = $target_template_name]"/>
-            <xsl:attribute name="select" select="string-join(('$record/node()[@tag=''', string($target_template/@tag), ''']',if ($target_template/@condition) then concat('[', $target_template/@condition, ']') else ()), '')"/>
+            <xsl:variable name="taglist" select="'('''||string-join(tokenize(($target_template/@tag), '\D+'), ''',''')||''')'"/>
+            <xsl:attribute name="select" select="'$record/node()[@tag=' || $taglist || ']' || (if ($target_template/@condition) then '[' || $target_template/@condition || ']' else ())"/>
+            <!--<xsl:attribute name="select" select="string-join(('$record/node()[@tag=''', string($target_template/@tag), ''']',if ($target_template/@condition) then concat('[', $target_template/@condition, ']') else ()), '')"/>-->
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_template_name'"/>
                 <xsl:attribute name="select" select="string-join(('''', $target_template_name, ''''), '')"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'target_tag'"/>
+                <xsl:attribute name="name" select="'target_tag_value'"/>
                 <xsl:attribute name="select" select="string-join(('''', $target_template/@tag, ''''), '')"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
@@ -641,14 +649,15 @@
     <xsl:template name="relationship-target-code-for-each">
         <xsl:param name="target_template"/>
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select="string-join(('node()[@code=''', string($target_template/@code), ''']', if ($target_template/@condition) then concat('[', $target_template/@condition, ']') else ()), '')"/>
+            <xsl:attribute name="select" select="string-join(('node()[@code=''', string($target_template/@code), ''']', if ($target_template/@code-condition) then concat('[', $target_template/@code-condition, ']') else ()), '')"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield'"/>
                 <xsl:attribute name="select" select="'.'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield_code'"/>
-                <xsl:attribute name="select" select="$target_template/@code"/>
+                <xsl:attribute name="as" select="'xs:string'"/>
+                <xsl:attribute name="select" select="''''||$target_template/@code/string()||''''"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield_position'"/>
@@ -764,7 +773,7 @@
             <xsl:variable name="identifier_string">
                 <xsl:call-template name="internal-id-template">
                     <xsl:with-param name="template_name" select="'$target_template_name'"/>
-                    <xsl:with-param name="tag" select="'$target_tag'"/>
+                    <xsl:with-param name="tag" select="'$target_tag_value'"/>
                     <xsl:with-param name="code" select="                             if ($target_template/@code) then                                 '$target_subfield_code'                             else                                 ()"/>
                     <xsl:with-param name="tag-pos" select="'$target_field_position'"/>
                     <xsl:with-param name="code-pos" select="                             if ($target_template/@code) then                                 '$target_subfield_position'                             else                                 ()"/>

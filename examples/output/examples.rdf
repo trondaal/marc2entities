@@ -1,384 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<collection xmlns="http://www.loc.gov/MARC21/slim">
-   <record id="/flickansomlektemedeldenregidanielalfredson"
-           type="http://rdaregistry.info/Elements/c/C10001">
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088">Flickan som lekte med elden : regi: Daniel Alfredson</subfield>
-      </datafield>
-      <datafield tag="380" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004">motion picture</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="/flickansomlektemedeldenregidanielalfredson/swe/movingimage"/>
-   </record>
-   <record id="http://viaf.org/viaf/175978173"
-           type="http://rdaregistry.info/Elements/c/C10001">
-      <datafield tag="240" ind1=" " ind2=" ">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/175978173</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088">Luftslottet som sprängdes</subfield>
-      </datafield>
-      <datafield tag="380" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004">novel</subfield>
-      </datafield>
-      <datafield tag="700" ind1="1" ind2="2">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/175978173</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088">Luftslottet som sprängdes</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10019"
-                             href="http://viaf.org/viaf/182958364"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10061"
-                             href="http://viaf.org/viaf/54441441"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/175978173/tyska/text"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/175978173/swe/text"/>
-   </record>
-   <record id="http://viaf.org/viaf/182958364"
-           type="http://rdaregistry.info/Elements/c/C10001">
-      <datafield tag="800" ind1="1" ind2=" ">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/182958364</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088">Millennium</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10147"
-                             href="http://viaf.org/viaf/1965149068358065730000"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10147"
-                             href="http://viaf.org/viaf/4188148523903220970001"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10147"
-                             href="http://viaf.org/viaf/175978173"/>
-   </record>
-   <record id="http://viaf.org/viaf/1965149068358065730000"
-           type="http://rdaregistry.info/Elements/c/C10001">
-      <datafield tag="240" ind1="1" ind2="0">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/1965149068358065730000</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088">Flickan som lekte med elden</subfield>
-      </datafield>
-      <datafield tag="380" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004">novel</subfield>
-      </datafield>
-      <datafield tag="700" ind1="1" ind2="2">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/1965149068358065730000</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088">Flickan som lekte med elden</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10019"
-                             href="http://viaf.org/viaf/182958364"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10061"
-                             href="http://viaf.org/viaf/54441441"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/1965149068358065730000/eng/text"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/1965149068358065730000/tyska/text"/>
-   </record>
-   <record id="http://viaf.org/viaf/4188148523903220970001"
-           type="http://rdaregistry.info/Elements/c/C10001">
-      <datafield tag="240" ind1="1" ind2="0">
-         <subfield code="1" type="http://rdaregistry.info/Elements/w/P10002">http://viaf.org/viaf/4188148523903220970001</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088">Män som hatar kvinnor</subfield>
-      </datafield>
-      <datafield tag="380" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004">novel</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10019"
-                             href="http://viaf.org/viaf/182958364"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10061"
-                             href="http://viaf.org/viaf/54441441"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/w/P10078"
-                             href="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
-   </record>
-   <record id="http://viaf.org/viaf/54441441"
-           type="http://rdaregistry.info/Elements/c/C10004">
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="0" type="http://rdaregistry.info/Elements/a/P50094">194202</subfield>
-         <subfield code="1" type="http://rdaregistry.info/Elements/a/P50094">http://viaf.org/viaf/54441441</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111">Larsson, Stieg</subfield>
-         <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107">1954-2004</subfield>
-      </datafield>
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="0" type="http://rdaregistry.info/Elements/a/P50094">https://libris.kb.se/vs689k5d108n3lx#it</subfield>
-         <subfield code="1" type="http://rdaregistry.info/Elements/a/P50094">http://viaf.org/viaf/54441441</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111">Larsson, Stieg</subfield>
-         <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107">1954-2004</subfield>
-      </datafield>
-      <datafield tag="100" ind1="1" ind2=" ">
-         <subfield code="1" type="http://rdaregistry.info/Elements/a/P50094">http://viaf.org/viaf/54441441</subfield>
-         <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111">Larsson, Stieg</subfield>
-         <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107">1954-2004</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/a/P50195"
-                             href="http://viaf.org/viaf/1965149068358065730000"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/a/P50195"
-                             href="http://viaf.org/viaf/4188148523903220970001"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/a/P50195"
-                             href="http://viaf.org/viaf/175978173"/>
-   </record>
-   <record id="/flickansomlektemedeldenregidanielalfredson/swe/movingimage"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <controlfield tag="008" type="http://rdaregistry.info/Elements/e/P20006">swe</controlfield>
-      <datafield tag="041" ind1="0" ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20006">swe</subfield>
-      </datafield>
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20312">Flickan som lekte med elden</subfield>
-      </datafield>
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">moving image</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="http://example.org/11852913"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="/flickansomlektemedeldenregidanielalfredson"/>
-   </record>
-   <record id="http://viaf.org/viaf/175978173/swe/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="041" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20006">swe</subfield>
-      </datafield>
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9789113029047"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/175978173"/>
-   </record>
-   <record id="http://viaf.org/viaf/175978173/tyska/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <datafield tag="700" ind1="1" ind2="2">
-         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Tyska</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/e/P20312">Luftslottet som sprängdes.</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9783453267008"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/175978173"/>
-   </record>
-   <record id="http://viaf.org/viaf/1965149068358065730000/eng/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="041" ind1="1" ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20006">eng</subfield>
-      </datafield>
-      <datafield tag="240" ind1="1" ind2="0">
-         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Engelska</subfield>
-      </datafield>
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9781847245564"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/1965149068358065730000"/>
-   </record>
-   <record id="http://viaf.org/viaf/1965149068358065730000/spa/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="041" ind1="1" ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20006">spa</subfield>
-      </datafield>
-      <datafield tag="240" ind1="1" ind2="0">
-         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Spanska</subfield>
-      </datafield>
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9789875804876"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/1965149068358065730000"/>
-   </record>
-   <record id="http://viaf.org/viaf/1965149068358065730000/tyska/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <datafield tag="700" ind1="1" ind2="2">
-         <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006">Tyska</subfield>
-         <subfield code="t" type="http://rdaregistry.info/Elements/e/P20312">Flickan som lekte med elden.</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9783453267008"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/1965149068358065730000"/>
-   </record>
-   <record id="http://viaf.org/viaf/4188148523903220970001/ger/text"
-           type="http://rdaregistry.info/Elements/c/C10006">
-      <datafield tag="041" ind1="1" ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20006">ger</subfield>
-      </datafield>
-      <datafield tag="336" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/e/P20001">text</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20059"
-                             href="urn:isbn:9783453267008"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/e/P20231"
-                             href="http://viaf.org/viaf/4188148523903220970001"/>
-   </record>
-   <record id="http://example.org/11852913"
-           type="http://rdaregistry.info/Elements/c/C10007">
-      <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001">11852913</controlfield>
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156">Flickan som lekte med elden</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30117">regi: Daniel Alfredson</subfield>
-      </datafield>
-      <datafield tag="300" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182">1 DVD-Video (2 tim., 4 min.)</subfield>
-      </datafield>
-      <datafield tag="337" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001">video</subfield>
-      </datafield>
-      <datafield tag="338" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002">video disc</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="/flickansomlektemedeldenregidanielalfredson/swe/movingimage"/>
-   </record>
-   <record id="urn:isbn:9781847245564"
-           type="http://rdaregistry.info/Elements/c/C10007">
-      <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001">11360497</controlfield>
-      <datafield tag="020" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004">urn:isbn:9781847245564</subfield>
-      </datafield>
-      <datafield tag="020" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004">urn:isbn:1847245560</subfield>
-      </datafield>
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156">The girl who played with fire</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30117">Stieg Larsson ; translated from the Swedish by Reg Keeland</subfield>
-      </datafield>
-      <datafield tag="260" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30088">London</subfield>
-         <subfield code="b" type="http://rdaregistry.info/Elements/m/P30083">MacLehose</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30011">2009</subfield>
-      </datafield>
-      <datafield tag="300" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182">569 s.</subfield>
-      </datafield>
-      <datafield tag="337" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001">unmediated</subfield>
-      </datafield>
-      <datafield tag="338" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002">volume</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/1965149068358065730000/eng/text"/>
-   </record>
-   <record id="urn:isbn:9783453267008"
-           type="http://rdaregistry.info/Elements/c/C10007">
-      <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001">12033495</controlfield>
-      <datafield tag="020" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004">urn:isbn:9783453267008</subfield>
-      </datafield>
-      <datafield tag="245" ind1="1" ind2="4">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156">Die Millennium-Trilogie : Verblendung - Verdammnis - Vergebung / Stieg Larsson ; aus dem Schwedischen von Wibke Kuhn</subfield>
-      </datafield>
-      <datafield tag="250" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30107">[Limitierte Sonderausg. in Kassette]</subfield>
-      </datafield>
-      <datafield tag="300" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182">687 s. ; 751 s. ; 847 s. ; c 215 mm x 135 mm.</subfield>
-      </datafield>
-      <datafield tag="337" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001">unmediated</subfield>
-      </datafield>
-      <datafield tag="338" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002">volume</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/1965149068358065730000/tyska/text"/>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/175978173/tyska/text"/>
-   </record>
-   <record id="urn:isbn:9789113029047"
-           type="http://rdaregistry.info/Elements/c/C10007">
-      <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001">11675457</controlfield>
-      <datafield tag="020" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004">urn:isbn:9789113029047</subfield>
-      </datafield>
-      <datafield tag="245" ind1="1" ind2="0">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156">Luftslottet som sprängdes</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30117">Stieg Larsson</subfield>
-      </datafield>
-      <datafield tag="300" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182">703 s.</subfield>
-      </datafield>
-      <datafield tag="337" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001">computer file</subfield>
-      </datafield>
-      <datafield tag="338" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002">online resource</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/175978173/swe/text"/>
-   </record>
-   <record id="urn:isbn:9789875804876"
-           type="http://rdaregistry.info/Elements/c/C10007">
-      <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001">13519003</controlfield>
-      <datafield tag="020" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004">urn:isbn:9789875804876</subfield>
-      </datafield>
-      <datafield tag="245" ind1="1" ind2="3">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156">La chica que soñaba con un cerillo y un galón de gasolina</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30117">Stieg Larsson ; traducción de Martin Lexell y Juan José Ortega Román.</subfield>
-      </datafield>
-      <datafield tag="260" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30088">Buenos Aires</subfield>
-         <subfield code="b" type="http://rdaregistry.info/Elements/m/P30083">Booket</subfield>
-         <subfield code="c" type="http://rdaregistry.info/Elements/m/P30011">2012</subfield>
-      </datafield>
-      <datafield tag="300" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182">772 p.</subfield>
-      </datafield>
-      <datafield tag="337" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001">unmediated</subfield>
-      </datafield>
-      <datafield tag="338" ind1=" " ind2=" ">
-         <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002">volume</subfield>
-      </datafield>
-      <frbrizer:relationship xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
-                             type="http://rdaregistry.info/Elements/m/P30139"
-                             href="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
-   </record>
-</collection>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:c="http://rdaregistry.info/Elements/c/"
+         xmlns:w="http://rdaregistry.info/Elements/w/"
+         xmlns:a="http://rdaregistry.info/Elements/a/"
+         xmlns:e="http://rdaregistry.info/Elements/e/"
+         xmlns:marc="http://marc21rdf.info/elements/marc/"
+         xmlns:m="http://rdaregistry.info/Elements/m/"
+         xml:base="http://example.org/rda/">
+   <c:C10001 rdf:about="/flickansomlektemedeldenregidanielalfredson">
+      <w:P10088>Flickan som lekte med elden : regi: Daniel Alfredson</w:P10088>
+      <w:P10004>motion picture</w:P10004>
+      <w:P10013 rdf:resource="alfredsondaniel"/>
+      <w:P10078 rdf:resource="/flickansomlektemedeldenregidanielalfredson/swe/movingimage"/>
+      <w:adaptationOfWork.en rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/175978173">
+      <w:P10002>http://viaf.org/viaf/175978173</w:P10002>
+      <w:P10088>Luftslottet som sprängdes</w:P10088>
+      <w:P10004>novel</w:P10004>
+      <w:P10019 rdf:resource="http://viaf.org/viaf/182958364"/>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/54441441"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/175978173/tyska/text"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/175978173/swe/text"/>
+      <w:precededByWork.en rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/182958364">
+      <w:P10002>http://viaf.org/viaf/182958364</w:P10002>
+      <w:P10088>Millennium</w:P10088>
+      <w:P10147 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+      <w:P10147 rdf:resource="http://viaf.org/viaf/4188148523903220970001"/>
+      <w:P10147 rdf:resource="http://viaf.org/viaf/175978173"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/1965149068358065730000">
+      <w:P10002>http://viaf.org/viaf/1965149068358065730000</w:P10002>
+      <w:P10088>Flickan som lekte med elden</w:P10088>
+      <w:P10004>novel</w:P10004>
+      <w:P10019 rdf:resource="http://viaf.org/viaf/182958364"/>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/54441441"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/1965149068358065730000/eng/text"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/1965149068358065730000/tyska/text"/>
+      <w:precededByWork.en rdf:resource="http://viaf.org/viaf/4188148523903220970001"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/4188148523903220970001">
+      <w:P10002>http://viaf.org/viaf/4188148523903220970001</w:P10002>
+      <w:P10088>Män som hatar kvinnor</w:P10088>
+      <w:P10004>novel</w:P10004>
+      <w:P10019 rdf:resource="http://viaf.org/viaf/182958364"/>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/54441441"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
+   </c:C10001>
+   <c:C10004 rdf:about="alfredsondaniel">
+      <a:P50111>Alfredson, Daniel</a:P50111>
+      <a:P50048 rdf:resource="/flickansomlektemedeldenregidanielalfredson"/>
+   </c:C10004>
+   <c:C10004 rdf:about="http://viaf.org/viaf/1945746">
+      <a:P50094>http://viaf.org/viaf/1945746</a:P50094>
+      <a:P50111>Keeland, Reg</a:P50111>
+      <a:P50107>1943-</a:P50107>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/1965149068358065730000/eng/text"/>
+   </c:C10004>
+   <c:C10004 rdf:about="http://viaf.org/viaf/51520608">
+      <a:P50094>http://viaf.org/viaf/51520608</a:P50094>
+      <a:P50111>Kuhn, Wibke</a:P50111>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
+   </c:C10004>
+   <c:C10004 rdf:about="http://viaf.org/viaf/54441441">
+      <a:P50094>194202</a:P50094>
+      <a:P50094>http://viaf.org/viaf/54441441</a:P50094>
+      <a:P50111>Larsson, Stieg</a:P50111>
+      <a:P50107>1954-2004</a:P50107>
+      <a:P50094>https://libris.kb.se/vs689k5d108n3lx#it</a:P50094>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/4188148523903220970001"/>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/175978173"/>
+   </c:C10004>
+   <c:C10004 rdf:about="lexellmartin1961">
+      <a:P50111>Lexell, Martin</a:P50111>
+      <a:P50107>1961-</a:P50107>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
+   </c:C10004>
+   <c:C10004 rdf:about="ortegaromnjuanjos">
+      <a:P50111>Ortega Román, Juan José</a:P50111>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
+   </c:C10004>
+   <c:C10006 rdf:about="/flickansomlektemedeldenregidanielalfredson/swe/movingimage">
+      <e:P20006>swe</e:P20006>
+      <e:P20312>Flickan som lekte med elden</e:P20312>
+      <e:P20001>moving image</e:P20001>
+      <e:P20059 rdf:resource="http://example.org/11852913"/>
+      <e:P20231 rdf:resource="/flickansomlektemedeldenregidanielalfredson"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/175978173/swe/text">
+      <e:P20006>swe</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20059 rdf:resource="urn:isbn:9789113029047"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/175978173"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/175978173/tyska/text">
+      <e:P20001>text</e:P20001>
+      <e:P20006>Tyska</e:P20006>
+      <e:P20312>Luftslottet som sprängdes.</e:P20312>
+      <e:P20059 rdf:resource="urn:isbn:9783453267008"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/175978173"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/1965149068358065730000/eng/text">
+      <e:P20006>eng</e:P20006>
+      <e:P20006>Engelska</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20037 rdf:resource="http://viaf.org/viaf/1945746"/>
+      <e:P20059 rdf:resource="urn:isbn:9781847245564"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/1965149068358065730000/spa/text">
+      <e:P20006>spa</e:P20006>
+      <e:P20006>Spanska</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20037 rdf:resource="lexellmartin1961"/>
+      <e:P20037 rdf:resource="ortegaromnjuanjos"/>
+      <e:P20059 rdf:resource="urn:isbn:9789875804876"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/1965149068358065730000/tyska/text">
+      <e:P20001>text</e:P20001>
+      <e:P20006>Tyska</e:P20006>
+      <e:P20312>Flickan som lekte med elden.</e:P20312>
+      <e:P20059 rdf:resource="urn:isbn:9783453267008"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/4188148523903220970001/ger/text">
+      <e:P20006>ger</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20037 rdf:resource="http://viaf.org/viaf/51520608"/>
+      <e:P20059 rdf:resource="urn:isbn:9783453267008"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/4188148523903220970001"/>
+   </c:C10006>
+   <c:C10007 rdf:about="http://example.org/11852913">
+      <marc:M001>11852913</marc:M001>
+      <m:P30156>Flickan som lekte med elden</m:P30156>
+      <m:P30117>regi: Daniel Alfredson</m:P30117>
+      <m:P30182>1 DVD-Video (2 tim., 4 min.)</m:P30182>
+      <m:P30001>video</m:P30001>
+      <m:P30002>video disc</m:P30002>
+      <m:P30139 rdf:resource="/flickansomlektemedeldenregidanielalfredson/swe/movingimage"/>
+   </c:C10007>
+   <c:C10007 rdf:about="urn:isbn:9781847245564">
+      <marc:M001>11360497</marc:M001>
+      <m:P30004>urn:isbn:9781847245564</m:P30004>
+      <m:P30004>urn:isbn:1847245560</m:P30004>
+      <m:P30156>The girl who played with fire</m:P30156>
+      <m:P30117>Stieg Larsson ; translated from the Swedish by Reg Keeland</m:P30117>
+      <m:P30088>London</m:P30088>
+      <m:P30083>MacLehose</m:P30083>
+      <m:P30011>2009</m:P30011>
+      <m:P30182>569 s.</m:P30182>
+      <m:P30001>unmediated</m:P30001>
+      <m:P30002>volume</m:P30002>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/1965149068358065730000/eng/text"/>
+   </c:C10007>
+   <c:C10007 rdf:about="urn:isbn:9783453267008">
+      <marc:M001>12033495</marc:M001>
+      <m:P30004>urn:isbn:9783453267008</m:P30004>
+      <m:P30156>Die Millennium-Trilogie : Verblendung - Verdammnis - Vergebung / Stieg Larsson ; aus dem Schwedischen von Wibke Kuhn</m:P30156>
+      <m:P30107>[Limitierte Sonderausg. in Kassette]</m:P30107>
+      <m:P30182>687 s. ; 751 s. ; 847 s. ; c 215 mm x 135 mm.</m:P30182>
+      <m:P30001>unmediated</m:P30001>
+      <m:P30002>volume</m:P30002>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/1965149068358065730000/tyska/text"/>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/175978173/tyska/text"/>
+   </c:C10007>
+   <c:C10007 rdf:about="urn:isbn:9789113029047">
+      <marc:M001>11675457</marc:M001>
+      <m:P30004>urn:isbn:9789113029047</m:P30004>
+      <m:P30156>Luftslottet som sprängdes</m:P30156>
+      <m:P30117>Stieg Larsson</m:P30117>
+      <m:P30182>703 s.</m:P30182>
+      <m:P30001>computer file</m:P30001>
+      <m:P30002>online resource</m:P30002>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/175978173/swe/text"/>
+   </c:C10007>
+   <c:C10007 rdf:about="urn:isbn:9789875804876">
+      <marc:M001>13519003</marc:M001>
+      <m:P30004>urn:isbn:9789875804876</m:P30004>
+      <m:P30156>La chica que soñaba con un cerillo y un galón de gasolina</m:P30156>
+      <m:P30117>Stieg Larsson ; traducción de Martin Lexell y Juan José Ortega Román.</m:P30117>
+      <m:P30088>Buenos Aires</m:P30088>
+      <m:P30083>Booket</m:P30083>
+      <m:P30011>2012</m:P30011>
+      <m:P30182>772 p.</m:P30182>
+      <m:P30001>unmediated</m:P30001>
+      <m:P30002>volume</m:P30002>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/1965149068358065730000/spa/text"/>
+   </c:C10007>
+</rdf:RDF>

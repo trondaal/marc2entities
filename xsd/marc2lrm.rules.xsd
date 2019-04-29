@@ -51,24 +51,10 @@
             <xs:attribute name="tag" type="xs:string"/>
             <xs:attribute name="code" type="xs:string"/>
             <xs:attribute name="condition" type="xs:string"/>
+            <xs:attribute name="code-condition" type="xs:string"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="note" type="xs:string"/>
-    <xs:element name="anchor">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" ref="code"/>
-            </xs:sequence>
-            <xs:attribute name="tag" use="required" type="xs:integer"/>
-            <xs:attribute name="condition" use="optional" type="xs:string"/>
-        </xs:complexType>
-    </xs:element>
-    <xs:element name="code">
-        <xs:complexType>
-            <xs:attribute name="code" use="required" type="xs:string"/>
-            <xs:attribute name="condition" use="optional" type="xs:string"/>
-        </xs:complexType>
-    </xs:element>
     <xs:element name="attributes">
         <xs:complexType>
             <xs:choice minOccurs="1" maxOccurs="unbounded">

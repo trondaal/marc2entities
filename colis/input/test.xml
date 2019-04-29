@@ -1,0 +1,90 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:record source="1989-BNB-Spain-Camilo-Jose-Cela.xml">
+        <marc:leader>00826 am a22002897a 4500</marc:leader>
+        <marc:controlfield tag="001">011985302</marc:controlfield>
+        <marc:controlfield tag="005">20091123000200.0</marc:controlfield>
+        <marc:controlfield tag="008">930610s1993    enk    ||     000 1|eng  </marc:controlfield>
+        <marc:datafield tag="015" ind1=" " ind2=" ">
+            <marc:subfield code="a">GB9332503</marc:subfield>
+            <marc:subfield code="2">bnb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1="y" ind2=" ">
+            <marc:subfield code="a">b9332503</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1="9" ind2=" ">
+            <marc:subfield code="a">0704370492</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1="1" ind2=" ">
+            <marc:subfield code="a">0704370492</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0704370492 :</marc:subfield>
+            <marc:subfield code="c">£16.95</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="039" ind1="0" ind2=" ">
+            <marc:subfield code="a">2244</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">Uk</marc:subfield>
+            <marc:subfield code="c">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+            <marc:subfield code="h">spa</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">863.62</marc:subfield>
+            <marc:subfield code="2">20</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cela, Camilo José</marc:subfield>
+            <marc:subfield code="d">1916-2002.</marc:subfield>
+            <marc:subfield code="1p">http://viaf.org/viaf/14767431</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Mazurca para dos muertos.</marc:subfield>
+            <marc:subfield code="l">English</marc:subfield>
+            <marc:subfield code="1w">http://viaf.org/viaf/181460365</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Mazurka for two dead men /</marc:subfield>
+            <marc:subfield code="c">Camilo José Cela ; translated by Patricia Haugaard.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London :</marc:subfield>
+            <marc:subfield code="b">Quartet,</marc:subfield>
+            <marc:subfield code="c">1993.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">312p.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="1" ind2=" ">
+            <marc:subfield code="a">Spanish fiction</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Doyle, Arthur Conan</marc:subfield>
+            <marc:subfield code="d">1859-1930.</marc:subfield>
+            <marc:subfield code="t">Study in scarlet.</marc:subfield>
+            <marc:subfield code="1p">http://viaf.org/viaf/65283845</marc:subfield>
+            <marc:subfield code="1w">http://viaf.org/viaf/179061639</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/adaptationOfWork.en</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1="4" ind2="1">
+            <marc:subfield code="a">British Library</marc:subfield>
+            <marc:subfield code="b">HMNTS</marc:subfield>
+            <marc:subfield code="j">NOV.1993/963</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

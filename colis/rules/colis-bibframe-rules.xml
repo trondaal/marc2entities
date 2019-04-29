@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="../../xsd/marc2lrm.rules.xsd">
+    <!-- keyfilter is used to remove punctuation etc. from the values that are used in the keystring -->
+    <keyfilter>lower-case(replace($key, ' ', ''))</keyfilter>
+    
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 100 entries -->
+    <!--***************************--> 
+    
+    <entity tag="100" condition="*:subfield/@code = '1p'" type="http://id.loc.gov/ontologies/bibframe/Person" templatename="MARC21-100-Person" label="Person">
+        <note>Creator identified with the help of field 100</note>
+        <attributes>
+            <datafield tag="100">
+                <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111" select="frbrizer:trim(.)" label="has name of the person"/>
+                <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107" select="frbrizer:trim(.)" label="has date associated with the person"/>
+                <subfield code="1p" type="http://rdaregistry.info/Elements/a/P50094" label="has identifier for person"/>
+                <subfield code="4" type="http://example.org/ex/relatorcode"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>frbrizer:create-personid(*:datafield[@tag='100'])</element>
+        </key>
+        <relationships>
+            <relationship condition="not(*:subfield/@code = '4') " type="http://rdaregistry.info/Elements/a/P50195" itype="http://rdaregistry.info/Elements/w/P10061">
+                <target entity="MARC21-240-Bibframe-Work-Original"/>
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+            <relationship condition="*:subfield[@code = '4'] = ('aut')" type="http://rdaregistry.info/Elements/a/P50195" itype="http://rdaregistry.info/Elements/w/P10061">
+                <target entity="MARC21-240-Bibframe-Work-Original"/>
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+            <relationship condition="*:subfield[@code = '4'] = ('drt')" type="http://rdaregistry.info/Elements/a/P50048" itype="http://rdaregistry.info/Elements/w/P10013">
+                <target entity="MARC21-240-Bibframe-Work-Original"/>
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 130 entries -->
+    <!--***************************--> 
+    
+    <!-- Merged processin with 240 -->
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 240 entries -->
+    <!--***************************--> 
+    
+    <entity tag="130, 240" condition="*:subfield/@code = 'l'"  type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-240-Bibframe-Work-Original" label="Work">
+        <note>Original work identified by title in 240 or 130. The presence of $l indicates that resource described is a translation.
+        This default 240 template creates a work reagardless of $l or not, and this template is used to create a work for the original, identified by the </note>
+        <attributes>
+            <datafield tag="130">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="240">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="380" condition="frbrizer:linked($anchor_field, .)">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag=('130', '240')], ())</element>
+        </key>
+        <relationships>
+            <relationship type="http://id.loc.gov/ontologies/bibframe/translation" itype="http://id.loc.gov/ontologies/bibframe/translationOf">
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+            <relationship type="{$target_field/*:subfield[@code='4']}">
+                <target entity="MARC21-700-Bibframe-Work-Related"/>
+            </relationship>
+            <relationship  type="http://rdaregistry.info/Elements/w/P10256" itype="http://rdaregistry.info/Elements/x/P00014">
+                <target entity="MARC21-600-Bibframe-Work-Subject"/>
+            </relationship>
+            <relationship type="http://rdaregistry.info/Elements/w/P10256" itype="http://rdaregistry.info/Elements/x/P00014">
+                <target entity="MARC21-600-Bibframe-Person-Subject" condition="not($target_field/*:subfield/@code = 't')"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 245 entries -->
+    <!--***************************-->    
+    <entity tag="245" type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-245-Bibframe-Work" label="Work">
+        <note>Work identified by title in 245</note>
+        <attributes>
+            <controlfield tag="008"  type="http://rdaregistry.info/Elements/e/P20006" label="has language of expression" select="substring(., 36, 3)"/>
+            <datafield tag="130">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="240">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006" label="has language of expression" />
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="245">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10088" select="frbrizer:trim(.)" label="has title of the work"/>
+            </datafield>
+            <datafield tag="380" condition="frbrizer:linked($anchor_field, .)">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag=('130', '240', '245')], frbrizer:sort-relationships(*:relationship[@type = 'http://rdaregistry.info/Elements/w/P10061']/@href)[1])</element>
+            <element>'/'</element>
+            <element>lower-case((//.[@type='http://rdaregistry.info/Elements/e/P20006'])[1])</element>
+        </key>
+        <relationships>
+            <relationship type="http://id.loc.gov/ontologies/bibframe/hasInstance" itype="http://id.loc.gov/ontologies/bibframe/instanceOf">
+                <target entity="MARC21-245-Bibframe-Instance"/>
+            </relationship>
+            <relationship type="http://id.loc.gov/ontologies/bibframe/hasPart" itype="http://id.loc.gov/ontologies/bibframe/partOf" >
+                <target entity="MARC21-700-Bibframe-Work-Analytic"/>
+            </relationship>
+            <!-- Related works and subject entries are only associated to the main work if there is no separat source/original work identified (240 or 130 lacking $l) -->
+            <relationship condition="not($record/*:datafield[@tag=('240', '130')]/*:subfield/@code = 'l')" type="{$target_subfield}">
+                <target entity="MARC21-700-Bibframe-Work-Related"/>
+            </relationship>
+            <relationship condition="not($record/*:datafield[@tag=('240', '130')]/*:subfield/@code = 'l') " type="http://rdaregistry.info/Elements/w/P10256" itype="http://rdaregistry.info/Elements/x/P00014">
+                <target entity="MARC21-600-Bibframe-Work-Subject"/>
+            </relationship>
+            <relationship condition="not($record/*:datafield[@tag=('240', '130')]/*:subfield/@code = 'l') " type="http://rdaregistry.info/Elements/w/P10256" itype="http://rdaregistry.info/Elements/x/P00014">
+                <target entity="MARC21-600-Bibframe-Person-Subject" condition="not($target_field/*:subfield/@code = 't') "/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="245" type="http://id.loc.gov/ontologies/bibframe/Instance" templatename="MARC21-245-Bibframe-Instance">
+        <note>Manifestation</note>
+        <attributes>
+            <controlfield tag="001" type="http://marc21rdf.info/elements/marc/M001"/>
+            <datafield tag="020">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004" select="concat('urn:isbn:', replace(., '\D', ''))" label="has identifier for the manifestation"/>
+            </datafield>
+            <datafield tag="022">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004" select="concat('urn:issn:', ./replace(., '\D', ''))" label="has identifier for the manifestation"/>
+            </datafield>
+            <datafield tag="024">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30004" select="concat('urn:',frbrizer:idprefix(../@ind1) ,':', replace(., '\D', ''))" label="has identifier for the manifestation"/>
+            </datafield>
+            <datafield tag="245">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30156" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'b'])), ' : ')" label="has title proper"/>
+                <!-- <subfield code="b" type="frbrer:P3020" subtype="subtitle" label="has title of the manifestation"/>-->
+                <subfield code="c" type="http://rdaregistry.info/Elements/m/P30117" select="frbrizer:trim(.)" label="has statement of responsibility"/>
+            </datafield>
+            <datafield tag="250">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30107" label="has edition statement"/>
+            </datafield>
+            <datafield tag="260">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30088" select="frbrizer:trim(.)" label="has place of publication"/>
+                <subfield code="b" type="http://rdaregistry.info/Elements/m/P30083" select="frbrizer:trim(.)" label="has publisher"/>
+                <subfield code="c" type="http://rdaregistry.info/Elements/m/P30011" select="frbrizer:trim(.)" label="has date of publication"/>
+                <subfield code="e" type="http://rdaregistry.info/Elements/m/P30111" select="frbrizer:trim(.)" label="has publication statement"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/m/P30175" select="frbrizer:trim(.)" label="has manufacturers name"/>
+                <subfield code="g" type="http://rdaregistry.info/Elements/m/P30109" select="frbrizer:trim(.)" label="has manufacture statement"/>
+            </datafield>
+            <datafield tag="300">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30182" label="has extent"/>
+                <!--<subfield code="b" type="http://marc21rdf.info/elements/marc/M30000b" label="other physical details"/>-->
+                <subfield code="c" type="http://rdaregistry.info/Elements/m/P30169" label="has dimensions"/>
+                <!--<subfield code="e" type="http://marc21rdf.info/elements/marc/M30000e" label="accompanying material"/> -->
+            </datafield>
+            <datafield tag="337">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30001" select="frbrizer:trim(.)" label="has carrier type"/>
+            </datafield>
+            <datafield tag="338">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30002" select="frbrizer:trim(.)" label="has media type"/>
+            </datafield>
+            <datafield tag="490">
+                <subfield code="a" type="http://rdaregistry.info/Elements/m/P30106" select="frbrizer:trim(.)" label="has series statement"/>
+                <subfield code="v" type="http://rdaregistry.info/Elements/m/P30165" label="has numbering of serials"/>
+                <subfield code="l" type="http://marc21rdf.info/elements/marc/M49000l"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>if ((*:datafield[@tag=("020","024")][1]/*:subfield[@code='a'])[1]) then (*:datafield[@tag=("020","024")][1]/*:subfield[@code='a'])[1]/replace(., '\(.*\)', '') else concat('http://example.org/', *:controlfield[@tag='001'])</element>
+        </key>
+        <relationships>
+            <relationship type="http://rdaregistry.info/Elements/m/P30020" itype="http://rdaregistry.info/Elements/m/P30033" label="is contained in (manifestation)" ilabel="is container for (manifestation)">
+                <!--<target entity="MARC21-490-Manifestation"/>-->
+                <!--<target entity="MARC21-773-Manifestation"/>-->
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 600 entries -->
+    <!--***************************-->
+    
+    <entity tag="600" condition="*:subfield/@code = '1p'" type="http://id.loc.gov/ontologies/bibframe/Person" templatename="MARC21-600-Bibframe-Person-Subject" label="Person">
+        <note>Person in a subject entry</note>
+        <attributes>
+            <datafield tag="600">
+                <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111" select="frbrizer:trim(.)" label="has name of the person"/>
+                <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107" select="frbrizer:trim(.)" label="has date associated with the person"/>
+                <subfield code="1p" type="http://rdaregistry.info/Elements/a/P50094" label="has identifier for person"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>frbrizer:create-personid(*:datafield[@tag='600'])</element>
+        </key>
+        <relationships>
+            <relationship condition="not(*:subfield[@code = '4'])" type="http://rdaregistry.info/Elements/a/P50195" itype="http://rdaregistry.info/Elements/w/P10061">
+                <target entity="MARC21-600-Bibframe-Work-Subject" same-field="true"/>
+            </relationship>
+            <relationship condition="*:subfield[@code = '4'] = ('aut')" type="http://rdaregistry.info/Elements/a/P50195" itype="http://rdaregistry.info/Elements/w/P10061">
+                <target entity="MARC21-600-Bibframe-Work-Subject"  same-field="true"/>
+            </relationship>
+            <relationship condition="*:subfield[@code = '4'] = ('drt')" type="http://rdaregistry.info/Elements/a/P50048" itype="http://rdaregistry.info/Elements/w/P10013">
+                <target entity="MARC21-600-Bibframe-Work-Subject"  same-field="true"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="600" type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-600-Bibframe-Work-Subject" label="Work">
+        <note>Work identified by title in 600</note>
+        <attributes>
+            <datafield tag="600">
+                <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag='600'], frbrizer:sort-relationships(*:relationship[@type = 'http://rdaregistry.info/Elements/w/P10061']/@href)[1])</element>
+        </key>
+    </entity>
+    
+    <!--***************************-->
+    <!-- TEMPLATES FOR 700 entries -->
+    <!--***************************-->  
+    
+    <entity tag="700" code='4' condition="not(*:subfield/@code = 't')" type="http://id.loc.gov/ontologies/bibframe/Person" templatename="MARC21-700-Bibframe-Person-Addedentry" label="Person">
+        <note>Person in a added entry, no title field. We associate the person with either 245 Work or 130/240</note>
+        <attributes>
+            <datafield tag="700">
+                <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111" select="frbrizer:trim(.)" label="has name of the person"/>
+                <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107" select="frbrizer:trim(.)" label="has date associated with the person"/>
+                <subfield code="1p" type="http://rdaregistry.info/Elements/a/P50094" label="has identifier for person"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>frbrizer:create-personid(*:datafield[@tag='700'])</element>
+        </key>
+        <relationships>
+            <relationship type="http://rdaregistry.info/Elements/a/P50204" itype="http://rdaregistry.info/Elements/w/P10065">
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="700" condition="ind2 = '2' and *:subfield/@code = 't'" type="http://id.loc.gov/ontologies/bibframe/Person" templatename="MARC21-700-Bibframe-Person-Analytic" label="Person">
+        <note>Person in a an analyical entry</note>
+        <attributes>
+            <datafield tag="700">
+                <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111" select="frbrizer:trim(.)" label="has name of the person"/>
+                <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107" select="frbrizer:trim(.)" label="has date associated with the person"/>
+                <subfield code="1p" type="http://rdaregistry.info/Elements/a/P50094" label="has identifier for person"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>frbrizer:create-personid(*:datafield[@tag='700'])</element>
+        </key>
+        <relationships>
+            <relationship type="http://rdaregistry.info/Elements/a/P50204" itype="http://rdaregistry.info/Elements/w/P10065">
+                <target entity="MARC21-700-Bibframe-Work-Analytic" same-field="true"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="700" condition="ind2 != '2' and *:subfield/@code = 't'" type="http://id.loc.gov/ontologies/bibframe/Person" templatename="MARC21-700-Bibframe-Person-RelatedWork" label="Person">
+        <note>Person in a an analyical entry</note>
+        <attributes>
+            <datafield tag="700">
+                <subfield code="a" type="http://rdaregistry.info/Elements/a/P50111" select="frbrizer:trim(.)" label="has name of the person"/>
+                <subfield code="d" type="http://rdaregistry.info/Elements/a/P50107" select="frbrizer:trim(.)" label="has date associated with the person"/>
+                <subfield code="1p" type="http://rdaregistry.info/Elements/a/P50094" label="has identifier for person"/>
+            </datafield>
+        </attributes>
+        <key order="1">
+            <element>frbrizer:create-personid(*:datafield[@tag='700'])</element>
+        </key>
+        <relationships>
+            <relationship type="http://rdaregistry.info/Elements/a/P50204" itype="http://rdaregistry.info/Elements/w/P10065">
+                <target entity="MARC21-700-Bibframe-Work-Related" same-field="true"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="700" condition="@ind2 eq '2' and *:subfield/@code='t'" type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-700-Bibframe-Work-Analytic" label="Work">
+        <note>Analytic Work identified by title in 700 and ind2=2</note>
+        <attributes>
+            <datafield tag="700">
+                <!-- Joining title $a and name of part $p to one string -->
+                <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="l" type="http://rdaregistry.info/Elements/e/P20006" label="has language of expression"/>                
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="380" condition="frbrizer:linked($anchor_field, .)">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag='700'], frbrizer:sort-relationships(*:relationship[@type = 'http://rdaregistry.info/Elements/w/P10061']/@href)[1])</element>
+            <element>'/'</element>
+            <element>lower-case((//.[@type='http://rdaregistry.info/Elements/e/P20006'])[1])</element>
+        </key>
+        <relationships>
+            <relationship type="http://id.loc.gov/ontologies/bibframe/partOf" itype="http://id.loc.gov/ontologies/bibframe/hasPart">
+                <target entity="MARC21-245-Bibframe-Work"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="700" condition="@ind2 eq '2' and *:subfield/@code='t' and *:subfield/@code='l'" type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-700-Bibframe-Work-Analytic-Original" label="Work">
+        <note>Analytic Work identified by title in 700 and ind2=2</note>
+        <attributes>
+            <datafield tag="700">
+                <!-- Joining title $a and name of part $p to one string -->
+                <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="380" condition="frbrizer:linked($anchor_field, .)">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag='700'], frbrizer:sort-relationships(*:relationship[@type = 'http://rdaregistry.info/Elements/w/P10061']/@href)[1])</element>
+        </key>
+        <relationships>
+            <relationship type="http://id.loc.gov/ontologies/bibframe/translation" itype="http://id.loc.gov/ontologies/bibframe/translationOf">
+                <target entity="MARC21-700-Bibframe-Work-Analytic"/>
+            </relationship>
+        </relationships>
+    </entity>
+    
+    <entity tag="700" code="4" condition="@ind2 ne '2' and *:subfield/@code='t'" code-condition="starts-with(., 'http')" type="http://id.loc.gov/ontologies/bibframe/Work" templatename="MARC21-700-Bibframe-Work-Related" label="Work">
+        <note>Work identified by title in 700</note>
+        <attributes>
+            <datafield tag="700">
+                <subfield code="t" type="http://rdaregistry.info/Elements/w/P10088" select="string-join((frbrizer:trim(.), frbrizer:trim(../*:subfield[@code = 'p'])), ' : ')" label="has title of the work"/>
+                <subfield code="f" type="http://rdaregistry.info/Elements/w/P10219" label="has date of work"/>
+                <subfield code="n" type="http://rdaregistry.info/Elements/w/P10003" label="has other distinguishing characteristic of the work"/>                
+                <subfield code="k" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+                <subfield code="1w" type="http://rdaregistry.info/Elements/w/P10002" label="has identifier for work"/>
+            </datafield>
+            <datafield tag="380" condition="frbrizer:linked($anchor_field, .)">
+                <subfield code="a" type="http://rdaregistry.info/Elements/w/P10004" label="has form of work"/>
+            </datafield>
+        </attributes>
+        <key order="2">
+            <element>frbrizer:create-workid(*:datafield[@tag='700'], frbrizer:sort-relationships(*:relationship[@type = 'http://rdaregistry.info/Elements/w/P10061']/@href)[1])</element>
+        </key>
+        <relationships>
+
+        </relationships>
+    </entity>
+     
+      
+    <stylesheet xmlns:frbrizer="http://idi.ntnu.no/frbrizer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
+        
+        <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+            name="local:create-personid">
+            <xsl:param name="datafield"/>
+            <xsl:choose>
+                <xsl:when test="$datafield/*:subfield[@code = '1p']">
+                    <xsl:value-of select="($datafield/*:subfield[@code = '1p'])[1]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="replace(lower-case(string-join(($datafield/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'b'], $datafield/*:subfield[@code = 'c'], $datafield/*:subfield[@code = 'd']), '')), '[^A-Za-z0-9]', '')"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:function>
+        
+        <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+            name="local:create-workid">
+            <xsl:param name="datafield"/>
+            <xsl:param name="relationship"/>
+            <xsl:choose>
+                <xsl:when test="$datafield/*:subfield[@code = '1w']">
+                    <xsl:value-of select="($datafield/*:subfield[@code = '1w'])[1]"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag='130']">
+                    <xsl:variable name="value" select="replace(lower-case(string-join(($datafield[@tag='130']/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag='240']">
+                    <xsl:variable name="value" select="replace(lower-case(string-join(($datafield[@tag='240']/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag='245']">
+                    <xsl:variable name="value" select="replace(lower-case($datafield/*:subfield[@code = 'a']), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag=('600', '700', '800')]">
+                    <xsl:variable name="value" select="replace(lower-case(string-join(($datafield[@tag=('600', '700', '800')][1]/*:subfield[@code = 't'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$relationship||'/noidentifier'"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:function>
+        
+        <xsl:function name="frbrizer:linked" as="xs:boolean">
+            <!-- returns true if the two fields have the same marc 21 link ($8), or if there is no linking subfields in target or source -->
+            <xsl:param name="anchor" as="element()"/>
+            <xsl:param name="target" as="element()"/>
+            <xsl:value-of select="(some $x in $anchor/subfield[@code='8'] satisfies $x = $target/subfield[@code='8']) or (not(exists($anchor/subfield[@code='8'])) or not(exists($target/subfield[@code='8'])))"/>  
+            <!--<xsl:value-of select=" (some $x in $anchor/*:subfield[@code = '8'] satisfies $x = $target/*:subfield[@code = '8']) or (not(exists($target/*:subfield[@code = '8'])))"/>-->
+        </xsl:function>
+        
+        <xsl:function name="frbrizer:linked-strict" as="xs:boolean">
+            <!-- returns true if the two fields have the same marc 21 link ($8) -->
+            <xsl:param name="anchor" as="element()"/>
+            <xsl:param name="target" as="element()"/>
+            <xsl:value-of select="some $x in $anchor/*:subfield[@code = '8'] satisfies $x = $target/*:subfield[@code = '8']"/>
+        </xsl:function>
+        
+        <xsl:function name="frbrizer:trim" as="xs:string*">
+            <xsl:param name="value" as="element()*"/>
+            <xsl:for-each select="$value">
+                <xsl:value-of select="replace(., '[ \.,/:]+$', '')"/>
+            </xsl:for-each>
+        </xsl:function>
+        <xsl:function name="frbrizer:idprefix">
+            <xsl:param name="value"/>
+            <xsl:choose>
+                <xsl:when test="$value = '0'">
+                    <xsl:value-of select="'isrc'"/>
+                </xsl:when>
+                <xsl:when test="$value = '1'">
+                    <xsl:value-of select="'upc'"/>
+                </xsl:when>
+                <xsl:when test="$value = '2'">
+                    <xsl:value-of select="'ismn'"/>
+                </xsl:when>
+                <xsl:when test="$value = '3'">
+                    <xsl:value-of select="'ian'"/>
+                </xsl:when>
+                <xsl:when test="$value = '4'">
+                    <xsl:value-of select="'sici'"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="'unknown'"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:function>
+
+    </stylesheet>
+</templates>

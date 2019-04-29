@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:c="http://rdaregistry.info/Elements/c/"
+         xmlns:w="http://rdaregistry.info/Elements/w/"
+         xmlns:a="http://rdaregistry.info/Elements/a/"
+         xmlns:e="http://rdaregistry.info/Elements/e/"
+         xmlns:marc="http://marc21rdf.info/elements/marc/"
+         xmlns:m="http://rdaregistry.info/Elements/m/"
+         xml:base="http://example.org/rda/">
+   <c:C10001 rdf:about="http://viaf.org/viaf/analyttid">
+      <w:P10002>http://viaf.org/viaf/analyttid</w:P10002>
+      <w:P10088>Dette er tittel til en analytt</w:P10088>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/analyttid/eng/text"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/emneverk">
+      <w:P10002>http://viaf.org/viaf/emneverk</w:P10002>
+      <w:P10088>Dette er tittel til et relatert verk</w:P10088>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/emneperson"/>
+      <w:P10264 rdf:resource="http://viaf.org/viaf/helhet"/>
+   </c:C10001>
+   <c:C10001 rdf:about="http://viaf.org/viaf/helhet">
+      <w:P10002>http://viaf.org/viaf/helhet</w:P10002>
+      <w:P10088>Dette er tittel på helheten</w:P10088>
+      <w:P10061 rdf:resource="http://viaf.org/viaf/personhoved"/>
+      <w:P10078 rdf:resource="http://viaf.org/viaf/helhet/eng/text"/>
+      <w:P10257 rdf:resource="http://viaf.org/viaf/emneverk"/>
+      <w:P10261 rdf:resource="http://viaf.org/viaf/emneperson"/>
+   </c:C10001>
+   <c:C10004 rdf:about="http://viaf.org/viaf/emneperson">
+      <a:P50094>http://viaf.org/viaf/emneperson</a:P50094>
+      <a:P50111>Elton John</a:P50111>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/emneverk"/>
+      <a:P50249 rdf:resource="http://viaf.org/viaf/helhet"/>
+   </c:C10004>
+   <c:C10004 rdf:about="http://viaf.org/viaf/personhoved">
+      <a:P50094>http://viaf.org/viaf/personhoved</a:P50094>
+      <a:P50111>Cela, Camilo José</a:P50111>
+      <a:P50107>1916-2002</a:P50107>
+      <a:P50195 rdf:resource="http://viaf.org/viaf/helhet"/>
+   </c:C10004>
+   <c:C10006 rdf:about="http://viaf.org/viaf/analyttid/eng/text">
+      <e:P20006>eng</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20006>spa</e:P20006>
+      <e:P20312>Dette er tittel til en analytt</e:P20312>
+      <e:P20059 rdf:resource="urn:isbn:0704370492"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/analyttid"/>
+   </c:C10006>
+   <c:C10006 rdf:about="http://viaf.org/viaf/helhet/eng/text">
+      <e:P20006>eng</e:P20006>
+      <e:P20001>text</e:P20001>
+      <e:P20059 rdf:resource="urn:isbn:0704370492"/>
+      <e:P20231 rdf:resource="http://viaf.org/viaf/helhet"/>
+   </c:C10006>
+   <c:C10007 rdf:about="urn:isbn:0704370492">
+      <marc:M001>011985302</marc:M001>
+      <m:P30004>urn:isbn:0704370492</m:P30004>
+      <m:P30156>Dette er tittelen som står på boka</m:P30156>
+      <m:P30117>Camilo José Cela ; translated by Patricia Haugaard</m:P30117>
+      <m:P30088>London</m:P30088>
+      <m:P30083>Quartet</m:P30083>
+      <m:P30011>1993</m:P30011>
+      <m:P30182>312p.</m:P30182>
+      <m:P30001>unmediated</m:P30001>
+      <m:P30002>volume</m:P30002>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/helhet/eng/text"/>
+      <m:P30139 rdf:resource="http://viaf.org/viaf/analyttid/eng/text"/>
+   </c:C10007>
+</rdf:RDF>
