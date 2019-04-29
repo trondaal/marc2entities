@@ -864,6 +864,7 @@
     </meta>
     <projectTree name="marcfrbr.xpr">
         <folder path="../../Downloads/"/>
+        <folder path="../CoLIS-2019/"/>
         <folder path="."/>
     </projectTree>
 </project>
