@@ -191,6 +191,17 @@
             <xsl:sort select="@id"/>
         </xsl:perform-sort>
     </xsl:function>
+    <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/" name="local:trimsort-targets">
+        <xsl:param name="relationships"/>
+        <xsl:perform-sort select="for $r in distinct-values($relationships) return local:trim-target($r)">
+            <xsl:sort select="."/>
+        </xsl:perform-sort>
+    </xsl:function>
+    <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/" name="local:trim-target">
+        <!-- This function transforms a list of uris to a list of strings containing the last part of the uri-->
+        <xsl:param name="value" as="xs:string"/>
+        <xsl:value-of select="let $x := $value return if (matches($x, '\w+:(/?/?)[^\s]+')) then (tokenize(replace($x, '/$', ''), '/'))[last()] else $x"/>
+    </xsl:function>   
  <!--   <xsl:function name="frbrizer:marc21rdftype" as="xs:string">
         <xsl:param name="node" as="element()"/>
         <xsl:variable name="prefix" select="'marcrdf'"/>

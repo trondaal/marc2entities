@@ -101,7 +101,7 @@
             </relationship>
             <!-- Person to expression -->
             <relationship condition="*:subfield[@code = '4'] = ('trl')" type="http://rdaregistry.info/Elements/a/P50145" itype="http://rdaregistry.info/Elements/e/P20037">
-                <target entity="MARC21-700-Expression" condition="(frbrizer:linked-strict($this_field, $target_field))"/>
+                <target entity="MARC21-700-Expression" condition="(frbrizer:linked($this_field, $target_field))"/>
                 <target entity="MARC21-240-Expression" condition="(frbrizer:linked($this_field, $target_field))"/>
                 <target entity="MARC21-245-Expression" condition="(frbrizer:linked($this_field, $target_field))"/>
                 <target entity="MARC21-130-Expression" condition="(frbrizer:linked($this_field, $target_field))"/>
@@ -654,6 +654,10 @@
                 </xsl:when>
                 <xsl:when test="$datafield/*:subfield[@code = '0']">
                     <xsl:value-of select="$datafield/*:subfield[@code = '0']"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag=('130')]">
+                    <xsl:variable name="value" select="replace(lower-case(string-join(($datafield/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
                 </xsl:when>
                 <xsl:when test="$datafield[@tag='240']">
                     <xsl:variable name="value" select="replace(lower-case(string-join(($datafield/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>

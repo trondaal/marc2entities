@@ -66,6 +66,8 @@
    <c:C10004 rdf:about="http://viaf.org/viaf/51520608">
       <a:P50094>http://viaf.org/viaf/51520608</a:P50094>
       <a:P50111>Kuhn, Wibke</a:P50111>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/1965149068358065730000/tyska/text"/>
+      <a:P50145 rdf:resource="http://viaf.org/viaf/175978173/tyska/text"/>
       <a:P50145 rdf:resource="http://viaf.org/viaf/4188148523903220970001/ger/text"/>
    </c:C10004>
    <c:C10004 rdf:about="http://viaf.org/viaf/54441441">
@@ -104,6 +106,7 @@
       <e:P20001>text</e:P20001>
       <e:P20006>Tyska</e:P20006>
       <e:P20312>Luftslottet som sprängdes.</e:P20312>
+      <e:P20037 rdf:resource="http://viaf.org/viaf/51520608"/>
       <e:P20059 rdf:resource="urn:isbn:9783453267008"/>
       <e:P20231 rdf:resource="http://viaf.org/viaf/175978173"/>
    </c:C10006>
@@ -128,6 +131,7 @@
       <e:P20001>text</e:P20001>
       <e:P20006>Tyska</e:P20006>
       <e:P20312>Flickan som lekte med elden.</e:P20312>
+      <e:P20037 rdf:resource="http://viaf.org/viaf/51520608"/>
       <e:P20059 rdf:resource="urn:isbn:9783453267008"/>
       <e:P20231 rdf:resource="http://viaf.org/viaf/1965149068358065730000"/>
    </c:C10006>

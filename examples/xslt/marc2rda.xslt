@@ -3882,7 +3882,7 @@
                   <xsl:variable name="target_field_position"
                                 as="xs:string"
                                 select="string(position())"/>
-                  <xsl:if test="((frbrizer:linked-strict($this_field, $target_field)))">
+                  <xsl:if test="((frbrizer:linked($this_field, $target_field)))">
                      <frbrizer:relationship>
                         <xsl:attribute name="type" select="'http://rdaregistry.info/Elements/a/P50145'"/>
                         <xsl:attribute name="itype" select="'http://rdaregistry.info/Elements/e/P20037'"/>
@@ -6008,6 +6008,23 @@
    <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                 name="local:trimsort-targets">
+        <xsl:param name="relationships"/>
+        <xsl:perform-sort select="for $r in distinct-values($relationships) return local:trim-target($r)">
+            <xsl:sort select="."/>
+        </xsl:perform-sort>
+    </xsl:function>
+   <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
+                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                 name="local:trim-target">
+        <!-- This function transforms a list of uris to a list of strings containing the last part of the uri-->
+        <xsl:param name="value" as="xs:string"/>
+        <xsl:value-of select="let $x := $value return if (matches($x, '\w+:(/?/?)[^\s]+')) then (tokenize(replace($x, '/$', ''), '/'))[last()] else $x"/>
+    </xsl:function>
+   <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/"
+                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  name="local:create-personid">
             <xsl:param name="datafield"/>
@@ -6036,6 +6053,11 @@
                 </xsl:when>
                 <xsl:when test="$datafield/*:subfield[@code = '0']">
                     <xsl:value-of select="$datafield/*:subfield[@code = '0']"/>
+                </xsl:when>
+                <xsl:when test="$datafield[@tag=('130')]">
+                    <xsl:variable name="value"
+                          select="replace(lower-case(string-join(($datafield/*:subfield[@code = 'a'], $datafield/*:subfield[@code = 'k'], $datafield/*:subfield[@code = 'n'], $datafield/*:subfield[@code = 'o'], $datafield/*:subfield[@code = 'p']), '')), '[^A-Za-z0-9]', '')"/>
+                    <xsl:value-of select="$relationship||'/'||$value"/>
                 </xsl:when>
                 <xsl:when test="$datafield[@tag='240']">
                     <xsl:variable name="value"
