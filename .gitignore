@@ -26,3 +26,4 @@ jar/saxonhe/notices/UNICODE.txt
 jar/saxonhe/saxon9-test.jar
 jar/saxonhe/saxon9-xqj.jar
 marc2frbr.xpr
+*.xpr
