@@ -10,11 +10,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/neo4j/getLrmExpressionTextSurrogate.xquery</String>
+                                    <String>oxygen:/eXist-db%20dijon.idi.ntnu.no$eXist-db%20dijon.idi.ntnu.no/db/colis/xqueries/getTags.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -25,11 +25,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/neo4j/getLrmRelationships.xquery</String>
+                                    <String>oxygen:/eXist-db%20dijon.idi.ntnu.no$eXist-db%20dijon.idi.ntnu.no/db/colis/xqueries/getAuthors.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -40,11 +40,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/neo4j/getLrmWorkTextSurrogate.xquery</String>
+                                    <String>oxygen:/eXist-db%20dijon.idi.ntnu.no$eXist-db%20dijon.idi.ntnu.no/db/colis/xqueries/getTitles.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -55,11 +55,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/transform2lrm.xquery</String>
+                                    <String>oxygen:/eXist-db%20dijon.idi.ntnu.no$eXist-db%20dijon.idi.ntnu.no/db/colis/xqueries/createUniqueCollection.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -70,11 +70,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/testing.xquery</String>
+                                    <String>oxygen:/eXist-db%20ark1.hioa.no$dijon/db/bibsurfbeta/xql/utils/b.transform.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1 - to file</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -85,11 +85,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/neo4j/getLrmWorks.xquery</String>
+                                    <String>oxygen:/eXist-db%20ark1.hioa.no$dijon/db/bibsurfbeta/xql/utils/a.remove.rdf.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -100,506 +100,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/createOriginalCollections.xquery</String>
+                                    <String>oxygen:/eXist-db%20ark1.hioa.no$dijon/db/bibsurfbeta/xql/utils/a.remove.index.xquery</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/statistikk.lrm.W2W.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/statistikk.lrm.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/search.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/addContentType.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/deletefields.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getWorkTextIndexCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getRelationshipsCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getRelationsCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getManifestationsCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getExpressionsCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getWorksCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/getPersonCvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/export-person-cvs.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/bib2201/gruppe00/report.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/test.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/language-based.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/createJSON.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/bib2201/gruppe22/transform.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/bib2201/rights.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/addLanguages.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/elaborateWorkAuthorities.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/addCounts.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/transform2bibframe-strict.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/transform2bibframe.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/xqueries/getTitles.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/delete900.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/bib2201/gruppe02/transform.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/bib2201/gruppe18/transform.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/statistikk.bibframe.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/addIdentifiersToWorks.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>exist ark1</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/statistikk.bincounts.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen:/eXist-db%20ark1.hioa.no$eXist-db%20ark1.hioa.no/db/colis/queries/bincounts.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>ark1 exist statistikk</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>../../OneDrive%20-%20NTNU/TPDL%202019/pc.xquery</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>saxon pe</String>
+                                        <String>dijon</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -716,90 +221,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>ark1 exist statistikk</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <null/>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XQUERY</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>eXist-db ark1.hioa.no</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>exist ark1</String>
+                                    <String>dijon</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -853,89 +275,6 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>eXist-db ark1.hioa.no</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>exist ark1 - to file</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <null/>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XQUERY</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInSVGPane">
@@ -954,90 +293,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>eXist-db ark1.hioa.no</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>saxon pe</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <null/>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XQUERY</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <null/>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE XQuery</String>
+                                    <String>eXist-db dijon.idi.ntnu.no</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
