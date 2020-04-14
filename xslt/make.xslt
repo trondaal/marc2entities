@@ -6,7 +6,8 @@
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:variable name="basic-uri" select="'basic.xslt'"/>
-    <xsl:param name="userdefined-uri" required="no" select="'userdefined.xslt'"/>
+    <xsl:param name="userdefined-uri" required="no"/>
+    <xsl:param name="entitytypes" required="no"/>
     <xsl:template match="/*:templates">
         <xsl:element name="xsl:stylesheet">
             <xsl:attribute name="version" select="'3.0'"/>
@@ -114,6 +115,22 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
             </xsl:element>
+            <xsl:choose>
+                <xsl:when test="$userdefined-uri">
+                    <xsl:element name="xsl:param">
+                        <xsl:attribute name="name" select="'userdefined'"/>
+                        <xsl:attribute name="as" select="'xs:boolean'"/>
+                        <xsl:attribute name="select" select="'true()'"/>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:element name="xsl:param">
+                        <xsl:attribute name="name" select="'userdefined'"/>
+                        <xsl:attribute name="as" select="'xs:boolean'"/>
+                        <xsl:attribute name="select" select="'false()'"/>
+                    </xsl:element>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:element name="xsl:output">
                 <xsl:attribute name="method" select="'xml'"/>
                 <xsl:attribute name="version" select="'1.0'"/>
@@ -125,24 +142,20 @@
             <xsl:call-template name="entity"/>
             <xsl:call-template name="create-key-mapping-templates"/>
             <xsl:call-template name="create-key-replacement-template"/>
-            <!--<xsl:call-template name="create-labels-template"/>-->
+            <!-- Retrieving templates and functions from basic.xslt -->
             <xsl:copy-of select="doc($basic-uri)/*/xsl:template"/>
             <xsl:copy-of select="doc($basic-uri)/*/xsl:function"/>
-            <!--<xsl:copy-of select="doc($merge-uri)/*/xsl:template"/>-->
-            <!--<xsl:copy-of select="doc($rdfify-uri)/*/xsl:template"/>-->
-            <!-- old code - leftover that can be deleted -->
-            <!--<xsl:apply-templates mode="createmergetemplate" select="doc($merge-uri)"/>
-            <xsl:apply-templates mode="createnomergetemplate" select="doc($merge-uri)"/>-->
-            <!--<xsl:if test="$userdefined-uri ne ''">
+            <!-- Retrieving templates and functions from userdefined -->
+            <xsl:if test="$userdefined-uri">
                 <xsl:copy-of select="doc($userdefined-uri)/*/xsl:template"/>
                 <xsl:copy-of select="doc($userdefined-uri)/*/xsl:function"/>
-            </xsl:if>-->
+            </xsl:if>
             <!-- Retrieving userdefined functions from the rules file -->
             <xsl:copy-of select="stylesheet/*"/>
         </xsl:element>
     </xsl:template>
     <xsl:template name="entity">
-        <xsl:for-each select="entity">
+        <xsl:for-each select="entity[if ($entitytypes) then contains($entitytypes, @type) else true()]">
             <xsl:sort select="@templatename"/>
             <xsl:element name="xsl:template">
                 <xsl:attribute name="name" select="@templatename"/>
@@ -827,7 +840,7 @@
             <xsl:namespace name="xs" select="'http://www.w3.org/2001/XMLSchema'"/>
             <xsl:attribute name="match" select="'/*:collection'"/>
             <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'collection-unmerged'"/>
+                <xsl:attribute name="name" select="'entity-collection'"/>
                 <xsl:element name="xsl:copy">
                     <!--<xsl:for-each select="in-scope-prefixes($templates)">
                         <xsl:variable name="prefix" select="."/>
@@ -845,24 +858,41 @@
                     <xsl:element name="xsl:for-each">
                         <xsl:attribute name="select" select="'*:record'"/>
                         <xsl:element name="xsl:call-template">
-                            <xsl:attribute name="name" select="'record-set'"/>
+                            <xsl:attribute name="name" select="'create-record-set'"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
             <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'collection-merged'"/>
+                <xsl:attribute name="name" select="'entity-collection-merged'"/>
                 <xsl:element name="xsl:choose">
                     <xsl:element name="xsl:when">
                         <xsl:attribute name="test" select="'$merge'"/>
                         <xsl:element name="xsl:apply-templates">
-                            <xsl:attribute name="select" select="'$collection-unmerged'"/>
+                            <xsl:attribute name="select" select="'$entity-collection'"/>
                             <xsl:attribute name="mode" select="'merge'"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="xsl:otherwise">
                         <xsl:element name="xsl:copy-of">
-                            <xsl:attribute name="select" select="'$collection-unmerged'"/>
+                            <xsl:attribute name="select" select="'$entity-collection'"/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="xsl:variable">
+                <xsl:attribute name="name" select="'entity-collection-userdefined'"/>
+                <xsl:element name="xsl:choose">
+                    <xsl:element name="xsl:when">
+                        <xsl:attribute name="test" select="'$userdefined'"/>
+                        <xsl:element name="xsl:apply-templates">
+                            <xsl:attribute name="select" select="'$entity-collection-merged'"/>
+                            <xsl:attribute name="mode" select="'userdefined'"/>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="xsl:otherwise">
+                        <xsl:element name="xsl:copy-of">
+                            <xsl:attribute name="select" select="'$entity-collection-merged'"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -871,13 +901,13 @@
                 <xsl:element name="xsl:when">
                     <xsl:attribute name="test" select="'$rdf'"/>
                     <xsl:element name="xsl:apply-templates">
-                        <xsl:attribute name="select" select="'$collection-merged'"/>
+                        <xsl:attribute name="select" select="'$entity-collection-userdefined'"/>
                         <xsl:attribute name="mode" select="'rdfify'"/>
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="xsl:otherwise">
                     <xsl:element name="xsl:copy-of">
-                        <xsl:attribute name="select" select="'$collection-merged'"/>
+                        <xsl:attribute name="select" select="'$entity-collection-userdefined'"/>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
@@ -886,11 +916,11 @@
     <xsl:template name="templates-template">
         <xsl:element name="xsl:template">
             <xsl:attribute name="match" select="'*:record'"/>
-            <xsl:attribute name="name" select="'record-set'"/>
+            <xsl:attribute name="name" select="'create-record-set'"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'step1'"/>
                 <xsl:element name="frbrizer:record-set">
-                    <xsl:for-each select="*:entity">
+                    <xsl:for-each select="*:entity[if ($entitytypes) then contains($entitytypes, @type) else true()]">
                         <xsl:element name="xsl:call-template">
                             <xsl:attribute name="name" select="@templatename"/>
                         </xsl:element>
@@ -911,35 +941,15 @@
                     <xsl:attribute name="mode" select="'create-keys'"/>
                 </xsl:element>
             </xsl:element>
-            <!-- disabling step5 variable to remove UUID-generation 
-            <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'step5'"/>
-                <xsl:element name="xsl:choose">
-                    <xsl:element name="xsl:when">
-                        <xsl:attribute name="test" select="'$UUID_identifiers'"/>
-                        <xsl:element name="xsl:apply-templates">
-                            <xsl:attribute name="select" select="'$step4'"/>
-                            <xsl:attribute name="mode" select="'create-UUID'"/>
-                        </xsl:element>
-                    </xsl:element>
-                    <xsl:element name="xsl:otherwise">
-                        <xsl:element name="xsl:copy-of">
-                            <xsl:attribute name="select" select="'$step4'"/>
-                        </xsl:element>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element> -->
-            <xsl:element name="xsl:variable">
-                <xsl:attribute name="name" select="'step6'"/>
+            <!--<xsl:element name="xsl:variable">
+                <xsl:attribute name="name" select="'step4'"/>
                 <xsl:element name="xsl:apply-templates">
-                    <!-- UUID-DISABLING Using $step4 directly instead of $step5 -->
-                    <!--<xsl:attribute name="select" select="'$step5'"/> -->
                     <xsl:attribute name="select" select="'$step3'"/>
                     <xsl:attribute name="mode" select="'remove-record-set'"/>
                 </xsl:element>
-            </xsl:element>
+            </xsl:element>-->
             <xsl:element name="xsl:copy-of">
-                <xsl:attribute name="select" select="'$step6'"/>
+                <xsl:attribute name="select" select="'$step3//*:record'"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>

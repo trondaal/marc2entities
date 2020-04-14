@@ -140,6 +140,7 @@
                 </xs:annotation>
             </xs:attribute>
             <xs:attribute name="condition" type="xs:string"/>
+            <xs:attribute name="type" type="xs:string"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="keyfilter" type="xs:string"

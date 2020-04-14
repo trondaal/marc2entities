@@ -1,5 +1,6 @@
 <!-- Templates from this file are copied into the conversion file by make.xsl --><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:frbrizer="http://idi.ntnu.no/frbrizer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
     <xsl:param name="debug" as="xs:boolean" select="false()"/>
+    <xsl:param name="lexical" as="xs:boolean" select="false()"/>
     <xsl:param name="include_MARC001_in_entityrecord" as="xs:boolean" select="false()"/>
     <xsl:param name="include_MARC001_in_controlfield" as="xs:boolean" select="false()"/>
     <xsl:param name="include_MARC001_in_subfield" as="xs:boolean" select="false()"/>
@@ -164,9 +165,9 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>-->
-    <xsl:template match="*:record-set" mode="remove-record-set">
+    <!--<xsl:template match="*:record-set" mode="remove-record-set">
         <xsl:copy-of select="//*:record"/>
-    </xsl:template>
+    </xsl:template>-->
     <!--<xsl:template match="@*|node()" mode="UUID" name="UUID">
         <xsl:copy>
             <xsl:copy-of select="@* except @id|@href"/>
@@ -435,30 +436,31 @@
             </xsl:for-each-group>
         </xsl:copy>
     </xsl:template>
-    <xsl:template match="/*:collection" mode="rdfify" name="rdfify">
+    <xsl:template match="/*:collection" mode="rdfify" name="rdfify" >
         <rdf:RDF xml:base="http://example.org/">
-            <xsl:for-each-group select="( //@type[starts-with(., 'http')])" group-by="replace(., tokenize(., '/')[last()], '')">
-                <xsl:namespace name="{tokenize(., '/')[last() - 1]}" select="current-grouping-key()"/>
+            <!-- Creating namespace for RDF/RDA assuming that the last part of the URI defines the local name, the second last part is used for the prefix -->
+            <xsl:for-each-group select="( //@type[starts-with(., 'http')])" group-by="replace(., tokenize(., '[/#]')[last()], '')">
+                <xsl:namespace name="{tokenize(., '[/#]')[last() - 1]}" select="current-grouping-key()"/>
             </xsl:for-each-group>
             <xsl:for-each-group select="//*:record[starts-with(@type, 'http')]" group-by="@id, @type" composite="yes">
-                <xsl:sort select="@type"/>
-                <xsl:sort select="@id"/>
-                <xsl:variable name="p" select="tokenize(@type, '/')[last() - 1]"/>
-                <xsl:variable name="n" select="tokenize(@type, '/')[last()]"/>
-                <xsl:element name="{concat($p, ':', $n)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
+                <!--<xsl:sort select="@type"/>
+                <xsl:sort select="@id"/>-->
+                <xsl:variable name="p" select="tokenize(@type, '[/#]')[last() - 1]"/>
+                <xsl:variable name="n" select="tokenize(@type, '[/#]')[last()]"/>
+                <xsl:element name="{concat($p, ':', $n)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
                     <xsl:attribute name="rdf:about" select="if (starts-with(@id, 'http')) then @id else 'http://example.org/'||@id" />
                     <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, replace(lower-case(text()), '[^A-Za-z0-9]', '')" composite="yes">
-                        <xsl:variable name="pre" select="tokenize(@type, '/')[last() - 1]"/>
-                        <xsl:variable name="nm" select="tokenize(@type, '/')[last()]"/>
-                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
+                        <xsl:variable name="pre" select="tokenize(@type, '[/#]')[last() - 1]"/>
+                        <xsl:variable name="nm" select="tokenize(@type, '[/#]')[last()]"/>
+                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
                             <xsl:copy-of select="current-group()[1]/text()"/>
                         </xsl:element>
                     </xsl:for-each-group>
                     <xsl:for-each-group select="current-group()/*:relationship[starts-with(@type, 'http')]" group-by="@type, @href" composite="yes">
                         <xsl:sort select="@type"/>
-                        <xsl:variable name="pre" select="tokenize(@type, '/')[last() - 1]"/>
-                        <xsl:variable name="nm" select="tokenize(@type, '/')[last()]"/>
-                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '/')[last()], '')}" >
+                        <xsl:variable name="pre" select="tokenize(@type, '[/#]')[last() - 1]"/>
+                        <xsl:variable name="nm" select="tokenize(@type, '[/#]')[last()]"/>
+                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
                             <xsl:attribute name="rdf:resource" select="if(starts-with(current-group()[1]/@href, 'http')) then current-group()[1]/@href else 'http://example.org/'||current-group()[1]/@href" />
                         </xsl:element>                        
                     </xsl:for-each-group>
