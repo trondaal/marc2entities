@@ -4,7 +4,7 @@
     <xsl:param name="include_MARC001_in_entityrecord" as="xs:boolean" select="false()"/>
     <xsl:param name="include_MARC001_in_controlfield" as="xs:boolean" select="false()"/>
     <xsl:param name="include_MARC001_in_subfield" as="xs:boolean" select="false()"/>
-    <xsl:param name="include_labels" as="xs:boolean" select="false()"/>
+    <!--<xsl:param name="include_labels" as="xs:boolean" select="false()"/>-->
     <xsl:param name="include_anchorvalues" as="xs:boolean" select="false()"/>
     <xsl:param name="include_templateinfo" as="xs:boolean" select="false()"/>
     <xsl:param name="include_sourceinfo" as="xs:boolean" select="false()"/>
@@ -15,7 +15,7 @@
     <xsl:param name="merge" as="xs:boolean" select="true()"/>
     <xsl:param name="include_id_as_element" as="xs:boolean" select="false()"/>
     <xsl:param name="include_missing_reverse_relationships" as="xs:boolean" select="true()"/>
-    <xsl:param name="include_target_entity_type" as="xs:boolean" select="false()"/>
+    <!--<xsl:param name="include_target_entity_type" as="xs:boolean" select="false()"/>-->
     <xsl:param name="include_entity_labels" as="xs:boolean" select="true()"/>
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <!--Template for copying subfield content. This template is used by the entity-templates-->
@@ -32,11 +32,11 @@
         <xsl:if test="$subtype ne ''">
             <xsl:attribute name="subtype" select="$subtype"/>
         </xsl:if>
-        <xsl:if test="$include_labels and ($label ne '')">
+        <!--<xsl:if test="$include_labels and ($label ne '')">
             <xsl:if test="$label ne ''">
                 <xsl:attribute name="label" select="$label"/>
             </xsl:if>
-        </xsl:if>
+        </xsl:if>-->
         <xsl:value-of select="normalize-space($select)"/>
         <xsl:if test="$include_MARC001_in_controlfield">
             <xsl:if test="string($marcid) ne ''">
@@ -244,21 +244,21 @@
                                         <xsl:if test="exists(@subtype)">
                                             <xsl:attribute name="isubtype" select="@subtype"/>
                                         </xsl:if>
-                                        <xsl:if test="$include_target_entity_type">
+                                        <!--<xsl:if test="$include_target_entity_type">
                                             <xsl:attribute name="target_type" select="$target-entity-type"/>
-                                        </xsl:if>
+                                        </xsl:if>-->
                                         <xsl:if test="$include_counters">
                                             <xsl:attribute name="c" select="'1'"/>
                                         </xsl:if>
                                         <xsl:attribute name="href" select="$target-entity-id"/>
-                                        <xsl:if test="$include_labels">
+                                        <!--<xsl:if test="$include_labels">
                                             <xsl:if test="@ilabel ne ''">
                                                 <xsl:attribute name="label" select="@ilabel"/>
                                             </xsl:if>
                                             <xsl:if test="@label ne ''">
                                                 <xsl:attribute name="ilabel" select="@label"/>
                                             </xsl:if>
-                                        </xsl:if>
+                                        </xsl:if>-->
                                         <xsl:copy-of select="node()"/>
                                     </xsl:copy>
                                 </xsl:if>

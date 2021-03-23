@@ -7,7 +7,9 @@
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:variable name="basic-uri" select="'basic.xslt'"/>
     <xsl:param name="userdefined-uri" required="no"/>
-    <xsl:param name="entitytypes" required="no"/>
+    <xsl:param name="excludetemplates" required="no">
+        <!-- if used, it will exclude creation of entities from these templates as well as relationships to them -->
+    </xsl:param>
     <xsl:template match="/*:templates">
         <xsl:element name="xsl:stylesheet">
             <xsl:attribute name="version" select="'3.0'"/>
@@ -40,16 +42,16 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
             </xsl:element>
-            <xsl:element name="xsl:param">
+            <!--<xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'include_labels'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>
-            <xsl:element name="xsl:param">
+            </xsl:element>-->
+            <!--<xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'include_entitylabels'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>
+            </xsl:element>-->
             <xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'include_anchorvalues'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
@@ -110,11 +112,11 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'true()'"/>
             </xsl:element>
-            <xsl:element name="xsl:param">
+            <!--<xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'include_target_entity_type'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>
+            </xsl:element>-->
             <xsl:choose>
                 <xsl:when test="$userdefined-uri">
                     <xsl:element name="xsl:param">
@@ -155,7 +157,7 @@
         </xsl:element>
     </xsl:template>
     <xsl:template name="entity">
-        <xsl:for-each select="entity[if ($entitytypes) then contains($entitytypes, @type) else true()]">
+        <xsl:for-each select="entity[if ($excludetemplates) then not(contains($excludetemplates, @templatename)) else true()]">
             <xsl:sort select="@templatename"/>
             <xsl:element name="xsl:template">
                 <xsl:attribute name="name" select="@templatename"/>
@@ -280,7 +282,7 @@
                     <xsl:attribute name="select" select="frbrizer:xpathify(@subtype)"/>
                 </xsl:element>
             </xsl:if>
-            <xsl:if test="exists(@label) and @label ne ''">
+            <!--<xsl:if test="exists(@label) and @label ne ''">
                 <xsl:element name="xsl:if">
                     <xsl:attribute name="test" select="'$include_labels'"/>
                     <xsl:element name="xsl:attribute">
@@ -288,7 +290,7 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify(@label)"/>
                     </xsl:element>
                 </xsl:element>
-            </xsl:if>
+            </xsl:if>-->
             <xsl:element name="xsl:attribute">
                 <xsl:attribute name="name" select="'templatename'"/>
                 <xsl:attribute name="select" select="'$this_template_name'"/>
@@ -428,7 +430,7 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify($subtype)"/>
                     </xsl:element>
                 </xsl:if>
-                <xsl:if test="string($label) ne ''">
+                <!--<xsl:if test="string($label) ne ''">
                     <xsl:element name="xsl:if">
                         <xsl:attribute name="test" select="'$include_labels'"/>
                         <xsl:element name="xsl:attribute">
@@ -436,7 +438,7 @@
                             <xsl:attribute name="select" select="frbrizer:xpathify($label)"/>
                         </xsl:element>
                     </xsl:element>
-                </xsl:if>
+                </xsl:if>-->
                 <xsl:element name="xsl:if">
                     <xsl:attribute name="test" select="'$include_counters'"/>
                     <xsl:element name="xsl:attribute">
@@ -606,7 +608,7 @@
         </xsl:element>
     </xsl:template>
     <xsl:template name="relationships">
-        <xsl:for-each select="*:relationships/*:relationship/*:target[@entity = //*:templates/*:entity/@templatename]">
+        <xsl:for-each select="*:relationships/*:relationship/*:target[@entity = //*:templates/*:entity/@templatename][if ($excludetemplates) then not(contains($excludetemplates, @entity)) else true()]">
             <!-- the predicate (condition) is used to avoid linking to non-existing templates -->
             <xsl:choose>
                 <xsl:when test="exists(parent::*:relationship/@condition)">
@@ -736,7 +738,7 @@
                     <xsl:attribute name="select" select="frbrizer:xpathify(../@isubtype)"/>
                 </xsl:element>
             </xsl:if>
-            <xsl:if test="exists(../@label)">
+            <!--<xsl:if test="exists(../@label)">
                 <xsl:element name="xsl:if">
                     <xsl:attribute name="test" select="'$include_labels'"/>
                     <xsl:element name="xsl:attribute">
@@ -744,8 +746,8 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify(../@label)"/>
                     </xsl:element>
                 </xsl:element>
-            </xsl:if>
-            <xsl:if test="exists(../@ilabel)">
+            </xsl:if>-->
+            <!--<xsl:if test="exists(../@ilabel)">
                 <xsl:element name="xsl:if">
                     <xsl:attribute name="test" select="'$include_labels'"/>
                     <xsl:element name="xsl:attribute">
@@ -753,7 +755,7 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify(../@ilabel)"/>
                     </xsl:element>
                 </xsl:element>
-            </xsl:if>
+            </xsl:if>-->
             <!--<xsl:element name="xsl:if">
 				<xsl:attribute name="test" select="'$include_labels'"/>
 				<xsl:if test="exists(../@label)">
@@ -769,13 +771,13 @@
 					</xsl:element>
 				</xsl:if>
 			</xsl:element>-->
-            <xsl:element name="xsl:if">
+            <!--<xsl:element name="xsl:if">
                 <xsl:attribute name="test" select="'$include_target_entity_type'"/>
                 <xsl:element name="xsl:attribute">
                     <xsl:attribute name="name" select="'target_type'"/>
                     <xsl:attribute name="select" select="concat('''', $target_typeid, '''')"/>
                 </xsl:element>
-            </xsl:element>
+            </xsl:element>-->
             <xsl:element name="xsl:if">
                 <xsl:attribute name="test" select="'$include_counters'"/>
                 <xsl:element name="xsl:attribute">
@@ -920,7 +922,7 @@
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'step1'"/>
                 <xsl:element name="frbrizer:record-set">
-                    <xsl:for-each select="*:entity[if ($entitytypes) then contains($entitytypes, @type) else true()]">
+                    <xsl:for-each select="*:entity[if ($excludetemplates) then not(contains($excludetemplates, @templatename)) else true()]">
                         <xsl:element name="xsl:call-template">
                             <xsl:attribute name="name" select="@templatename"/>
                         </xsl:element>
@@ -956,7 +958,7 @@
     <xsl:template name="create-key-mapping-templates">
         <xsl:variable name="keyfilter" select="keyfilter"/>
         <xsl:variable name="rules" select="."/>
-        <xsl:variable name="ordernumbers" select="                 for $i in xs:integer(min(entity/key/@order)) to xs:integer(max(entity/key/@order))                 return                     $i"/>
+        <xsl:variable name="ordernumbers" select="for $i in xs:integer(min(entity/key/@order)) to xs:integer(max(entity/key/@order)) return $i"/>
         <xsl:for-each select="$ordernumbers">
             <xsl:variable name="order" select="."/>
             <xsl:element name="xsl:template">
@@ -1009,7 +1011,7 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="create-key-replacement-template">
-        <xsl:variable name="ordernumbers" select="                 for $i in xs:integer(min(*:entity/*:key/@order)) to xs:integer(max(*:entity/*:key/@order))                 return                     $i"/>
+        <xsl:variable name="ordernumbers" select="for $i in xs:integer(min(*:entity/*:key/@order)) to xs:integer(max(*:entity/*:key/@order)) return $i"/>
         <xsl:element name="xsl:template">
             <xsl:attribute name="match" select="'*:record-set'"/>
             <xsl:attribute name="mode" select="'create-keys'"/>
