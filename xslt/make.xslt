@@ -844,16 +844,16 @@
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'entity-collection'"/>
                 <xsl:element name="xsl:copy">
-                    <!--<xsl:for-each select="in-scope-prefixes($templates)">
+                    <xsl:for-each select="in-scope-prefixes($templates)">
                         <xsl:variable name="prefix" select="."/>
                         <xsl:variable name="uri" select="namespace-uri-for-prefix(., $templates)"/>
-                        <xsl:if test="$prefix ne '' and not(starts-with($uri, 'http://www.w3.org'))">
+                        <xsl:if test="$prefix ne '' and not(starts-with($prefix, 'xs'))">
                             <xsl:element name="xsl:namespace">
                                 <xsl:attribute name="name" select="$prefix"/>
                                 <xsl:attribute name="select" select="concat('''', $uri, '''')"/>
                             </xsl:element>
                         </xsl:if>
-                    </xsl:for-each>-->
+                    </xsl:for-each>
                     <xsl:element name="xsl:call-template">
                         <xsl:attribute name="name" select="'copy-attributes'"/>
                     </xsl:element>
