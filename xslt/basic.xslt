@@ -436,31 +436,38 @@
             </xsl:for-each-group>
         </xsl:copy>
     </xsl:template>
-    <xsl:template match="/*:collection" mode="rdfify" name="rdfify" >
+    <xsl:template match="/*:collection" mode="rdfify" name="rdfify" xmlns:map="http://www.w3.org/2005/xpath-functions/map">
+        <xsl:variable name="collection" select="."/>
         <rdf:RDF xml:base="http://example.org/">
-            <!-- Creating namespace for RDF/RDA assuming that the last part of the URI defines the local name, the second last part is used for the prefix -->
-            <xsl:for-each-group select="( //@type[starts-with(., 'http')])" group-by="replace(., tokenize(., '[/#]')[last()], '')">
-                <xsl:namespace name="{tokenize(., '[/#]')[last() - 1]}" select="current-grouping-key()"/>
-            </xsl:for-each-group>
+            <xsl:for-each select="in-scope-prefixes($collection)">
+                <xsl:variable name="prefix" select="."/>
+                <xsl:variable name="uri" select="namespace-uri-for-prefix(., $collection)"/>
+                <xsl:if test="$prefix ne '' and not(starts-with($prefix, 'xs'))">
+                    <xsl:namespace name="{$prefix}" select="$uri"/>
+                </xsl:if>
+            </xsl:for-each>
+            <xsl:variable name="prefixmap" select="map:merge(for $i in in-scope-prefixes($collection) return map{namespace-uri-for-prefix($i, $collection) : $i})"/>
+            
             <xsl:for-each-group select="//*:record[starts-with(@type, 'http')]" group-by="@id, @type" composite="yes">
                 <!--<xsl:sort select="@type"/>
                 <xsl:sort select="@id"/>-->
-                <xsl:variable name="p" select="tokenize(@type, '[/#]')[last() - 1]"/>
-                <xsl:variable name="n" select="tokenize(@type, '[/#]')[last()]"/>
-                <xsl:element name="{concat($p, ':', $n)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
+                <!--<xsl:variable name="namespace" select="tokenize(@type, '[/#]')[last() - 1]"/>-->
+                <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
+                <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
+                <xsl:element name="{$prefixmap($entity_namespace) || ':' || $entity_type}" namespace="{$entity_namespace}">
                     <xsl:attribute name="rdf:about" select="if (starts-with(@id, 'http')) then @id else 'http://example.org/'||@id" />
                     <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, replace(lower-case(text()), '[^A-Za-z0-9]', '')" composite="yes">
-                        <xsl:variable name="pre" select="tokenize(@type, '[/#]')[last() - 1]"/>
-                        <xsl:variable name="nm" select="tokenize(@type, '[/#]')[last()]"/>
-                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
+                        <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
+                        <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
+                        <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
                             <xsl:copy-of select="current-group()[1]/text()"/>
                         </xsl:element>
                     </xsl:for-each-group>
                     <xsl:for-each-group select="current-group()/*:relationship[starts-with(@type, 'http')]" group-by="@type, @href" composite="yes">
                         <xsl:sort select="@type"/>
-                        <xsl:variable name="pre" select="tokenize(@type, '[/#]')[last() - 1]"/>
-                        <xsl:variable name="nm" select="tokenize(@type, '[/#]')[last()]"/>
-                        <xsl:element name="{concat($pre, ':', $nm)}" namespace="{replace(@type, tokenize(@type, '[/#]')[last()], '')}" >
+                        <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
+                        <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
+                        <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
                             <xsl:attribute name="rdf:resource" select="if(starts-with(current-group()[1]/@href, 'http')) then current-group()[1]/@href else 'http://example.org/'||current-group()[1]/@href" />
                         </xsl:element>                        
                     </xsl:for-each-group>
