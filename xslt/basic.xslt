@@ -438,7 +438,7 @@
     </xsl:template>
     <xsl:template match="/*:collection" mode="rdfify" name="rdfify" xmlns:map="http://www.w3.org/2005/xpath-functions/map">
         <xsl:variable name="collection" select="."/>
-        <rdf:RDF xml:base="http://example.org/">
+        <rdf:RDF>
             <xsl:for-each select="in-scope-prefixes($collection)">
                 <xsl:variable name="prefix" select="."/>
                 <xsl:variable name="uri" select="namespace-uri-for-prefix(., $collection)"/>
@@ -473,6 +473,12 @@
                     </xsl:for-each-group>
                 </xsl:element>
             </xsl:for-each-group>
+            <xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
+                <xsl:copy-of select="."></xsl:copy-of>
+            </xsl:for-each>
+            <xsl:for-each select="doc('rda.labels.rdf')/rdf:RDF/rdf:Description">
+                <xsl:copy-of select="."></xsl:copy-of>
+            </xsl:for-each>
         </rdf:RDF>
     </xsl:template>
 </xsl:stylesheet>
