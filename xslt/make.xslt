@@ -386,8 +386,8 @@
                         <xsl:call-template name="datafield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p5, $p6), '')"/>
                             <xsl:with-param name="type" select="@type"/>
-                            <xsl:with-param name="subtype" select="@subtype"/>
-                            <xsl:with-param name="label" select="@label"/>
+                            <!--<xsl:with-param name="subtype" select="@subtype"/>
+                            <xsl:with-param name="label" select="@label"/>-->
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
@@ -399,8 +399,8 @@
                         <xsl:call-template name="datafield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p5, $p6), '')"/>
                             <xsl:with-param name="type" select="@type"/>
-                            <xsl:with-param name="subtype" select="@subtype"/>
-                            <xsl:with-param name="label" select="@label"/>
+                            <!--<xsl:with-param name="subtype" select="@subtype"/>
+                            <xsl:with-param name="label" select="@label"/>-->
                         </xsl:call-template>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -410,8 +410,8 @@
     <xsl:template name="datafield">
         <xsl:param name="p" required="yes"/>
         <xsl:param name="type" required="no" select="''"/>
-        <xsl:param name="subtype" required="no" select="''"/>
-        <xsl:param name="label" required="no" select="''"/>
+        <!--<xsl:param name="subtype" required="no" select="''"/>
+        <xsl:param name="label" required="no" select="''"/>-->
         <xsl:element name="xsl:for-each">
             <xsl:attribute name="select" select="$p"/>
             <xsl:element name="xsl:copy">
@@ -424,12 +424,12 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify($type)"/>
                     </xsl:element>
                 </xsl:if>
-                <xsl:if test="string($subtype) ne ''">
+                <!--<xsl:if test="string($subtype) ne ''">
                     <xsl:element name="xsl:attribute">
                         <xsl:attribute name="name" select="'subtype'"/>
                         <xsl:attribute name="select" select="frbrizer:xpathify($subtype)"/>
                     </xsl:element>
-                </xsl:if>
+                </xsl:if>-->
                 <!--<xsl:if test="string($label) ne ''">
                     <xsl:element name="xsl:if">
                         <xsl:attribute name="test" select="'$include_labels'"/>
@@ -473,18 +473,18 @@
                                                   <xsl:attribute name="select" select="frbrizer:xpathify(@type)"/>
                                                 </xsl:element>
                                             </xsl:if>
-                                            <xsl:if test="exists(@subtype) and @subtype ne ''">
+                                            <!--<xsl:if test="exists(@subtype) and @subtype ne ''">
                                                 <xsl:element name="xsl:with-param">
                                                   <xsl:attribute name="name" select="'subtype'"/>
                                                   <xsl:attribute name="select" select="frbrizer:xpathify(@subtype)"/>
                                                 </xsl:element>
-                                            </xsl:if>
-                                            <xsl:if test="exists(@type) and @label ne ''">
+                                            </xsl:if>-->
+                                            <!--<xsl:if test="exists(@type) and @label ne ''">
                                                 <xsl:element name="xsl:with-param">
                                                   <xsl:attribute name="name" select="'label'"/>
                                                   <xsl:attribute name="select" select="frbrizer:xpathify(@label)"/>
                                                 </xsl:element>
-                                            </xsl:if>
+                                            </xsl:if>-->
                                             <xsl:element name="xsl:with-param">
                                                 <xsl:attribute name="name" select="'select'"/>
                                                 <xsl:attribute name="select" select=" if (exists(@select) and (string-length(@select)) != 0) then @select else ('.')"/>
@@ -535,8 +535,8 @@
                         <xsl:call-template name="controlfield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p4, $p5), '')"/>
                             <xsl:with-param name="type" select="@type"/>
-                            <xsl:with-param name="subtype" select="@subtype"/>
-                            <xsl:with-param name="label" select="@label"/>
+                            <!--<xsl:with-param name="subtype" select="@subtype"/>
+                            <xsl:with-param name="label" select="@label"/>-->
                             <xsl:with-param name="select" select="@select"/>
                         </xsl:call-template>
                     </xsl:when>
@@ -547,8 +547,8 @@
                         <xsl:call-template name="controlfield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3), '')"/>
                             <xsl:with-param name="type" select="@type"/>
-                            <xsl:with-param name="subtype" select="@subtype"/>
-                            <xsl:with-param name="label" select="@label"/>
+                            <!--<xsl:with-param name="subtype" select="@subtype"/>
+                            <xsl:with-param name="label" select="@label"/>-->
                             <xsl:with-param name="select" select="@select"/>
                         </xsl:call-template>
                     </xsl:otherwise>
@@ -559,8 +559,8 @@
     <xsl:template name="controlfield">
         <xsl:param name="p" required="yes"/>
         <xsl:param name="type" required="no" select="''"/>
-        <xsl:param name="label" required="no" select="''"/>
-        <xsl:param name="subtype" required="no" select="''"/>
+        <!---<xsl:param name="label" required="no" select="''"/>
+        <xsl:param name="subtype" required="no" select="''"/>-->
         <xsl:param name="select" required="no" select="''"/>
         <xsl:element name="xsl:for-each">
             <xsl:attribute name="select" select="$p"/>
@@ -573,7 +573,7 @@
                             <xsl:attribute name="select" select="frbrizer:xpathify($type)"/>
                         </xsl:element>
                     </xsl:if>
-                    <xsl:if test="string($subtype) ne ''">
+                    <!--<xsl:if test="string($subtype) ne ''">
                         <xsl:element name="xsl:with-param">
                             <xsl:attribute name="name" select="'subtype'"/>
                             <xsl:attribute name="select" select="frbrizer:xpathify($subtype)"/>
@@ -584,7 +584,7 @@
                             <xsl:attribute name="name" select="'label'"/>
                             <xsl:attribute name="select" select="frbrizer:xpathify($label)"/>
                         </xsl:element>
-                    </xsl:if>
+                    </xsl:if>-->
                     <!--<xsl:if test="string($type) ne ''">
 						<xsl:element name="xsl:with-param">
 							<xsl:attribute name="name" select="'type'"/>
