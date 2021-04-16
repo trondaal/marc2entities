@@ -473,9 +473,9 @@
                     </xsl:for-each-group>
                 </xsl:element>
             </xsl:for-each-group>
-            <xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
+            <!--<xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
                 <xsl:copy-of select="."></xsl:copy-of>
-            </xsl:for-each>
+            </xsl:for-each>-->
             <xsl:for-each select="doc('rda.labels.rdf')/rdf:RDF/rdf:Description">
                 <xsl:copy-of select="."></xsl:copy-of>
             </xsl:for-each>
