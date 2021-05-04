@@ -531,7 +531,7 @@
                         <xsl:variable name="p2" select="@tag"/>
                         <xsl:variable name="p3" select="''']'"/>
                         <xsl:variable name="p4" select="'[$this_field_position]'"/>
-                        <xsl:variable name="p5" select="if (exists(condition)) then (string-join(('[', condition, ']'), '')) else ('')"/>
+                        <xsl:variable name="p5" select="if (exists(@condition)) then (string-join(('[', @condition, ']'), '')) else ('')"/>
                         <xsl:call-template name="controlfield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p4, $p5), '')"/>
                             <xsl:with-param name="type" select="@type"/>
@@ -544,8 +544,9 @@
                         <xsl:variable name="p1" select="'$record/*:controlfield[@tag='''"/>
                         <xsl:variable name="p2" select="@tag"/>
                         <xsl:variable name="p3" select="''']'"/>
+                        <xsl:variable name="p5" select="if (exists(@condition)) then (string-join(('[', @condition, ']'), '')) else ('')"/>
                         <xsl:call-template name="controlfield">
-                            <xsl:with-param name="p" select="string-join(($p1, $p2, $p3), '')"/>
+                            <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p5), '')"/>
                             <xsl:with-param name="type" select="@type"/>
                             <!--<xsl:with-param name="subtype" select="@subtype"/>
                             <xsl:with-param name="label" select="@label"/>-->
