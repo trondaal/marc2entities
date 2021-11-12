@@ -452,26 +452,36 @@
                 <!--<xsl:sort select="@type"/>
                 <xsl:sort select="@id"/>-->
                 <!--<xsl:variable name="namespace" select="tokenize(@type, '[/#]')[last() - 1]"/>-->
-                <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
-                <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
-                <xsl:element name="{$prefixmap($entity_namespace) || ':' || $entity_type}" namespace="{$entity_namespace}">
-                    <xsl:attribute name="rdf:about" select="if (starts-with(@id, 'http')) then @id else 'http://example.org/'||@id" />
-                    <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, replace(lower-case(text()), '[^A-Za-z0-9]', '')" composite="yes">
-                        <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
-                        <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
-                        <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
-                            <xsl:copy-of select="current-group()[1]/text()"/>
-                        </xsl:element>
-                    </xsl:for-each-group>
-                    <xsl:for-each-group select="current-group()/*:relationship[starts-with(@type, 'http')]" group-by="@type, @href" composite="yes">
-                        <xsl:sort select="@type"/>
-                        <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
-                        <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
-                        <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
-                            <xsl:attribute name="rdf:resource" select="if(starts-with(current-group()[1]/@href, 'http')) then current-group()[1]/@href else 'http://example.org/'||current-group()[1]/@href" />
-                        </xsl:element>                        
-                    </xsl:for-each-group>
-                </xsl:element>
+                <xsl:try>
+                    <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
+                    <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
+                    <xsl:element name="{$prefixmap($entity_namespace) || ':' || $entity_type}" namespace="{$entity_namespace}">
+                        <xsl:attribute name="rdf:about" select="if (starts-with(@id, 'http')) then @id else 'http://example.org/'||@id" />
+                        <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, replace(lower-case(text()), '[^A-Za-z0-9]', '')" composite="yes">
+                            <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
+                            <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
+                            <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
+                                <xsl:copy-of select="current-group()[1]/text()"/>
+                            </xsl:element>
+                        </xsl:for-each-group>
+                        <xsl:for-each-group select="current-group()/*:relationship[starts-with(@type, 'http')]" group-by="@type, @href" composite="yes">
+                            <xsl:sort select="@type"/>
+                            <xsl:variable name="property_type" select="tokenize(@type, '[/#]')[last()]"/>
+                            <xsl:variable name="property_namespace" select="replace(@type, $property_type, '')"/>
+                            <xsl:element name="{$prefixmap($property_namespace) || ':' || $property_type}" namespace="{$property_namespace}">
+                                <xsl:attribute name="rdf:resource" select="if(starts-with(current-group()[1]/@href, 'http')) then current-group()[1]/@href else 'http://example.org/'||current-group()[1]/@href" />
+                            </xsl:element>                        
+                        </xsl:for-each-group>
+                    </xsl:element>
+                    <xsl:catch>
+                        <xsl:result-document href="error.log" omit-xml-declaration="yes">
+                            <xsl:message terminate="no">
+                                <xsl:value-of select="'Error converting to rdf in record:'"/>
+                                <xsl:value-of select="./*:controlfield[@tag='001']"></xsl:value-of>                            
+                            </xsl:message>
+                        </xsl:result-document>
+                    </xsl:catch>
+                </xsl:try>
             </xsl:for-each-group>
             <!--<xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
                 <xsl:copy-of select="."></xsl:copy-of>
