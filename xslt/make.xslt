@@ -228,7 +228,9 @@
     </xsl:template>
     <xsl:template name="code-for-each">
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select=" string-join(('node()[@code=''', @code, ''']', if (@code-condition) then string-join(('[', @code-condition, ']'), '') else  ()), '')"/>
+            <xsl:variable name="codelist" select="'('''||string-join(tokenize((@code), '\W+'), ''',''')||''')'"/>
+            <!--<xsl:attribute name="select" select="'node()[@tag='  || $codelist || ']' || (if (@condition)      then '[' || @condition      || ']' else ())"/>-->
+            <xsl:attribute name="select" select="'node()[@code=' || $codelist || ']' || (if (@code-condition) then '[' || @code-condition || ']' else ())"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield'"/>
                 <xsl:attribute name="select" select="'(ancestor-or-self::*:subfield)'"/>
@@ -240,12 +242,12 @@
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield_code'"/>
                 <xsl:attribute name="as" select="'xs:string'"/>
-                <xsl:attribute name="select" select="''''||@code||''''"/>
+                <xsl:attribute name="select" select="'$this_subfield/@code'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'anchor_subfield_code'"/>
                 <xsl:attribute name="as" select="'xs:string'"/>
-                <xsl:attribute name="select" select="''''||@code||''''"/>
+                <xsl:attribute name="select" select="'$this_subfield/@code'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield_position'"/>
@@ -295,78 +297,6 @@
                 <xsl:attribute name="name" select="'templatename'"/>
                 <xsl:attribute name="select" select="'$this_template_name'"/>
             </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_counters'"/>
-                <xsl:element name="xsl:attribute">
-                    <xsl:attribute name="name" select="'c'"/>
-                    <xsl:attribute name="select" select="'1'"/>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_anchorvalues'"/>
-                <xsl:element name="xsl:element">
-                    <xsl:attribute name="name" select="'frbrizer:anchorvalue'"/>
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_counters'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'c'"/>
-                            <xsl:attribute name="select" select="'1'"/>
-                        </xsl:element>
-                    </xsl:element>
-                    <xsl:element name="xsl:value-of">
-                        <xsl:attribute name="select" select="'.'"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_templateinfo'"/>
-                <xsl:element name="xsl:element">
-                    <xsl:attribute name="name" select="'frbrizer:templatename'"/>
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_counters'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'c'"/>
-                            <xsl:attribute name="select" select="'1'"/>
-                        </xsl:element>
-                    </xsl:element>
-                    <xsl:element name="xsl:value-of">
-                        <xsl:attribute name="select" select="'$this_template_name'"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_internal_key'"/>
-                <xsl:element name="xsl:element">
-                    <xsl:attribute name="name" select="'frbrizer:intkey'"/>
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_counters'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'c'"/>
-                            <xsl:attribute name="select" select="'1'"/>
-                        </xsl:element>
-                    </xsl:element>
-                    <xsl:element name="xsl:value-of">
-                        <xsl:attribute name="select" select="$record-identifier-string"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_MARC001_in_entityrecord'"/>
-                <xsl:element name="xsl:element">
-                    <xsl:attribute name="name" select="'frbrizer:mid'"/>
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_counters'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'c'"/>
-                            <xsl:attribute name="select" select="'1'"/>
-                        </xsl:element>
-                    </xsl:element>
-                    <xsl:element name="xsl:attribute">
-                        <xsl:attribute name="name" select="'i'"/>
-                        <xsl:attribute name="select" select="'$marcid'"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element>
             <xsl:call-template name="controlfields"/>
             <xsl:call-template name="datafields"/>
             <xsl:call-template name="relationships"/>
@@ -381,8 +311,8 @@
                         <xsl:variable name="p1" select="'$record/*:datafield[@tag='''"/>
                         <xsl:variable name="p2" select="@tag"/>
                         <xsl:variable name="p3" select="''']'"/>
-                        <xsl:variable name="p5" select="                                 if (exists(@condition)) then                                     (string-join(('[', @condition, ']'), ''))                                 else                                     ('[. = $this_field]')"/>
-                        <xsl:variable name="p6" select="                                 concat('[*:subfield/@code = (''', string-join((for $c in distinct-values(*:subfield/@code)                                 return                                     $c), ''','''), ''')]')"/>
+                        <xsl:variable name="p5" select="if (exists(@condition)) then (string-join(('[', @condition, ']'), '')) else ('[. = $this_field]')"/>
+                        <xsl:variable name="p6" select="concat('[*:subfield/@code = (''', string-join((for $c in distinct-values(*:subfield/@code) return $c), ''','''), ''')]')"/>
                         <xsl:call-template name="datafield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p5, $p6), '')"/>
                             <xsl:with-param name="type" select="@type"/>
@@ -394,8 +324,8 @@
                         <xsl:variable name="p1" select="'$record/*:datafield[@tag='''"/>
                         <xsl:variable name="p2" select="@tag"/>
                         <xsl:variable name="p3" select="''']'"/>
-                        <xsl:variable name="p5" select="                                 if (exists(@condition)) then                                     (string-join(('[', @condition, ']'), ''))                                 else                                     ('')"/>
-                        <xsl:variable name="p6" select="                                 concat('[*:subfield/@code = (''', string-join((for $c in distinct-values(*:subfield/@code)                                 return                                     $c), ''','''), ''')]')"/>
+                        <xsl:variable name="p5" select="if (exists(@condition)) then (string-join(('[', @condition, ']'), '')) else ('')"/>
+                        <xsl:variable name="p6" select="concat('[*:subfield/@code = (''', string-join((for $c in distinct-values(*:subfield/@code) return $c), ''','''), ''')]')"/>
                         <xsl:call-template name="datafield">
                             <xsl:with-param name="p" select="string-join(($p1, $p2, $p3, $p5, $p6), '')"/>
                             <xsl:with-param name="type" select="@type"/>
@@ -410,8 +340,6 @@
     <xsl:template name="datafield">
         <xsl:param name="p" required="yes"/>
         <xsl:param name="type" required="no" select="''"/>
-        <!--<xsl:param name="subtype" required="no" select="''"/>
-        <xsl:param name="label" required="no" select="''"/>-->
         <xsl:element name="xsl:for-each">
             <xsl:attribute name="select" select="$p"/>
             <xsl:element name="xsl:copy">
@@ -424,28 +352,6 @@
                         <xsl:attribute name="select" select="frbrizer:xpathify($type)"/>
                     </xsl:element>
                 </xsl:if>
-                <!--<xsl:if test="string($subtype) ne ''">
-                    <xsl:element name="xsl:attribute">
-                        <xsl:attribute name="name" select="'subtype'"/>
-                        <xsl:attribute name="select" select="frbrizer:xpathify($subtype)"/>
-                    </xsl:element>
-                </xsl:if>-->
-                <!--<xsl:if test="string($label) ne ''">
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_labels'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'label'"/>
-                            <xsl:attribute name="select" select="frbrizer:xpathify($label)"/>
-                        </xsl:element>
-                    </xsl:element>
-                </xsl:if>-->
-                <xsl:element name="xsl:if">
-                    <xsl:attribute name="test" select="'$include_counters'"/>
-                    <xsl:element name="xsl:attribute">
-                        <xsl:attribute name="name" select="'c'"/>
-                        <xsl:attribute name="select" select="'1'"/>
-                    </xsl:element>
-                </xsl:element>
                 <xsl:element name="xsl:for-each">
                     <xsl:variable name="p">
                         <xsl:element name="part">
@@ -459,7 +365,7 @@
                         </xsl:element>
                     </xsl:variable>
                     <xsl:attribute name="select" select="string-join($p/part, '')"/>
-                    <xsl:for-each select="*:subfield">
+                    <xsl:for-each select="*:subfield[@code ne '*']">
                         <xsl:element name="xsl:if">
                             <xsl:attribute name="test" select="string-join(('@code = ''', @code, '''', if (exists(@condition)) then concat(' and ', @condition)  else ()), '')"/>
                             <xsl:choose>
@@ -473,18 +379,6 @@
                                                   <xsl:attribute name="select" select="frbrizer:xpathify(@type)"/>
                                                 </xsl:element>
                                             </xsl:if>
-                                            <!--<xsl:if test="exists(@subtype) and @subtype ne ''">
-                                                <xsl:element name="xsl:with-param">
-                                                  <xsl:attribute name="name" select="'subtype'"/>
-                                                  <xsl:attribute name="select" select="frbrizer:xpathify(@subtype)"/>
-                                                </xsl:element>
-                                            </xsl:if>-->
-                                            <!--<xsl:if test="exists(@type) and @label ne ''">
-                                                <xsl:element name="xsl:with-param">
-                                                  <xsl:attribute name="name" select="'label'"/>
-                                                  <xsl:attribute name="select" select="frbrizer:xpathify(@label)"/>
-                                                </xsl:element>
-                                            </xsl:if>-->
                                             <xsl:element name="xsl:with-param">
                                                 <xsl:attribute name="name" select="'select'"/>
                                                 <xsl:attribute name="select" select=" if (exists(@select) and (string-length(@select)) != 0) then @select else ('.')"/>
@@ -500,23 +394,6 @@
                             </xsl:choose>
                         </xsl:element>
                     </xsl:for-each>
-                </xsl:element>
-                <xsl:element name="xsl:if">
-                    <xsl:attribute name="test" select="'$include_MARC001_in_subfield'"/>
-                    <xsl:element name="xsl:element">
-                        <xsl:attribute name="name" select="'frbrizer:mid'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'i'"/>
-                            <xsl:attribute name="select" select="'$marcid'"/>
-                        </xsl:element>
-                        <xsl:element name="xsl:if">
-                            <xsl:attribute name="test" select="'$include_counters'"/>
-                            <xsl:element name="xsl:attribute">
-                                <xsl:attribute name="name" select="'c'"/>
-                                <xsl:attribute name="select" select="'1'"/>
-                            </xsl:element>
-                        </xsl:element>
-                    </xsl:element>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
@@ -665,7 +542,10 @@
     <xsl:template name="relationship-target-code-for-each">
         <xsl:param name="target_template"/>
         <xsl:element name="xsl:for-each">
-            <xsl:attribute name="select" select="string-join(('node()[@code=''', string($target_template/@code), ''']', if ($target_template/@code-condition) then concat('[', $target_template/@code-condition, ']') else ()), '')"/>
+            <xsl:variable  name="codelist" select="'('''||string-join(tokenize(($target_template/@code), '\W+'), ''',''')||''')'"/>
+            <!--<xsl:attribute name="select" select="'$record/node()[@tag=' || $codelist || ']' || (if      ($target_template/@condition) then '[' || $target_template/@condition || ']' else ())"/>-->
+            <xsl:attribute name="select" select="'node()[@code=' || $codelist || ']' || (if ($target_template/@code-condition) then '[' || $target_template/@code-condition || ']' else ())"/>          
+            <!--<xsl:attribute name="select" select="string-join(('node()[@code=''', string($target_template/@code), ''']', if ($target_template/@code-condition) then concat('[', $target_template/@code-condition, ']') else ()), '')"/>-->
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield'"/>
                 <xsl:attribute name="select" select="'.'"/>
@@ -673,7 +553,7 @@
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield_code'"/>
                 <xsl:attribute name="as" select="'xs:string'"/>
-                <xsl:attribute name="select" select="''''||$target_template/@code/string()||''''"/>
+                <xsl:attribute name="select" select="'$target_subfield/@code'"/>
             </xsl:element>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'target_subfield_position'"/>
@@ -779,13 +659,6 @@
                     <xsl:attribute name="select" select="concat('''', $target_typeid, '''')"/>
                 </xsl:element>
             </xsl:element>-->
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_counters'"/>
-                <xsl:element name="xsl:attribute">
-                    <xsl:attribute name="name" select="'c'"/>
-                    <xsl:attribute name="select" select="'1'"/>
-                </xsl:element>
-            </xsl:element>
             <xsl:variable name="identifier_string">
                 <xsl:call-template name="internal-id-template">
                     <xsl:with-param name="template_name" select="'$target_template_name'"/>
@@ -806,23 +679,7 @@
                     <xsl:attribute name="select" select="$identifier_string"/>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="xsl:if">
-                <xsl:attribute name="test" select="'$include_MARC001_in_relationships'"/>
-                <xsl:element name="xsl:element">
-                    <xsl:attribute name="name" select="'frbrizer:mid'"/>
-                    <xsl:element name="xsl:attribute">
-                        <xsl:attribute name="name" select="'i'"/>
-                        <xsl:attribute name="select" select="'$marcid'"/>
-                    </xsl:element>
-                    <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="'$include_counters'"/>
-                        <xsl:element name="xsl:attribute">
-                            <xsl:attribute name="name" select="'c'"/>
-                            <xsl:attribute name="select" select="'1'"/>
-                        </xsl:element>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:element>
+ 
         </xsl:element>
     </xsl:template>
     <!-- template for creating internal identifier value -->
@@ -976,19 +833,22 @@
                                         <xsl:attribute name="name" select="'frbrizer:keyentry'"/>
                                         <xsl:element name="xsl:variable">
                                             <xsl:attribute name="name" select="'key'"/>
-                                            <xsl:for-each select="*:key/*:related">
-                                                <xsl:element name="xsl:value-of">
-                                                  <xsl:attribute name="select" select="string-join(('frbrizer:sort-relationships(*:relationship[@type =''', ., ''']/@href)'), '')"/>
-                                                </xsl:element>
-                                            </xsl:for-each>
-                                            <xsl:for-each select="*:key/*:element">
-                                                <xsl:element name="xsl:value-of">
-                                                  <xsl:attribute name="select" select="string-join(('frbrizer:sort-keys(', ., ')'), '')"/>
-                                                </xsl:element>
-                                            </xsl:for-each>
-                                            <!--<xsl:element name="xsl:value-of">
-                                                <xsl:attribute name="select" select="'concat(''\'',@type, ''#'')'"/>
-                                            </xsl:element>-->
+                                            <xsl:attribute name="as" select="'xs:string*'"/>
+
+                                                <xsl:for-each select="*:key/*:related">
+                                                    <xsl:element name="xsl:value-of">
+                                                      <xsl:attribute name="select" select="string-join(('frbrizer:sort-relationships(*:relationship[@type =''', ., ''']/@href)'), '')"/>
+                                                    </xsl:element>
+                                                </xsl:for-each>
+                                                <xsl:for-each select="*:key/*:element">
+                                                    <xsl:element name="xsl:value-of">
+                                                      <xsl:attribute name="select" select="string-join(('frbrizer:sort-keys(', ., ')'), '')"/>
+                                                    </xsl:element>
+                                                </xsl:for-each>
+                                                <!--<xsl:element name="xsl:value-of">
+                                                    <xsl:attribute name="select" select="'concat(''\'',@type, ''#'')'"/>
+                                                </xsl:element>-->
+                                            
                                         </xsl:element>
                                         <xsl:element name="xsl:variable">
                                             <xsl:attribute name="name" select="'keyvalue'"/>

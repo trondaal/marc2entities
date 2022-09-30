@@ -452,9 +452,9 @@
                 <!--<xsl:sort select="@type"/>
                 <xsl:sort select="@id"/>-->
                 <!--<xsl:variable name="namespace" select="tokenize(@type, '[/#]')[last() - 1]"/>-->
+                <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
+                <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
                 <xsl:try>
-                    <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
-                    <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
                     <xsl:element name="{$prefixmap($entity_namespace) || ':' || $entity_type}" namespace="{$entity_namespace}">
                         <xsl:attribute name="rdf:about" select="if (starts-with(@id, 'http')) then @id else 'http://example.org/'||@id" />
                         <xsl:for-each-group select="current-group()//(*:subfield, *:controlfield)[starts-with(@type, 'http')]" group-by="@type, replace(lower-case(text()), '[^A-Za-z0-9]', '')" composite="yes">
@@ -473,22 +473,22 @@
                             </xsl:element>                        
                         </xsl:for-each-group>
                     </xsl:element>
-                    <xsl:catch>
-                        <xsl:result-document href="error.log" omit-xml-declaration="yes">
+                    <xsl:catch xmlns:err="http://www.w3.org/2005/xqt-errors">
                             <xsl:message terminate="no">
                                 <xsl:value-of select="'Error converting to rdf in record:'"/>
-                                <xsl:value-of select="./*:controlfield[@tag='001']"></xsl:value-of>                            
-                            </xsl:message>
-                        </xsl:result-document>
+                                <xsl:copy-of select="."></xsl:copy-of>  
+                                <!--<xsl:value-of select="$entity_type"></xsl:value-of>-->
+                                <!--<xsl:value-of select="$err:description"></xsl:value-of>-->
+                            </xsl:message>                       
                     </xsl:catch>
                 </xsl:try>
             </xsl:for-each-group>
             <!--<xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
                 <xsl:copy-of select="."></xsl:copy-of>
             </xsl:for-each>-->
-            <xsl:for-each select="doc('rda.labels.rdf')/rdf:RDF/rdf:Description">
+            <!--<xsl:for-each select="doc('rda.labels.rdf')/rdf:RDF/rdf:Description">
                 <xsl:copy-of select="."></xsl:copy-of>
-            </xsl:for-each>
+            </xsl:for-each>-->
         </rdf:RDF>
     </xsl:template>
 </xsl:stylesheet>
