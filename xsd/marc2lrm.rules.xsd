@@ -41,8 +41,14 @@
                 </xs:choice>
                 <xs:element ref="attributes"/>
                 <xs:choice maxOccurs="unbounded">
-                    <xs:element ref="key"/>
-                    <xs:element ref="label"/>
+                    <xs:element name="identifier"/>
+                    <xs:element name="identifier-constructed">
+                        <xs:complexType>
+                            <xs:sequence maxOccurs="unbounded">
+                                <xs:element ref="element"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
                     <xs:element ref="relationships"/>
                 </xs:choice>
             </xs:sequence>
@@ -94,25 +100,7 @@
             <xs:attributeGroup ref="typeattributes"/>
         </xs:complexType>
     </xs:element>
-    <xs:element name="key">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" maxOccurs="unbounded" ref="related"/>
-                <xs:element maxOccurs="unbounded" ref="element"/>
-            </xs:sequence>
-            <xs:attribute name="order" use="optional" type="xs:integer" default="0"
-                form="unqualified"/>
-        </xs:complexType>
-    </xs:element>
     <xs:element name="element" type="xs:string"/>
-    <xs:element name="label">
-        <xs:annotation>
-            <xs:documentation>The label element (child of record) can be used to add textual descriptions to the entity e.g. for display or other purposes.</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:attribute name="select" use="required"/>
-        </xs:complexType>
-    </xs:element>
     <xs:element name="relationships">
         <xs:complexType>
             <xs:sequence>
@@ -128,7 +116,6 @@
             </xs:choice>
             <xs:attribute name="condition" type="xs:string"/>
             <xs:attributeGroup ref="typeattributes"/>
-            <xs:attributeGroup ref="itypeattributes"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="target">
@@ -170,19 +157,6 @@
                     The parameter include_labels can be used to include or remove type labels from the output.
                     
                     The parameter </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
-    <xs:attributeGroup name="itypeattributes">
-        <xs:attribute name="itype" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>This attribute is comparable to the type attribute, but it is used to define the inverse relationship. When this attribute is present, the tool will automatically create inverse relationships which significantly simplifies writing the rules.</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-        <xs:attribute name="ilabel" type="xs:string"/>
-        <xs:attribute name="isubtype" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>Same purpose as the itype, but for any kind of subtype. The purpose of this attribute is to support dealing with types both at a genric (supertype) level and at the subtype level in the rules. </xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
