@@ -153,7 +153,7 @@
         </xs:annotation>
     </xs:element>
     <xs:attributeGroup name="typeattributes">
-        <xs:attribute name="type" type="xs:string" use="required">
+        <xs:attribute name="type" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The type attribute is used to give a type-name or -identifier to an entity, attribute or relationship. If the attribute value is in curly braces it will be interpreted as an xpath-expression and can be used to decide type dynamically. If the value is without curly braces it will be interpreted as a literal value - a static type.
                     

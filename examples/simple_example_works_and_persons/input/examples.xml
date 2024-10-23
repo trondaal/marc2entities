@@ -1,0 +1,399 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <leader>02912aam a22006737a 4500</leader>
+        <controlfield tag="001">11360497</controlfield>
+        <controlfield tag="003">SE-LIBR</controlfield>
+        <controlfield tag="005">20120314142206.0</controlfield>
+        <controlfield tag="008">090330s2009    enk           000 f eng c</controlfield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)ocn260208934</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9781847245564 (hbk.)</subfield>
+        </datafield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">1847245560 (hbk.)</subfield>
+        </datafield>
+        <datafield tag="041" ind1="1" ind2=" ">
+            <subfield code="a">eng</subfield>
+            <subfield code="h">swe</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="0">194202</subfield>
+            <subfield code="4">aut</subfield>
+            <subfield code="1">http://viaf.org/viaf/54441441</subfield>
+        </datafield>
+        <datafield tag="240" ind1="1" ind2="0">
+            <subfield code="a">Flickan som lekte med elden.</subfield>
+            <subfield code="l">Engelska</subfield>
+            <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The girl who played with fire /</subfield>
+            <subfield code="c">Stieg Larsson ; translated from the Swedish by Reg Keeland.</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">London :</subfield>
+            <subfield code="b">MacLehose,</subfield>
+            <subfield code="c">2009.</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">569 s.</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">text</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</subfield>
+            <subfield code="2">rdacontent</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">unmediated</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</subfield>
+            <subfield code="2">rdamedia</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">volume</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1001</subfield>
+            <subfield code="2">rdacarrier</subfield>
+        </datafield>
+        <datafield tag="380" ind1=" " ind2=" ">
+            <subfield code="a">novel</subfield>
+            <subfield code="2">marcgt</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Keeland, Reg,</subfield>
+            <subfield code="d">1943-</subfield>
+            <subfield code="4">trl</subfield>
+            <subfield code="1">http://viaf.org/viaf/1945746</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>02213cam a22004457a 4500</leader>
+        <controlfield tag="001">13519003</controlfield>
+        <controlfield tag="003">SE-LIBR</controlfield>
+        <controlfield tag="005">20120904110711.0</controlfield>
+        <controlfield tag="008">120904s2012 ag 000 f spa c</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9789875804876</subfield>
+        </datafield>
+        <datafield tag="041" ind1="1" ind2=" ">
+            <subfield code="a">spa</subfield>
+            <subfield code="h">swe</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="0">194202</subfield>
+            <subfield code="4">aut</subfield>
+            <subfield code="1">http://viaf.org/viaf/54441441</subfield>
+        </datafield>
+        <datafield tag="240" ind1="1" ind2="0">
+            <subfield code="a">Flickan som lekte med elden.</subfield>
+            <subfield code="l">Spanska</subfield>
+            <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="3">
+            <subfield code="a">
+                La chica que soñaba con un cerillo y un galón de gasolina /</subfield>
+            <subfield code="c">
+                Stieg Larsson ; traducción de Martin Lexell y Juan José Ortega Román.
+            </subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Buenos Aires :</subfield>
+            <subfield code="b">Booket,</subfield>
+            <subfield code="c">2012</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">772 p.</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">text</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</subfield>
+            <subfield code="2">rdacontent</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">unmediated</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</subfield>
+            <subfield code="2">rdamedia</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">volume</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1001</subfield>
+            <subfield code="2">rdacarrier</subfield>
+        </datafield>
+        <datafield tag="380" ind1=" " ind2=" ">
+            <subfield code="a">novel</subfield>
+            <subfield code="2">marcgt</subfield>
+        </datafield>
+        <!--<datafield tag="490" ind1="1" ind2=" ">
+            <subfield code="a">Millennium ;</subfield>
+            <subfield code="v">2</subfield>
+        </datafield>-->
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Lexell, Martin,</subfield>
+            <subfield code="d">1961-</subfield>
+            <subfield code="4">trl</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Ortega Román, Juan José</subfield>
+            <subfield code="4">trl</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
+            <subfield code="t">Män som hatar kvinnor</subfield>
+            <subfield code="1">http://viaf.org/viaf/4188148523903220970001</subfield>
+        </datafield>
+        <datafield tag="800" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="t">Millennium.</subfield>
+            <subfield code="l">Spanska ;</subfield>
+            <subfield code="v">2.</subfield>
+            <subfield code="1">http://viaf.org/viaf/182958364</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>03061nam a22005653a 4500</leader>
+        <controlfield tag="001">11852913</controlfield>
+        <controlfield tag="003">SE-LIBR</controlfield>
+        <controlfield tag="005">20100518165752.0</controlfield>
+        <controlfield tag="008">100518s2009    sw |||||||||||000 ||swe|c</controlfield>
+        <datafield tag="028" ind1="4" ind2="0">
+            <subfield code="a">1526911</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2=" ">
+            <subfield code="a">swe</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Flickan som lekte med elden</subfield>
+            <subfield code="h">[Hyrvideo (DVD)] /</subfield>
+            <subfield code="c">regi: Daniel Alfredson.</subfield>
+        </datafield>
+        <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Danderyd :</subfield>
+            <subfield code="b">Nordisk Film,</subfield>
+            <subfield code="c">2009</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">1 DVD-Video (2 tim., 4 min.)</subfield>
+            <subfield code="b">ljud, färg</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">moving image</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</subfield>
+            <subfield code="2">rdacontent</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">video</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1008</subfield>
+            <subfield code="2">rdamedia</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">video disc</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1060</subfield>
+            <subfield code="2">rdacarrier</subfield>
+        </datafield>
+        <datafield tag="380" ind1=" " ind2=" ">
+            <subfield code="a">motion picture</subfield>
+            <subfield code="2">marcgt</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Originalfilmen: Yellow Bird Millenium Productions ..., cop. 2009</subfield>
+        </datafield>
+        <datafield tag="511" ind1="1" ind2=" ">
+            <subfield code="a">Skådespelare: Michael Nyqvist, Noomi Rapace, Lena Endre, Paolo Roberto, Sofia Ledarp, Per Oscarsson, Georgi Staykov Alexandra Eisenstein, Yasmine Garbi, Tanja Lorentzon, Magnus Krepper, Ralph Carlsson, Daniel Gustavsson ...</subfield>
+        </datafield>
+        <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">Bygger på romanen: Flickan som lekte med elden / Stieg Larsson</subfield>
+        </datafield>
+        <datafield tag="538" ind1=" " ind2=" ">
+            <subfield code="a">Region 2; bildformat: 16:9; ljudformat: Dolby digital 5.1, DTS</subfield>
+        </datafield>
+        <datafield tag="546" ind1=" " ind2=" ">
+            <subfield code="a">Tal på svenska. textad på svenska, finska, norska</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Alfredson, Daniel</subfield>
+            <subfield code="4">drt</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/adaptationOfWork.en</subfield>
+            <subfield code="t">Flickan som lekte med elden.</subfield>
+            <subfield code="l">Spanska</subfield>
+            <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>02803cam a2200529 aa4500</leader>
+        <controlfield tag="001">12033495</controlfield>
+        <controlfield tag="003">SE-LIBR</controlfield>
+        <controlfield tag="005">20130305153919.0</controlfield>
+        <controlfield tag="008">101111s2010 gw |||||||||||000 f|ger|c</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9783453267008</subfield>
+            <subfield code="q">GB [in Kassette].</subfield>
+        </datafield>
+        <datafield tag="041" ind1="1" ind2=" ">
+            <subfield code="a">ger</subfield>
+            <subfield code="h">swe</subfield>
+        </datafield>
+        <datafield tag="042" ind1=" " ind2=" ">
+            <subfield code="9">SUEC</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="0">https://libris.kb.se/vs689k5d108n3lx#it</subfield>
+            <subfield code="1">http://viaf.org/viaf/54441441</subfield>
+            <subfield code="4">aut</subfield>
+        </datafield>
+        <datafield tag="240" ind1="1" ind2="0">
+            <subfield code="a">Män som hatar kvinnor</subfield>
+            <subfield code="1">http://viaf.org/viaf/4188148523903220970001</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">Die Millennium-Trilogie :</subfield>
+            <subfield code="b">
+                Verblendung - Verdammnis - Vergebung / Stieg Larsson ; aus dem Schwedischen von Wibke Kuhn
+            </subfield>
+        </datafield>
+        <datafield tag="250" ind1=" " ind2=" ">
+            <subfield code="a">[Limitierte Sonderausg. in Kassette]</subfield>
+        </datafield>
+        <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Munchen :</subfield>
+            <subfield code="b">Heyne,</subfield>
+            <subfield code="c">2010</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">687 s. ; 751 s. ; 847 s. ; c 215 mm x 135 mm.</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">text</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</subfield>
+            <subfield code="2">rdacontent</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">unmediated</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</subfield>
+            <subfield code="2">rdamedia</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">volume</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1001</subfield>
+            <subfield code="2">rdacarrier</subfield>
+        </datafield>
+        <datafield tag="380" ind1=" " ind2=" ">
+            <subfield code="a">novel</subfield>
+            <subfield code="2">marcgt</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="2">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="t">Flickan som lekte med elden.</subfield>
+            <subfield code="l">Tyska</subfield>
+            <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="2">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="t">Luftslottet som sprängdes.</subfield>
+            <subfield code="l">Tyska</subfield>
+            <subfield code="1">http://viaf.org/viaf/175978173</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Kuhn, Wibke</subfield>
+            <subfield code="4">trl</subfield>
+            <subfield code="1">http://viaf.org/viaf/51520608</subfield>
+        </datafield>
+        <datafield tag="800" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="t">Millennium</subfield>
+            <subfield code="1">http://viaf.org/viaf/182958364</subfield>
+        </datafield>
+    </record>
+    <record>
+        <leader>36194cam a2205065 ar4500</leader>
+        <controlfield tag="001">11675457</controlfield>
+        <controlfield tag="003">SE-LIBR</controlfield>
+        <controlfield tag="005">20181015151911.0</controlfield>
+        <controlfield tag="007">cr ||| |||||</controlfield>
+        <controlfield tag="008">091107s2009 sw |||||s|||||000 f|swe|d</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9789113029047</subfield>
+        </datafield>
+        <datafield tag="041" ind1=" " ind2=" ">
+            <subfield code="a">swe</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="1">http://viaf.org/viaf/54441441</subfield>
+        </datafield>
+        <datafield tag="240" ind1=" " ind2=" ">
+            <subfield code="a">Luftslottet som sprängdes.</subfield>
+            <subfield code="1">http://viaf.org/viaf/175978173</subfield>
+        </datafield>
+        <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Luftslottet som sprängdes</subfield>
+            <subfield code="h">[Elektronisk resurs] /</subfield>
+            <subfield code="c">Stieg Larsson.</subfield>
+        </datafield>
+        <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Stockholm :</subfield>
+            <subfield code="b">Norstedt :</subfield>
+            <subfield code="b">eLib [distributör],</subfield>
+            <subfield code="c">2009</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">703 s.</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">text</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</subfield>
+            <subfield code="2">rdacontent</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">computer file</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1003</subfield>
+            <subfield code="2">rdamedia</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">online resource</subfield>
+            <subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1018</subfield>
+            <subfield code="2">rdacarrier</subfield>
+        </datafield>
+        <datafield tag="380" ind1=" " ind2=" ">
+            <subfield code="a">novel</subfield>
+            <subfield code="2">marcgt</subfield>
+        </datafield>
+        <datafield tag="347" ind1=" " ind2=" ">
+            <subfield code="a">text</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004.</subfield>
+            <subfield code="t">Flickan som lekte med elden.</subfield>
+            <subfield code="4">http://rdaregistry.info/Elements/w/precededByWork.en</subfield>
+            <subfield code="1">http://viaf.org/viaf/1965149068358065730000</subfield>
+        </datafield>
+        <datafield tag="800" ind1="1" ind2=" ">
+            <subfield code="a">Larsson, Stieg,</subfield>
+            <subfield code="d">1954-2004</subfield>
+            <subfield code="t">Millennium</subfield>
+            <subfield code="1">http://viaf.org/viaf/182958364</subfield>
+        </datafield>
+    </record>
+</collection>
