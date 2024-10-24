@@ -32,11 +32,6 @@
         <xsl:if test="$subtype ne ''">
             <xsl:attribute name="subtype" select="$subtype"/>
         </xsl:if>
-        <!--<xsl:if test="$include_labels and ($label ne '')">
-            <xsl:if test="$label ne ''">
-                <xsl:attribute name="label" select="$label"/>
-            </xsl:if>
-        </xsl:if>-->
         <xsl:value-of select="normalize-space($select)"/>
         <xsl:if test="$include_MARC001_in_controlfield">
             <xsl:if test="string($marcid) ne ''">
@@ -155,31 +150,6 @@
             </xsl:for-each>
         </xsl:copy>
     </xsl:template>
-    <!--<xsl:template match="*:record-set" mode="create-UUID">
-        <xsl:choose>
-            <xsl:when test="$UUID_identifiers">
-                <xsl:call-template name="UUID"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:copy-of select="node()"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>-->
-    <!--<xsl:template match="*:record-set" mode="remove-record-set">
-        <xsl:copy-of select="//*:record"/>
-    </xsl:template>-->
-    <!--<xsl:template match="@*|node()" mode="UUID" name="UUID">
-        <xsl:copy>
-            <xsl:copy-of select="@* except @id|@href"/>
-            <xsl:if test="exists(@id)">
-                <xsl:attribute xmlns:uuid="java:java.util.UUID" name="id" select="uuid:to-string(uuid:nameUUIDFromBytes(string-to-codepoints(@id)))"/>
-            </xsl:if>
-            <xsl:if test="exists(@href)">
-                <xsl:attribute xmlns:uuid="java:java.util.UUID" name="href" select="uuid:to-string(uuid:nameUUIDFromBytes(string-to-codepoints(@href)))"/>
-            </xsl:if>
-            <xsl:apply-templates mode="UUID" select="node()"/>
-        </xsl:copy>
-    </xsl:template>-->
     <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/" name="local:sort-keys">
         <xsl:param name="keys"/>
         <xsl:perform-sort select="distinct-values($keys)">
@@ -199,21 +169,9 @@
         </xsl:perform-sort>
     </xsl:function>
     <xsl:function xmlns:local="http://idi.ntnu.no/frbrizer/" name="local:trim-target">
-        <!-- This function transforms a list of uris to a list of strings containing the last part of the uri-->
         <xsl:param name="value" as="xs:string"/>
         <xsl:value-of select="let $x := $value return if (matches($x, '\w+:(/?/?)[^\s]+')) then (tokenize(replace($x, '/$', ''), '/'))[last()] else $x"/>
     </xsl:function>   
- <!--   <xsl:function name="frbrizer:marc21rdftype" as="xs:string">
-        <xsl:param name="node" as="element()"/>
-        <xsl:variable name="prefix" select="'marcrdf'"/>
-        <xsl:variable name="tag" select="$node/ancestor-or-self::node()[@tag]/@tag"/>
-        <xsl:variable name="code" select="$node/ancestor-or-self::node()[@code]/@code"/>
-        <xsl:variable name="ind1" select="                 if (matches($node/ancestor-or-self::node()[@tag]/@ind1, '[a-zA-Z0-9]')) then                     $node/ancestor-or-self::node()[@tag]/@ind1                 else                     '_'"/>
-        <xsl:variable name="ind2" select="                 if (matches($node/ancestor-or-self::node()[@tag]/@ind2, '[a-zA-Z0-9]')) then                     $node/ancestor-or-self::node()[@tag]/@ind2                 else                     '_'"/>
-        <xsl:value-of select="                 if (local-name($node) eq 'controlfield') then                     concat($prefix, ':M', $tag)                 else                     concat($prefix, ':M', $tag, $ind1, $ind2, $code)"/>
-    </xsl:function>-->
-    <!--template for adding inverse relationships -->
-    <!--uses a record-set as input and outputs a new record-set-->
     <xsl:template match="*:record-set" mode="create-inverse-relationships">
         <xsl:if test="$include_missing_reverse_relationships">
             <xsl:variable name="record-set" select="."/>
@@ -244,21 +202,10 @@
                                         <xsl:if test="exists(@subtype)">
                                             <xsl:attribute name="isubtype" select="@subtype"/>
                                         </xsl:if>
-                                        <!--<xsl:if test="$include_target_entity_type">
-                                            <xsl:attribute name="target_type" select="$target-entity-type"/>
-                                        </xsl:if>-->
                                         <xsl:if test="$include_counters">
                                             <xsl:attribute name="c" select="'1'"/>
                                         </xsl:if>
                                         <xsl:attribute name="href" select="$target-entity-id"/>
-                                        <!--<xsl:if test="$include_labels">
-                                            <xsl:if test="@ilabel ne ''">
-                                                <xsl:attribute name="label" select="@ilabel"/>
-                                            </xsl:if>
-                                            <xsl:if test="@label ne ''">
-                                                <xsl:attribute name="ilabel" select="@label"/>
-                                            </xsl:if>
-                                        </xsl:if>-->
                                         <xsl:copy-of select="node()"/>
                                     </xsl:copy>
                                 </xsl:if>
@@ -449,9 +396,6 @@
             <xsl:variable name="prefixmap" select="map:merge(for $i in in-scope-prefixes($collection) return map{namespace-uri-for-prefix($i, $collection) : $i})"/>
             
             <xsl:for-each-group select="//*:record[starts-with(@type, 'http')]" group-by="@id, @type" composite="yes">
-                <!--<xsl:sort select="@type"/>
-                <xsl:sort select="@id"/>-->
-                <!--<xsl:variable name="namespace" select="tokenize(@type, '[/#]')[last() - 1]"/>-->
                 <xsl:variable name="entity_type" select="tokenize(@type, '[/#]')[last()]"/>
                 <xsl:variable name="entity_namespace" select="replace(@type, $entity_type, '')"/>
                 <xsl:try>
@@ -477,18 +421,10 @@
                             <xsl:message terminate="no">
                                 <xsl:value-of select="'Error converting to rdf in record:'"/>
                                 <xsl:copy-of select="."></xsl:copy-of>  
-                                <!--<xsl:value-of select="$entity_type"></xsl:value-of>-->
-                                <!--<xsl:value-of select="$err:description"></xsl:value-of>-->
                             </xsl:message>                       
                     </xsl:catch>
                 </xsl:try>
             </xsl:for-each-group>
-            <!--<xsl:for-each select="doc('rda.inverse.rdf')/rdf:RDF/rdf:Description">
-                <xsl:copy-of select="."></xsl:copy-of>
-            </xsl:for-each>-->
-            <!--<xsl:for-each select="doc('rda.labels.rdf')/rdf:RDF/rdf:Description">
-                <xsl:copy-of select="."></xsl:copy-of>
-            </xsl:for-each>-->
         </rdf:RDF>
     </xsl:template>
 </xsl:stylesheet>

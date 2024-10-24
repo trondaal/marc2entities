@@ -22,7 +22,7 @@
     xmlns:rdat="http://rdaregistry.info/termList/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:ex="http://www.example.org/"
-    xsi:noNamespaceSchemaLocation="../marc2entities/xsd/marc2lrm.rules.xsd">
+    xsi:noNamespaceSchemaLocation="../../../xsd/marc2lrm.rules.xsd">
     <keyfilter>replace(string-join($key[. != ''], '/'), ' ', '')</keyfilter>
     
     <!-- Thius is a restrictive ruleset where we only process explicitly coded entities and relationships -->

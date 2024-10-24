@@ -14,23 +14,6 @@
         </xsl:copy>
     </xsl:template>
     
-    <!-- renaming from numeric typenames to lexical typenames -->
-    <xsl:template match="@type" mode="copy">
-        <xsl:variable name="currenttype" select="."/>
-        <xsl:variable name="lexicaltype" select="doc('rda.xml')/*:RDF/*:Description[@*:about=$currenttype]/*:lexicalAlias[ends-with(@*:resource, '.en')]/@*:resource"/>
-        <xsl:choose>
-            <xsl:when test="$lexicaltype ne ''">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="doc('rda.xml')/*:RDF/*:Description[@*:about=$currenttype]/*:lexicalAlias[ends-with(@*:resource, '.en')]/@*:resource"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:attribute name="type">
-                    <xsl:value-of select="$currenttype"/>
-                </xsl:attribute>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
     
 
   

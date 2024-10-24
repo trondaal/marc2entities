@@ -5,8 +5,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" version="3.0">
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-    <xsl:variable name="basic-uri" select="'basic.xslt'"/>
-    <xsl:param name="userdefined-uri" required="no"/>
+    <xsl:variable name="utils-uri" select="'utils.xslt'"/>
     <xsl:param name="excludetemplates" required="no">
         <!-- if used, it will exclude creation of entities from these templates as well as relationships to them -->
     </xsl:param>
@@ -42,16 +41,6 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
             </xsl:element>
-            <!--<xsl:element name="xsl:param">
-                <xsl:attribute name="name" select="'include_labels'"/>
-                <xsl:attribute name="as" select="'xs:boolean'"/>
-                <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>-->
-            <!--<xsl:element name="xsl:param">
-                <xsl:attribute name="name" select="'include_entitylabels'"/>
-                <xsl:attribute name="as" select="'xs:boolean'"/>
-                <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>-->
             <xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'include_anchorvalues'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
@@ -82,11 +71,6 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'false()'"/>
             </xsl:element>
-            <!--<xsl:element name="xsl:param">
-                <xsl:attribute name="name" select="'UUID_identifiers'"/>
-                <xsl:attribute name="as" select="'xs:boolean'"/>
-                <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>-->
             <xsl:element name="xsl:param">
                 <xsl:attribute name="name" select="'merge'"/>
                 <xsl:attribute name="as" select="'xs:boolean'"/>
@@ -112,12 +96,7 @@
                 <xsl:attribute name="as" select="'xs:boolean'"/>
                 <xsl:attribute name="select" select="'true()'"/>
             </xsl:element>
-            <!--<xsl:element name="xsl:param">
-                <xsl:attribute name="name" select="'include_target_entity_type'"/>
-                <xsl:attribute name="as" select="'xs:boolean'"/>
-                <xsl:attribute name="select" select="'false()'"/>
-            </xsl:element>-->
-            <xsl:choose>
+            <!--<xsl:choose>
                 <xsl:when test="$userdefined-uri">
                     <xsl:element name="xsl:param">
                         <xsl:attribute name="name" select="'userdefined'"/>
@@ -132,7 +111,7 @@
                         <xsl:attribute name="select" select="'false()'"/>
                     </xsl:element>
                 </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose>-->
             <xsl:element name="xsl:output">
                 <xsl:attribute name="method" select="'xml'"/>
                 <xsl:attribute name="version" select="'1.0'"/>
@@ -144,14 +123,14 @@
             <xsl:call-template name="entity"/>
             <xsl:call-template name="create-key-mapping-templates"/>
             <xsl:call-template name="create-key-replacement-template"/>
-            <!-- Retrieving templates and functions from basic.xslt -->
-            <xsl:copy-of select="doc($basic-uri)/*/xsl:template"/>
-            <xsl:copy-of select="doc($basic-uri)/*/xsl:function"/>
+            <!-- Retrieving templates and functions from utils.xslt -->
+            <xsl:copy-of select="doc($utils-uri)/*/xsl:template"/>
+            <xsl:copy-of select="doc($utils-uri)/*/xsl:function"/>
             <!-- Retrieving templates and functions from userdefined -->
-            <xsl:if test="$userdefined-uri">
+            <!--<xsl:if test="$userdefined-uri">
                 <xsl:copy-of select="doc($userdefined-uri)/*/xsl:template"/>
                 <xsl:copy-of select="doc($userdefined-uri)/*/xsl:function"/>
-            </xsl:if>
+            </xsl:if>-->
             <!-- Retrieving userdefined functions from the rules file -->
             <xsl:copy-of select="stylesheet/*"/>
         </xsl:element>
@@ -740,7 +719,7 @@
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
-            <xsl:element name="xsl:variable">
+            <!--<xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'entity-collection-userdefined'"/>
                 <xsl:element name="xsl:choose">
                     <xsl:element name="xsl:when">
@@ -756,18 +735,18 @@
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
-            </xsl:element>
+            </xsl:element>-->
             <xsl:element name="xsl:choose">
                 <xsl:element name="xsl:when">
                     <xsl:attribute name="test" select="'$rdf'"/>
                     <xsl:element name="xsl:apply-templates">
-                        <xsl:attribute name="select" select="'$entity-collection-userdefined'"/>
+                        <xsl:attribute name="select" select="'$entity-collection-merged'"/>
                         <xsl:attribute name="mode" select="'rdfify'"/>
                     </xsl:element>
                 </xsl:element>
                 <xsl:element name="xsl:otherwise">
                     <xsl:element name="xsl:copy-of">
-                        <xsl:attribute name="select" select="'$entity-collection-userdefined'"/>
+                        <xsl:attribute name="select" select="'$entity-collection-merged'"/>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
