@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>00877cam a22002175a 4500</marc:leader>
+        <marc:controlfield tag="001">15471094</marc:controlfield>
+        <marc:controlfield tag="003">LC</marc:controlfield>
+        <marc:controlfield tag="005">20230613175313.0</marc:controlfield>
+        <marc:controlfield tag="008">081001r20082006nyu           000 1 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2008277520</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780307455291 (pbk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">813/.54</marc:subfield>
+            <marc:subfield code="2">22</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">McCarthy, Cormac,</marc:subfield>
+            <marc:subfield code="d">1933-2023.</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/29558386</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/object/P10061</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="4">
+            <marc:subfield code="a">The road</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/220031159</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The road /</marc:subfield>
+            <marc:subfield code="c">Cormac McCarthy.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">1st Vintage International ed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Vintage International,</marc:subfield>
+            <marc:subfield code="c">c2008.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">287 p. ;</marc:subfield>
+            <marc:subfield code="c">21 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1049</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01104cam a2200253 a 4500</marc:leader>
+        <marc:controlfield tag="001">14455973</marc:controlfield>
+        <marc:controlfield tag="003">LC</marc:controlfield>
+        <marc:controlfield tag="005">20231011062650.0</marc:controlfield>
+        <marc:controlfield tag="008">060717s2006    nyu           000 1 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2006023629</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0307265439</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780307265432</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">813/.54</marc:subfield>
+            <marc:subfield code="2">22</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">McCarthy, Cormac,</marc:subfield>
+            <marc:subfield code="d">1933-2023.</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/29558386</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/object/P10061</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="4">
+            <marc:subfield code="a">The road</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/220031159</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The road /</marc:subfield>
+            <marc:subfield code="c">Cormac McCarthy.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">1st ed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Alfred A. Knopf,</marc:subfield>
+            <marc:subfield code="c">2006.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">241 p. ;</marc:subfield>
+            <marc:subfield code="c">25 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1049</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Winner of the Pulitzer Prize in 2006 as well as the James Tait Black Memorial Prize for Fiction. McCarthy is a 1981 MacArthur Fellow.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>02908cam a2200409 i 4500</marc:leader>
+        <marc:controlfield tag="001">22464976</marc:controlfield>
+        <marc:controlfield tag="003">LC</marc:controlfield>
+        <marc:controlfield tag="005">20230613180744.0</marc:controlfield>
+        <marc:controlfield tag="007">ta</marc:controlfield>
+        <marc:controlfield tag="008">220314t20222022nyu           000 1 eng d</marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2022934755</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0307269000</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780307269003</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0593535235</marc:subfield>
+            <marc:subfield code="q">(ebook)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">152471240X</marc:subfield>
+            <marc:subfield code="q">(open market edition)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780593535233</marc:subfield>
+            <marc:subfield code="q">(ebook)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9781524712402</marc:subfield>
+            <marc:subfield code="q">(open market edition)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="037" ind1=" " ind2=" ">
+            <marc:subfield code="b">Random House Inc, Attn Order Entry 400 Hahn rd, Westminster, MD, USA, 21157</marc:subfield>
+            <marc:subfield code="n">SAN 201-3975</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us-wi</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">813/.54</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">McCarthy, Cormac,</marc:subfield>
+            <marc:subfield code="d">1933-2023,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/29558386</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/object/P10061</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="4">
+            <marc:subfield code="a">Stella Maris</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/1307171191134758030004</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Stella Maris /</marc:subfield>
+            <marc:subfield code="c">Cormac McCarthy.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">First edition.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Alfred A. Knopf,</marc:subfield>
+            <marc:subfield code="c">2022.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">189 pages ;</marc:subfield>
+            <marc:subfield code="c">25 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1007</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1049</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;This is a Borzoi book&quot;- Title page verso.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Sequel to: The Passenger.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;From the best-selling, Pulitzer Prize-winning author of The Road comes the second volume of a two-volume masterpiece: Stella Maris is an intimate portrait of grief and longing, as a young woman in a psychiatric facility seeks to understand her own existence. Black River Falls, Wisconsin, 1972: Alicia Western, twenty years old, with forty thousand dollars in a plastic bag, admits herself to the hospital. A doctoral candidate in mathematics at the University of Chicago, Alicia has been diagnosed with paranoid schizophrenia, and she does not want to talk about her brother, Bobby. Instead, she contemplates the nature of madness, the human insistence on one common experience of the world; she recalls a childhood where, by the age of seven, her own grandmother feared for her; she surveys the intersection of physics and philosophy; and she introduces her cohorts, her chimeras, the hallucinations that only she can see. All the while, she grieves for Bobby, not quite dead, not quite hers. Told entirely through the transcripts of Alicia's psychiatric sessions, Stella Maris is a searching, rigorous, intellectually challenging coda to The Passenger, a philosophical inquiry that questions our notions of God, truth, and existence&quot;-</marc:subfield>
+            <marc:subfield code="c">Dust jacket flap.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="a">The passenger (McCarthy, Cormac)</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/470166838899836200007</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/object/P10122</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01231pam a22003011i 4500</marc:leader>
+        <marc:controlfield tag="001">020702897</marc:controlfield>
+        <marc:controlfield tag="003">Uk</marc:controlfield>
+        <marc:controlfield tag="005">20221125021337.0</marc:controlfield>
+        <marc:controlfield tag="006">m    ||  d |      </marc:controlfield>
+        <marc:controlfield tag="007">cr |||||||||||</marc:controlfield>
+        <marc:controlfield tag="008">220616s2022    enk     o     000|f|eng|d</marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9781447245834 (ePub ebook) :</marc:subfield>
+            <marc:subfield code="c">£16.99</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780330457422 (hbk.) :</marc:subfield>
+            <marc:subfield code="c">£20.00</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="037" ind1=" " ind2=" ">
+            <marc:subfield code="a">PanMacmillan32964</marc:subfield>
+            <marc:subfield code="b">Ingram Content Group</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">813.54</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">McCarthy, Cormac,</marc:subfield>
+            <marc:subfield code="d">1933-2023,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/29558386</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/object/P10061</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="4">
+            <marc:subfield code="a">The passenger</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/470166838899836200007</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The passenger /</marc:subfield>
+            <marc:subfield code="c">Cormac McCarthy.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">London :</marc:subfield>
+            <marc:subfield code="b">Picador,</marc:subfield>
+            <marc:subfield code="c">2022.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMediaType/1003</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDACarrierType/1018</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">Description based on CIP data; resource not viewed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version :</marc:subfield>
+            <marc:subfield code="z">9780330457422</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
+
