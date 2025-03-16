@@ -6,22 +6,16 @@
         </xs:annotation>
         <xs:complexType mixed="true">
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element ref="keyfilter" minOccurs="0" maxOccurs="1"/>
-                <xs:element maxOccurs="unbounded" minOccurs="0" name="type-prefixes">
-                    <xs:annotation>
-                        <xs:documentation>This field is used to define all the namespace prefixes that you are using in type attribute values. xmlns:frbr = "url", xmlns:rda = "</xs:documentation>
-                        <xs:documentation>The purpose of the field is to make sure that your namespaces are included in the result so that it is easier to construct proper rdf.</xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:anyAttribute/>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element ref="entity" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
                         <xs:documentation>Each entity element describes the rules for identifying one type of entity in the record from one specific tag in the record. </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="stylesheet" minOccurs="0" maxOccurs="1" type="xs:anyType"/>
+                <xs:element name="stylesheet" minOccurs="0" maxOccurs="1" type="xs:anyType">
+                    <xs:annotation>
+                        <xs:documentation>Placeholder for user defined stylesheet functions and templates that are used in xpath-expressions in rules. Will be copied directly into the conversion stylesheet.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
             </xs:choice>
         </xs:complexType>
         <xs:unique name="templatename">
@@ -48,10 +42,26 @@
             </xs:sequence>
             <xs:attribute name="templatename" use="required" type="xs:NCName"/>
             <xs:attributeGroup ref="typeattributes"/>
-            <xs:attribute name="tag" type="xs:string"/>
-            <xs:attribute name="code" type="xs:string"/>
-            <xs:attribute name="condition" type="xs:string"/>
-            <xs:attribute name="code-condition" type="xs:string"/>
+            <xs:attribute name="tag" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Is the MARC datafield tag(s) that the conversion process will iterate over and for each apply this template. Can be a single tag or list of tags separated with comma. Is mandatory</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="code" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Is the MARC subfield code(s) that the conversion process will iterate for tag(s) listed in @tag. Can be a single code or list of codes separated with comma. Is used for more spesific iterations than by tag alone.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="condition" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Extra conditions applied to the tag condition for determining when to apply a template.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="code-condition" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Any extra conditions applied when we iteratate over subfields .</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
         </xs:complexType>
     </xs:element>
     <xs:element name="note" type="xs:string"/>
@@ -142,15 +152,6 @@
             <xs:attribute name="condition" type="xs:string"/>
             <xs:attribute name="type" type="xs:string"/>
         </xs:complexType>
-    </xs:element>
-    <xs:element name="keyfilter" type="xs:string"
-        default="replace(lower-case(string-join($key, '\')), '[^a-z0-9\\#|¤§]', '')">
-        <xs:annotation>
-            <xs:documentation>
-                The keyfilter element is used to specify string processing of the key value. It has to be a valid XPATH expression using the variable $key as input.
-                Typically this expression is used to remove irrelevant punctuation, convert letters to lowercase and other text operations.
-            </xs:documentation>
-        </xs:annotation>
     </xs:element>
     <xs:attributeGroup name="typeattributes">
         <xs:attribute name="type" type="xs:string">

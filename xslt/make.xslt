@@ -172,7 +172,6 @@
         <xsl:element name="xsl:for-each">
             <xsl:variable name="taglist" select="'('''||string-join(tokenize((@tag), '\D+'), ''',''')||''')'"/>
             <xsl:attribute name="select" select="'node()[@tag=' || $taglist  || ']' || (if (@condition) then '[' || @condition || ']' else ())"/>          
-            <!--<xsl:attribute name="select" select=" string-join(('node()[@tag=''', @tag, ''']', if (@condition) then concat('[', @condition, ']') else ()), '')"/>-->
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_field'"/>              
                 <xsl:attribute name="select" select="'(ancestor-or-self::*:datafield, ancestor-or-self::*:controlfield)'"/>
@@ -208,7 +207,6 @@
     <xsl:template name="code-for-each">
         <xsl:element name="xsl:for-each">
             <xsl:variable name="codelist" select="'('''||string-join(tokenize((@code), '\W+'), ''',''')||''')'"/>
-            <!--<xsl:attribute name="select" select="'node()[@tag='  || $codelist || ']' || (if (@condition)      then '[' || @condition      || ']' else ())"/>-->
             <xsl:attribute name="select" select="'node()[@code=' || $codelist || ']' || (if (@code-condition) then '[' || @code-condition || ']' else ())"/>
             <xsl:element name="xsl:variable">
                 <xsl:attribute name="name" select="'this_subfield'"/>

@@ -23,29 +23,13 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:ex="http://www.example.org/"
     xsi:noNamespaceSchemaLocation="../../../xsd/marc2lrm.rules.xsd">
-    <keyfilter>replace(string-join($key[. != ''], '/'), ' ', '')</keyfilter>
     
     <!-- Thius is a restrictive ruleset where we only process explicitly coded entities and relationships -->
     
-    <!-- URI types and categories as entities -->
-    <entity tag="381" code="0" code-condition="starts-with(., 'http')" templatename="MARC381" type="http://www.example.org/expressiontypes">
-        <note>Entity for expression type</note>
-        <attributes>
-            <datafield tag="381" condition="generate-id(.) = generate-id($this_field)">
-                <subfield code="a" select="." type="http://www.w3.org/2000/01/rdf-schema#label"/>
-                <subfield code="0" select="." condition="generate-id(.) = generate-id($this_subfield)" type="http://www.w3.org/2004/02/skos/core#subjectIndicator" label="has expression category"/>
-            </datafield>
-        </attributes>
-        <key order="1">
-            <element>*:datafield[@tag=('381')]/*:subfield[@code='0'][starts-with(., 'http')]</element>
-        </key>
-    </entity>
-
     <entity tag="380" code="0" code-condition="starts-with(., 'http')" templatename="MARC380" type="http://www.w3.org/2004/02/skos/core#Concept">
         <note>Entity for work type</note>
         <attributes>
             <datafield tag="380" condition="generate-id(.) = generate-id($this_field)">
-                <!--<subfield code="a" select="." type="http://www.w3.org/2000/01/rdf-schema#label"/>-->
                 <subfield code="0" select="." condition="generate-id(.) = generate-id($this_subfield)" type="http://www.w3.org/2004/02/skos/core#subjectIndicator" label="has form of work"/>
             </datafield>
         </attributes>
@@ -55,10 +39,9 @@
     </entity>
     
     <entity tag="336" code="0" code-condition="starts-with(., 'http')" templatename="MARC336" type="http://www.w3.org/2004/02/skos/core#Concept">
-        <note>Entity for expression type</note>
+        <note>Entity for content type</note>
         <attributes>
             <datafield tag="336" condition="generate-id(.) = generate-id($this_field)">
-                <!--<subfield code="a" select="." type="http://www.w3.org/2000/01/rdf-schema#label"/>-->
                 <subfield code="0" select="." condition="generate-id(.) = generate-id($this_subfield)" type="http://www.w3.org/2004/02/skos/core#subjectIndicator" />
             </datafield>
         </attributes>
@@ -68,10 +51,9 @@
     </entity>
     
     <entity tag="337" code="0" code-condition="starts-with(., 'http')" templatename="MARC337" type="http://www.w3.org/2004/02/skos/core#Concept">
-        <note>Entity for work type</note>
+        <note>Entity for media type</note>
         <attributes>
             <datafield tag="337" condition="generate-id(.) = generate-id($this_field)">
-                <!--<subfield code="a" select="." type="http://www.w3.org/2000/01/rdf-schema#label"/>-->
                 <subfield code="0" select="." condition="generate-id(.) = generate-id($this_subfield)" type="http://www.w3.org/2004/02/skos/core#subjectIndicator"/>
             </datafield>
         </attributes>
@@ -81,10 +63,9 @@
     </entity>
     
     <entity tag="338" code="0" code-condition="starts-with(., 'http')" templatename="MARC338" type="http://www.w3.org/2004/02/skos/core#Concept">
-        <note>Entity for work type</note>
+        <note>Entity for carrier type</note>
         <attributes>
             <datafield tag="338" condition="generate-id(.) = generate-id($this_field)">
-                <!--<subfield code="a" select="." type="http://www.w3.org/2000/01/rdf-schema#label"/>-->
                 <subfield code="0" select="." condition="generate-id(.) = generate-id($this_subfield)" type="http://www.w3.org/2004/02/skos/core#subjectIndicator"/>
             </datafield>
         </attributes>
@@ -339,9 +320,6 @@
             </relationship>
             <relationship type="http://rdaregistry.info/Elements/e/datatype/P20001" label="has content type">
                 <target entity="MARC336" condition="frbrizer:linked($anchor_field, $target_field, false())"/>
-            </relationship>
-            <relationship type="http://rdaregistry.info/Elements/e/datatype/P20331" label="has category">
-                <target entity="MARC381" condition="frbrizer:linked($anchor_field, $target_field, false())"/>
             </relationship>
             <!-- hack: using ind1 with value > 0 to indicate that a part of relationship is to be created with added analytical entries -->
             <relationship type="http://rdaregistry.info/Elements/e/object/P20145" condition="$this_field/@ind1 != '0'" label="has part expression">

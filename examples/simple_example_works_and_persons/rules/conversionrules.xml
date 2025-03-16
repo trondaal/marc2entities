@@ -23,9 +23,9 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:ex="http://www.example.org/"
     xsi:noNamespaceSchemaLocation="../../../xsd/marc2lrm.rules.xsd">
-    <keyfilter>replace(string-join($key[. != ''], '/'), ' ', '')</keyfilter>
+ 
     
-    <!-- This is an example ruleset where we only basic entities and relationships -->
+    <!-- This is an example ruleset where with simple extraction of entities and relationships -->
     
     
     <!-- Agent entries main and added 
@@ -49,7 +49,8 @@
     </entity>
  
     <!-- Main entry work 
-         essentially iterating over 240-fields with a subfield 1 -->
+         essentially iterating over 240-fields with a subfield 1 used for URI to identify entity
+         -->
     <entity tag="240" code="1" code-condition="starts-with(., 'http')" type="http://rdaregistry.info/Elements/c/C10001" templatename="MARC21-240-Work" label="Work">
         <attributes>
             <datafield tag="240"  condition=". eq $this_field">
