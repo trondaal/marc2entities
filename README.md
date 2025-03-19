@@ -67,7 +67,7 @@ The tool uses an intermediary format in the transformation, with each created en
 
 The intermediary format can directly be translated into RDF (supported by the tool). Keys are used to uniquely identify each entity for merging and deduplication purposes. 
 
-...
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://www.example.org/"
          xmlns:frbrizer="http://idi.ntnu.no/frbrizer/"
@@ -235,6 +235,6 @@ The intermediary format can directly be translated into RDF (supported by the to
       <skos:subjectIndicator>http://rdaregistry.info/termList/RDAMediaType/1007</skos:subjectIndicator>
    </skos:Concept>
 </rdf:RDF>
-...
+```
 
 An example rule set and example data file is found in the example directory. Simple scripts are provided for running the generation of the transformation xslt and the final transformation
