@@ -10,9 +10,10 @@ The tool is tested with Saxon 9, but makes use of some XSLT 3.0 features and you
 
 An example of the rule file can be found in the examples diretory. The format is rather simple, but since some selections and conditions make use of xpath-expressions and userdefined xpath-funtions, the overall rules can be rather intricate and complex.
 ```
-   <!-- Agent entries main and added 
+   <!-- Agent entries main 
         conditions are checking if there is a URI in $1 to identifty the person and URI in $4 for relating the person to the entities -->
-    <entity tag="100" condition="exists(*:subfield[@code = '1']/starts-with(., 'http')) and not(*:subfield/@code = 't')" code="4" code-condition="starts-with(., 'http')" type="http://rdaregistry.info/Elements/c/C10002" templatename="MARC21-100-Person" label="Person">
+    <entity tag="100" condition="exists(*:subfield[@code = '1']/starts-with(., 'http')) and not(*:subfield/@code = 't')" code="4" code-condition="starts-with(., 'http')"
+                      type="http://rdaregistry.info/Elements/c/C10002" templatename="MARC21-100-Person" label="Person">
         <note>Persons identified in field 100 </note>
         <attributes>
             <datafield tag="100" condition=". eq $this_field">
