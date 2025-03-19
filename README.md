@@ -1,12 +1,12 @@
 # marc2frbr
 
-marc2frbr is a tool for performing interpretations and conversion of bibliographic MARC records in XML to new entity-centric models such as FRBR or BIBFRAME. The tools is intended for experimental conversions and it's strong feature is the use of highly customizable rules that allows the tool to be adapted to different catalogues, output models and formats.
+marc2frbr is a tool for performing interpretations and conversion of bibliographic MARC records in XML to new entity-centric models such as LRM or BIBFRAME. The tools is intended for experimental conversions and it's strong feature is the use of highly customizable rules that allows the tool to be adapted to different catalogues, output models and formats.
 
 1. Create a rule file in xml
 1. Use an XSLT processor and run make.xslt on the rules file to create a an XSLT file for the actual conversions
 1. Transform one or more MARC record collections (XML files) using the created XSLT conversion file
 
-The tool is tested with Saxon 9, but makes use of some XSLT 3.0 features and you should use the last version of Saxon.
+The tools allows for easy experimentation with ways of interepreting the records and different outputs.
 
 An example of the rule file can be found in the examples diretory. The format is rather simple, but since some selections and conditions make use of xpath-expressions and userdefined xpath-funtions, the overall rules can be rather intricate and complex.
 ```
